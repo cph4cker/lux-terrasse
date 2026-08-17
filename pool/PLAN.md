@@ -8,7 +8,7 @@ Date: 2026-08-17
 | Item | Internal size | Position |
 |---|---|---|
 | Pool | 2.0 × 3.0 m, 150 cm deep (8 courses = 160 cm wall) | top-left corner of deck |
-| Biofilter | 2.0 × 2.0 m, 100 cm deep (5 courses) | directly below pool, shares one 2 m wall |
+| Biofilter | 2.0 × 2.0 m nominal, 100 cm deep (5 courses) | directly below pool, shares one 2 m wall. Sandbox circle (centre ~2.2 m from left edge, 4.6 m from back edge) cuts into the filter's right side; the filter wall follows the circle as a cast concrete arc (r ≈ 1.3 m, ~2.4 m long, 15 cm). Net planted area ≈ 1.6 m² (26 % of pool surface; pumped up-flow bog filter is normally sized 10–30 %). Can be extended 60 cm south for 2.2 m² |
 | Tops | flush with each other, at deck level | filter floor sits 50 cm above pool floor |
 
 Combined footprint (outer): ~2.3 × 5.45 m (15 cm walls; 19 cm walls on pool → ~2.4 × 5.6 m).
@@ -38,7 +38,7 @@ Combined footprint (outer): ~2.3 × 5.45 m (15 cm walls; 19 cm walls on pool →
 
 - Slab: ~1.9 m³
 - Wall fill: ~2.5 m³ (19 cm pool + 15 cm filter)
-- Two deliveries (slab first, walls after slab cures).
+- Own mix: ~64 × 25 kg cement + ~10 t betongrus 0–16 delivered loose. Slab in one day (2 people, ~14 mixer loads).
 
 ## 3. Water flow — up-flow bog filter, gravity return
 

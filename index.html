@@ -263,7 +263,7 @@ footer a{color:var(--water)}
         <div><b>5,0 × 6,5 m</b>terrasse</div>
         <div><b>2 × 3 m</b>naturpool, 150 cm</div>
         <div><b>Ø 2,36 m</b>sandcirkel i corten</div>
-        <div><b>92.645 kr</b>materialer, alt selvbyg</div>
+        <div><b>90.565 kr</b>materialer, alt selvbyg</div>
       </div>
     </div>
     <div class="enso-wrap" aria-hidden="true">
@@ -291,7 +291,7 @@ footer a{color:var(--water)}
   <div class="wrap">
     <div class="head">
       <div><div class="eyebrow">Idéen</div><h2>Ro og vand<br>i samme rum</h2></div>
-      <p class="lede">Haven er 5 meter bred. Det er lige præcis nok til, at de to ønsker kan stå side om side uden at gå i vejen for hinanden. Sandcirklen får den venstre halvdel foran poolen. Vandet får det bageste hjørne, hvor hækken lukker om det.</p>
+      <p class="lede">Haven er 5 meter bred. Det er lige præcis nok til, at de to ønsker kan stå side om side uden at gå i vejen for hinanden. Vandet får det bageste venstre hjørne, hvor hækken lukker om det, med filteret lige under. Sandcirklen ligger foran og læner sig ind i filteret – planterne står helt op til ringen.</p>
     </div>
     <div class="voices">
       <article class="voice">
@@ -307,7 +307,7 @@ footer a{color:var(--water)}
       <article class="voice water">
         <div class="eyebrow">Til hende · vand</div>
         <h3>En pool, der er levende</h3>
-        <p>Ingen klor. Ingen blå plastdug. Bassinet er 2 × 3 meter og 150 cm dybt, med grå mineralske vægge, der med tiden får en naturlig patina. Vandet holdes klart af et plantet grusfilter ved siden af – iris, dunhammer og siv renser det, som en søbred gør. Man svømmer blandt planter, ikke kemi.</p>
+        <p>Ingen klor. Ingen blå plastdug. Bassinet er 2 × 3 meter og 150 cm dybt, med grå mineralske vægge, der med tiden får en naturlig patina. Vandet holdes klart af et plantet grusfilter lige ved siden af – iris, dunhammer og siv renser det, som en søbred gør. Man svømmer blandt planter, ikke kemi.</p>
         <ul>
           <li>Ca. 8,4 m³ vand, hele volumen gennem filteret hver 1,5 time</li>
           <li>Pumpen bruger ca. 45 W – som en pære</li>
@@ -358,19 +358,20 @@ footer a{color:var(--water)}
           <text x="119" y="180" text-anchor="middle" style="fill:#B7CCC4">200 × 300 · dybde 150</text>
         </g>
         <g data-k="filter">
-          <rect class="wall" x="238" y="0" width="219" height="238"/>
-          <rect class="filter" x="238" y="19" width="200" height="200"/>
-          <rect class="weir" x="219" y="60" width="19" height="40"/>
-          <text x="338" y="112" text-anchor="middle" style="fill:#E4EBD9;font-size:14px">Biofilter</text>
-          <text x="338" y="132" text-anchor="middle" style="fill:#CDD9BC">200 × 200 · dybde 100</text>
-          <text x="338" y="150" text-anchor="middle" style="fill:#CDD9BC;font-size:11px">iris · dunhammer · siv</text>
+          <rect class="wall" x="0" y="338" width="238" height="219"/>
+          <rect class="filter" x="19" y="338" width="200" height="200"/>
+          <clipPath id="filterClip"><rect x="19" y="338" width="200" height="200"/></clipPath>
+          <circle class="wall" cx="220" cy="460" r="133" clip-path="url(#filterClip)"/>
+          <rect class="weir" x="60" y="319" width="40" height="19"/>
+          <text x="62" y="372" text-anchor="middle" style="fill:#E4EBD9;font-size:12px">Biofilter</text>
+          <text x="58" y="390" text-anchor="middle" style="fill:#CDD9BC;font-size:9.5px">~1,6 m² netto</text>
         </g>
         <g data-k="sand">
-          <circle class="sand" cx="150" cy="470" r="118"/>
-          <circle class="rakeline" cx="150" cy="470" r="100"/><circle class="rakeline" cx="150" cy="470" r="84"/><circle class="rakeline" cx="150" cy="470" r="68"/><circle class="rakeline" cx="150" cy="470" r="52"/><circle class="rakeline" cx="150" cy="470" r="36"/><circle class="rakeline" cx="150" cy="470" r="20"/>
-          <ellipse cx="128" cy="486" rx="12" ry="8" fill="#5A5F5A" transform="rotate(-20 128 486)"/>
-          <ellipse cx="166" cy="452" rx="8" ry="6" fill="#3F4A45"/>
-          <text x="150" y="536" text-anchor="middle" style="fill:#7A6A4E">Sandcirkel Ø 236</text>
+          <circle class="sand" cx="220" cy="460" r="118"/>
+          <circle class="rakeline" cx="220" cy="460" r="100"/><circle class="rakeline" cx="220" cy="460" r="84"/><circle class="rakeline" cx="220" cy="460" r="68"/><circle class="rakeline" cx="220" cy="460" r="52"/><circle class="rakeline" cx="220" cy="460" r="36"/><circle class="rakeline" cx="220" cy="460" r="20"/>
+          <ellipse cx="198" cy="476" rx="12" ry="8" fill="#5A5F5A" transform="rotate(-20 198 476)"/>
+          <ellipse cx="236" cy="442" rx="8" ry="6" fill="#3F4A45"/>
+          <text x="220" y="526" text-anchor="middle" style="fill:#7A6A4E">Sandcirkel Ø 236</text>
         </g>
         <g data-k="box">
           <rect class="box" x="-70" y="500" width="70" height="150"/>
@@ -393,12 +394,12 @@ footer a{color:var(--water)}
       <div>
         <ul class="legend" id="legend">
           <li data-k="pool"><span class="sw" style="background:var(--water)"></span><div><b>Naturpool</b><span class="d">Bagerste venstre hjørne, langsiden mod hækken. Grå mineralvægge, vand i plan med dækket.</span></div><span class="m">200 × 300 × 150</span></li>
-          <li data-k="filter"><span class="sw" style="background:#5D7F4E"></span><div><b>Biofilter</b><span class="d">Plantet grusbassin ved siden af poolen. Deler væg med den. Bunden ligger 50 cm højere end poolens.</span></div><span class="m">200 × 200 × 100</span></li>
-          <li data-k="sand"><span class="sw" style="background:var(--sand);border:2px solid var(--corten)"></span><div><b>Sandcirkel</b><span class="d">Foran poolen, skåret ind i dækket. Cortenring 15 cm høj på en base af komprimeret grus.</span></div><span class="m">Ø 236</span></li>
+          <li data-k="filter"><span class="sw" style="background:#5D7F4E"></span><div><b>Biofilter</b><span class="d">Plantet grusbassin lige under poolen, deler væg med den. Sandcirklen skærer ind i filterets højre side, og væggen følger cirklen i en bue. Netto ca. 1,6 m² plantet grus. Bunden ligger 50 cm højere end poolens.</span></div><span class="m">200 × 200 × 100</span></li>
+          <li data-k="sand"><span class="sw" style="background:var(--sand);border:2px solid var(--corten)"></span><div><b>Sandcirkel</b><span class="d">Foran poolen, skåret ind i dækket og ind i filterets hjørne. Cortenring 15 cm høj på en base af komprimeret grus.</span></div><span class="m">Ø 236</span></li>
           <li data-k="deck"><span class="sw" style="background:var(--pine)"></span><div><b>Terrasse</b><span class="d">Termofyr 26 × 140 på strøer og jordskruer. Affaset hjørne mod den eksisterende terrasse.</span></div><span class="m">500 × 650 · +30</span></li>
           <li data-k="box"><span class="sw" style="background:var(--pine-2)"></span><div><b>Teknikboks</b><span class="d">Uden for dækkets kant, forrest til venstre. Stik, ventiler, slange og opbevaring. Låg i samme brædder.</span></div><span class="m">50 × 150 × 50</span></li>
         </ul>
-        <div class="callout"><b>Justeret i forhold til 3D-modellen:</b> i modellen ligger sandcirklen delvist oven på filteret. Det kan ikke bygges, så filteret er her rykket op ved siden af poolen langs baghækken. Poolen, cirklen og terrassens omrids er uændrede. Vil I hellere have filteret foran poolen, må cirklen blive mindre eller terrassen længere.</div>
+        <div class="callout"><b>Cirklen og filteret deler plads.</b> Sandcirklen skærer ind i biofilteret, og filtervæggen støbes i en bue om cirklen – filteret bliver halvmåneformet med ca. 1,6 m² plantet grus, 26 % af poolens overflade. Et pumpet grusfilter dimensioneres normalt til 10–30 %, så det holder. Vil I have mere buffer, kan filteret forlænges 60 cm mod syd (2,2 m²).</div>
       </div>
     </div>
   </div>
@@ -493,14 +494,14 @@ footer a{color:var(--water)}
     </div>
     <div class="budget-top">
       <div>
-        <div class="big">92.645<small> kr</small></div>
+        <div class="big">90.565<small> kr</small></div>
         <div class="range">
-          <div>Med 10 % til uforudset: <b>101.910 kr</b></div>
-          <div class="range-bar"><span style="left:0;width:54.7%"></span><i style="left:33.5%"></i></div>
-          <div class="range-marks"><span>lav 77.971</span><span>høj 121.710</span></div>
+          <div>Med 10 % til uforudset: <b>99.621 kr</b></div>
+          <div class="range-bar"><span style="left:0;width:54.5%"></span><i style="left:33.7%"></i></div>
+          <div class="range-marks"><span>lav 75.891</span><span>høj 119.421</span></div>
         </div>
         <div class="splits">
-          <div><b>68.786</b><span>Pool + biofilter</span></div>
+          <div><b>66.705</b><span>Pool + biofilter</span></div>
           <div><b>16.779</b><span>Terrasse</span></div>
           <div><b>4.921</b><span>Sandcirkel</span></div>
           <div><b>2.160</b><span>Teknikboks</span></div>
@@ -509,15 +510,15 @@ footer a{color:var(--water)}
       </div>
       <div>
         <ul class="bars">
-          <li><a href="#bom-A"><span class="bar-label"><b>A</b> Udgravning &amp; underlag</span><span class="bar-track"><span class="bar-fill" style="--w:74.6%"></span></span><span class="bar-num">16.163</span></a></li>
-<li><a href="#bom-B"><span class="bar-label"><b>B</b> Beton, blokke &amp; armering</span><span class="bar-track"><span class="bar-fill" style="--w:100.0%"></span></span><span class="bar-num">21.676</span></a></li>
-<li><a href="#bom-C"><span class="bar-label"><b>C</b> Vandtætning</span><span class="bar-track"><span class="bar-fill" style="--w:44.9%"></span></span><span class="bar-num">9.734</span></a></li>
-<li><a href="#bom-D"><span class="bar-label"><b>D</b> Pumpe &amp; VVS</span><span class="bar-track"><span class="bar-fill" style="--w:37.3%"></span></span><span class="bar-num">8.077</span></a></li>
-<li><a href="#bom-E"><span class="bar-label"><b>E</b> Filtergrus &amp; planter</span><span class="bar-track"><span class="bar-fill" style="--w:27.6%"></span></span><span class="bar-num">5.976</span></a></li>
-<li><a href="#bom-F"><span class="bar-label"><b>F</b> El &amp; vand</span><span class="bar-track"><span class="bar-fill" style="--w:33.0%"></span></span><span class="bar-num">7.160</span></a></li>
-<li><a href="#bom-G"><span class="bar-label"><b>G</b> Terrasse</span><span class="bar-track"><span class="bar-fill" style="--w:77.4%"></span></span><span class="bar-num">16.779</span></a></li>
-<li><a href="#bom-H"><span class="bar-label"><b>H</b> Sandcirkel</span><span class="bar-track"><span class="bar-fill" style="--w:22.7%"></span></span><span class="bar-num">4.921</span></a></li>
-<li><a href="#bom-I"><span class="bar-label"><b>I</b> Teknikboks</span><span class="bar-track"><span class="bar-fill" style="--w:10.0%"></span></span><span class="bar-num">2.160</span></a></li>
+          <li><a href="#bom-A"><span class="bar-label"><b>A</b> Udgravning &amp; underlag</span><span class="bar-track"><span class="bar-fill" style="--w:76.3%"></span></span><span class="bar-num">16.163</span></a></li>
+<li><a href="#bom-B"><span class="bar-label"><b>B</b> Beton, blokke &amp; armering</span><span class="bar-track"><span class="bar-fill" style="--w:100.0%"></span></span><span class="bar-num">21.186</span></a></li>
+<li><a href="#bom-C"><span class="bar-label"><b>C</b> Vandtætning</span><span class="bar-track"><span class="bar-fill" style="--w:45.9%"></span></span><span class="bar-num">9.734</span></a></li>
+<li><a href="#bom-D"><span class="bar-label"><b>D</b> Pumpe &amp; VVS</span><span class="bar-track"><span class="bar-fill" style="--w:38.1%"></span></span><span class="bar-num">8.077</span></a></li>
+<li><a href="#bom-E"><span class="bar-label"><b>E</b> Filtergrus &amp; planter</span><span class="bar-track"><span class="bar-fill" style="--w:20.7%"></span></span><span class="bar-num">4.385</span></a></li>
+<li><a href="#bom-F"><span class="bar-label"><b>F</b> El &amp; vand</span><span class="bar-track"><span class="bar-fill" style="--w:33.8%"></span></span><span class="bar-num">7.160</span></a></li>
+<li><a href="#bom-G"><span class="bar-label"><b>G</b> Terrasse</span><span class="bar-track"><span class="bar-fill" style="--w:79.2%"></span></span><span class="bar-num">16.779</span></a></li>
+<li><a href="#bom-H"><span class="bar-label"><b>H</b> Sandcirkel</span><span class="bar-track"><span class="bar-fill" style="--w:23.2%"></span></span><span class="bar-num">4.921</span></a></li>
+<li><a href="#bom-I"><span class="bar-label"><b>I</b> Teknikboks</span><span class="bar-track"><span class="bar-fill" style="--w:10.2%"></span></span><span class="bar-num">2.160</span></a></li>
         </ul>
         <p class="fine">Klik på en linje for at åbne styklisten for den del.</p>
       </div>
@@ -540,7 +541,7 @@ footer a{color:var(--water)}
 <thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
 <tbody>
 <tr>
-<td class="vare"><div>Minigraver 1,5–1,8 t, leje</div><div class="spec">2 dage; Loxam listepris 1 765 kr/dag, lokale udlejere 1 100–1 400</div><div class="note">Lokal udlejer sparer ~700–1 300 kr</div></td>
+<td class="vare"><div>Minigraver 1,5–1,8 t, leje</div><div class="spec">2 dage til ~20 m³; Loxam listepris 1 765 kr/dag, lokale udlejere 1 100–1 400</div><div class="note">Lokal udlejer sparer ~700–1 300 kr</div></td>
 <td class="num">2 dag</td>
 <td class="num">1.765,50</td>
 <td class="num strong">3.531</td>
@@ -561,7 +562,7 @@ footer a{color:var(--water)}
 <td class="shop"><a href="https://www.loxam.dk/p/pladevibrator-100kg/020-0011-014275" target="_blank" rel="noopener">Loxam</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
-<td class="vare"><div>Bortkørsel ren jord, grabbil</div><div class="spec">fast pris pr. læs op til 10 t. 25 m³ = 40–45 t = 4 læs. Budget: 1 læs, resten genbruges på grunden</div><div class="note">Alt jord væk = +19 800 kr</div></td>
+<td class="vare"><div>Bortkørsel ren jord, grabbil</div><div class="spec">fast pris pr. læs op til 10 t. Hullet er ~20 m³ (pool 8 m² × 1,6 m + filter 5 m² × 1,0 m + arbejdsplads) ≈ 34 t = 3–4 læs. Budget: 1 læs, resten genbruges på grunden</div><div class="note">Alt jord væk = +13 200–19 800 kr</div></td>
 <td class="num">1 læs</td>
 <td class="num">6.599,00</td>
 <td class="num strong">6.599</td>
@@ -586,9 +587,9 @@ footer a{color:var(--water)}
 </div>
 </details>
 <details class="bom" id="bom-B">
-<summary><span class="bom-letter">B</span><span class="bom-name">Slab, blokke, beton, armering, mørtel</span><span class="bom-sum">21.676 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<summary><span class="bom-letter">B</span><span class="bom-name">Slab, blokke, beton, armering, mørtel</span><span class="bom-sum">21.186 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
 <div class="bom-body">
-<p class="bom-note">Alt i B er ESTIMAT undtagen 15 cm-blokken (dit screenshot). Ring 2 leverandører på beton – prisen svinger mest her.</p>
+<p class="bom-note">Alt i B er ESTIMAT undtagen 15 cm-blokken (dit screenshot). Beton blandes selv: 4,8 m³ ≈ 11 t cement+grus at skovle – slab (2 m³) skal støbes i én arbejdsdag uden pauser, ellers får du en støbeskel. Færdigbeton til slab alene ville koste ~4 500 kr.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
 <tbody>
@@ -600,10 +601,10 @@ footer a{color:var(--water)}
 <td class="shop">byggemarked (RBR)</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
-<td class="vare"><div>RBR Fundamentblok 15×20×50 cm</div><div class="spec">filtervægge, 5 skifter × 13 = 65 +10 %</div><div class="note">72 stk/palle</div></td>
-<td class="num">80 stk</td>
+<td class="vare"><div>RBR Fundamentblok 15×20×50 cm</div><div class="spec">filterets 2 lige vægge, 5 skifter × 9 = 45 +10 %</div><div class="note">72 stk/palle</div></td>
+<td class="num">50 stk</td>
 <td class="num">18,50</td>
-<td class="num strong">1.480</td>
+<td class="num strong">925</td>
 <td class="shop">byggemarked (RBR)</td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
@@ -614,25 +615,32 @@ footer a{color:var(--water)}
 <td class="shop">byggemarked</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
-<td class="vare"><div>Færdigbeton C25/30, slab</div><div class="spec">2,4×5,6×0,15 = 2,0 m³, leveret</div><div class="note">1 500–1 900 kr/m³</div></td>
-<td class="num">2 m³</td>
-<td class="num">1.650,00</td>
-<td class="num strong">3.300</td>
-<td class="shop">Unicon / IBF / lokal</td>
+<td class="vare"><div>Cement, Aalborg Basis/Rapid 25 kg</div><div class="spec">egen blanding ~C25: 330 kg/m³ × 4,8 m³ (slab 2,0 + blokfyld 2,4 + buet væg 0,4) ≈ 1 600 kg</div><div class="note">Køb på palle (48 stk) = billigere</div></td>
+<td class="num">64 sæk</td>
+<td class="num">60,00</td>
+<td class="num strong">3.840</td>
+<td class="shop">byggemarked</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
-<td class="vare"><div>Færdigbeton C25/30, vægfyld</div><div class="spec">2,5 m³, 2. levering efter opmuring</div><div class="note">Flydende konsistens (S4) til blokceller</div></td>
-<td class="num">2,5 m³</td>
-<td class="num">1.650,00</td>
-<td class="num strong">4.125</td>
-<td class="shop">Unicon / IBF / lokal</td>
+<td class="vare"><div>Betongrus 0–16 mm (støbemix), løst leveret</div><div class="spec">~1,9 t/m³ × 4,8 m³ ≈ 9,5 t – samme vognmand som stabilgrus</div><div class="note">Bigbags i stedet: ~9 × 850 kr</div></td>
+<td class="num">10 t</td>
+<td class="num">400,00</td>
+<td class="num strong">4.000</td>
+<td class="shop">lokal vognmand / grus.dk</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
-<td class="vare"><div>Småbil-/leveringstillæg beton</div><div class="spec">2 leveringer under 4 m³</div><div class="note">Blandebil &#x27;betal hvad du bruger&#x27; undgår spild</div></td>
-<td class="num">2 stk</td>
-<td class="num">1.200,00</td>
-<td class="num strong">2.400</td>
-<td class="shop">betonleverandør</td>
+<td class="vare"><div>Betonblander 130–190 l, leje</div><div class="spec">slab støbes på ÉN dag (≈14 blandinger, 2 mand); vægfyld over 2–3 dage</div><div class="note">Brugt blander til salg ~1 500 kr = samme pris, du beholder den</div></td>
+<td class="num">2 uge</td>
+<td class="num">550,00</td>
+<td class="num strong">1.100</td>
+<td class="shop">byggemarked-udlejning / lokal</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Trillebør, skovle, spande + stavvibrator-leje 1 dag</div><div class="spec">vibrator til blokcellerne</div></td>
+<td class="num">1 sæt</td>
+<td class="num">500,00</td>
+<td class="num strong">500</td>
+<td class="shop">byggemarked / udlejning</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
 <td class="vare"><div>Armeringsnet Ø6 150×150, 2,35×5,0 m</div><div class="spec">slab, 1 lag, 13,5 m² + overlap</div></td>
@@ -688,6 +696,13 @@ footer a{color:var(--water)}
 <td class="num">15 sæk</td>
 <td class="num">60,00</td>
 <td class="num strong">900</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Forskalling til buet filtervæg</div><div class="spec">6 mm bøjelig krydsfinér + lægter, væggen om sandcirklen støbes (r ≈ 1,3 m, ~2,4 m lang, 15 cm tyk)</div><div class="note">Nemmere end at mure buen i blokke</div></td>
+<td class="num">1 sæt</td>
+<td class="num">450,00</td>
+<td class="num strong">450</td>
 <td class="shop">byggemarked</td>
 <td class="conf"><span class="badge e">estimat</span></td>
 </tr><tr>
@@ -885,59 +900,59 @@ footer a{color:var(--water)}
 </div>
 </details>
 <details class="bom" id="bom-E">
-<summary><span class="bom-letter">E</span><span class="bom-name">Filtermedie &amp; planter</span><span class="bom-sum">5.976 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<summary><span class="bom-letter">E</span><span class="bom-name">Filtermedie &amp; planter</span><span class="bom-sum">4.385 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
 <div class="bom-body">
 <p class="bom-note">Skyl alt grus før det kommer i filteret (støv = mudret pool i uger).</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
 <tbody>
 <tr>
-<td class="vare"><div>Nøddesten 16–32 mm, bigbag 1 500 kg</div><div class="spec">bundlag 30 cm ≈ 1,2 m³ – 1 bigbag = 1,04 m³, spæd op m. rest af 8–16</div><div class="note">&#x27;fra&#x27;-pris inkl. levering, varierer m. postnr</div></td>
+<td class="vare"><div>Nøddesten 16–32 mm, bigbag 1 000 kg</div><div class="spec">bundlag 30 cm på ~1,6 m² ≈ 0,5 m³ – bigbag = 0,69 m³</div><div class="note">&#x27;fra&#x27;-pris inkl. levering, varierer m. postnr</div></td>
 <td class="num">1 bigbag</td>
-<td class="num">1.750,00</td>
-<td class="num strong">1.750</td>
+<td class="num">1.316,00</td>
+<td class="num strong">1.316</td>
 <td class="shop"><a href="https://www.grusdirekte.dk/produkt/noeddesten-16-32mm-bigbag-1500-kg-1508.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
-<td class="vare"><div>Ærtesten 8–16 mm, bigbag 1 500 kg</div><div class="spec">mellemlag 30 cm ≈ 1,2 m³</div></td>
+<td class="vare"><div>Ærtesten 8–16 mm, bigbag 1 000 kg</div><div class="spec">mellemlag 30 cm ≈ 0,5 m³</div></td>
 <td class="num">1 bigbag</td>
-<td class="num">1.750,00</td>
-<td class="num strong">1.750</td>
+<td class="num">1.316,00</td>
+<td class="num strong">1.316</td>
 <td class="shop"><a href="https://www.grusdirekte.dk/produkt/aertesten-8-16mm-bigbag-1500-kg-1502.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
-<td class="vare"><div>Perlesten 4–8 mm, bigbag 1 000 kg</div><div class="spec">plantelag 10–15 cm ≈ 0,5 m³</div><div class="note">Lokal vognmand løst: ~250–375 kr/t + kørsel</div></td>
+<td class="vare"><div>Perlesten 4–8 mm, bigbag 500 kg</div><div class="spec">plantelag 10–15 cm ≈ 0,25 m³</div><div class="note">Lokal vognmand løst: ~250–375 kr/t + kørsel</div></td>
 <td class="num">1 bigbag</td>
-<td class="num">1.390,00</td>
-<td class="num strong">1.390</td>
+<td class="num">919,00</td>
+<td class="num strong">919</td>
 <td class="shop"><a href="https://www.grusdirekte.dk/produkt/perlesten-4-8mm-bigbag-1000-kg-117.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Iris pseudacorus (gul iris)</div><div class="note">15 % mængderabat indregnet</div></td>
-<td class="num">10 stk</td>
+<td class="num">8 stk</td>
 <td class="num">33,15</td>
-<td class="num strong">332</td>
+<td class="num strong">265</td>
 <td class="shop"><a href="https://www.jespersplanteskole.dk/gul-iris-iris-pseudacorus" target="_blank" rel="noopener">Jespers Planteskole</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Typha angustifolia (dunhammer)</div><div class="note">Vælg evt. Typha minima – mindre aggressiv</div></td>
-<td class="num">6 stk</td>
+<td class="num">4 stk</td>
 <td class="num">29,75</td>
-<td class="num strong">178</td>
+<td class="num strong">119</td>
 <td class="shop"><a href="https://www.jespersplanteskole.dk/smalbladet-dunhammer-typha-angustifolia-flere-varianter" target="_blank" rel="noopener">Jespers Planteskole</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Juncus effusus (lyse-siv)</div></td>
-<td class="num">6 stk</td>
+<td class="num">4 stk</td>
 <td class="num">38,25</td>
-<td class="num strong">230</td>
+<td class="num strong">153</td>
 <td class="shop"><a href="https://www.jespersplanteskole.dk/lyse-siv-juncus-effusus-flere-varianter" target="_blank" rel="noopener">Jespers Planteskole</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Mentha aquatica (vandmynte)</div><div class="note">Breder sig – godt til næringsoptag</div></td>
-<td class="num">8 stk</td>
+<td class="num">6 stk</td>
 <td class="num">24,65</td>
-<td class="num strong">197</td>
+<td class="num strong">148</td>
 <td class="shop"><a href="https://www.jespersplanteskole.dk/vandmynte-mentha-aquatica" target="_blank" rel="noopener">Jespers Planteskole</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
@@ -1233,7 +1248,7 @@ footer a{color:var(--water)}
 </tbody></table></div>
 </div>
 </details>
-    <div class="bom-total"><span>Materialer i alt, ekskl. uforudset</span><b>92.645 kr</b></div>
+    <div class="bom-total"><span>Materialer i alt, ekskl. uforudset</span><b>90.565 kr</b></div>
   </div>
 </section>
 
@@ -1263,12 +1278,12 @@ footer a{color:var(--water)}
       <p class="lede">Budgettet er materialer og leje. Fire ting kan flytte tallet, og to kræver et ja fra andre end os.</p>
     </div>
     <ul class="risks">
-      <li><b>Beton og blokke</b> (sektion B, ca. 22.000 kr) er skøn – prisen på færdigbeton svinger mest. To leverandører ringes op, før budgettet låses.</li>
-      <li><b>Jorden.</b> 25 m³ udgravning er 40–45 ton. Der er budgetteret ét læs væk; resten skal have et sted at være på grunden. Alt væk koster ca. 20.000 kr mere.</li>
+      <li><b>Beton og blokke</b> (sektion B, ca. 21.000 kr) er skøn. Betonen blandes selv i lejet blander – 4,8 m³ er ca. 11 ton cement og grus at skovle, og bundpladen skal støbes færdig på én dag. Færdigbeton til bundpladen alene koster ca. 2.000 kr mere.</li>
+      <li><b>Jorden.</b> Hullet til pool og filter er ca. 20 m³ – pool 8 m² × 1,6 m dyb, filter 5 m² × 1 m, plus lidt arbejdsplads – og jord vejer 1,7 t/m³, så det er 30–35 ton. Der er budgetteret ét læs væk; resten skal have et sted at være på grunden. Alt væk koster 13–20.000 kr mere.</li>
       <li><b>El.</b> En fast udendørs installation skal laves af en autoriseret elinstallatør (ca. 3.500 kr). Alternativet – et stik med indbygget fejlstrømsafbryder fra et eksisterende udendørs stik – er lovligt selvbyg og med i lavprisen.</li>
       <li><b>Kommunen.</b> Et bassin på 8–9 m³ kan kræve anmeldelse eller ligge under lokalplanens regler. Tjekkes før første spadestik.</li>
       <li><b>Jordbund.</b> Jordskruer holder dårligt i løs bagfyld. Bagfyldes i lag og komprimeres, eller strøerne ved poolen hviler på bassinets vægtop på en gummiklods.</li>
-      <li><b>Placeringen af filteret</b> er justeret i forhold til 3D-modellen (se planen). Det skal I være enige i, før bassinet mures.</li>
+      <li><b>Den buede filtervæg</b> om sandcirklen støbes i beton med bøjelig forskalling i stedet for at mures i blokke. Radius og placering af cirklen skal ligge fast, før filteret støbes.</li>
     </ul>
   </div>
 </section>
