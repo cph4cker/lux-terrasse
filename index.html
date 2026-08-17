@@ -44,6 +44,15 @@ section .head .lede{margin:0}
 .nav li a{text-decoration:none;color:var(--ink-2);white-space:nowrap}
 .nav li a:hover{color:var(--ink)}
 @media(max-width:700px){.nav ul{display:none}}
+.sound{font:inherit;font-size:13px;display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid var(--line-2);border-radius:999px;padding:6px 12px 6px 10px;cursor:pointer;color:var(--ink-2);flex-shrink:0}
+.sound:hover{background:var(--paper-2);color:var(--ink)}
+.sound .bars{display:inline-flex;align-items:flex-end;gap:2px;height:12px}
+.sound .bars i{display:block;width:2px;height:4px;background:currentColor;border-radius:1px}
+.sound[aria-pressed="true"]{color:var(--water);border-color:var(--water)}
+.sound[aria-pressed="true"] .bars i{animation:eq .9s ease-in-out infinite alternate}
+.sound[aria-pressed="true"] .bars i:nth-child(2){animation-delay:.2s}.sound[aria-pressed="true"] .bars i:nth-child(3){animation-delay:.4s}
+@keyframes eq{from{height:3px}to{height:12px}}
+@media (prefers-reduced-motion:reduce){.sound .bars i{animation:none!important;height:8px}}
 
 /* hero */
 .hero{padding:clamp(56px,8vw,110px) 0 clamp(48px,7vw,96px)}
@@ -246,8 +255,10 @@ footer a{color:var(--water)}
       <li><a href="#stykliste">Stykliste</a></li>
       <li><a href="#forloeb">Forløb</a></li>
     </ul>
+    <button type="button" class="sound" id="soundBtn" aria-pressed="false" aria-label="Musik til/fra" hidden><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="lbl">Musik</span></button>
   </div>
 </nav>
+<audio id="bgm" src="music/of-silence.mp3" loop preload="none"></audio>
 
 <header class="hero" id="top">
   <div class="wrap">
@@ -1292,7 +1303,7 @@ footer a{color:var(--water)}
 <footer>
   <div class="wrap">
     <span>Udarbejdet af Christian · august 2026 · <a href="https://sketchfab.com/3d-models/lux-deck-bbd90c593f8e462a872cbd05be922bb4" target="_blank" rel="noopener">3D-model på Sketchfab</a></span>
-    <span>Priser inkl. moms, hentet 17.08.2026. Kan ændre sig.</span>
+    <span>Musik: "Of Silence" · DEX 1200 · Epidemic Sound. Priser inkl. moms, hentet 17.08.2026.</span>
   </div>
 </footer>
 
@@ -1314,6 +1325,25 @@ footer a{color:var(--water)}
       li.addEventListener('blur',function(){set(null)});
       li.addEventListener('click',function(){var on=li.classList.contains('on');set(on?null:li.getAttribute('data-k'))});
     });
+  }
+  /* baggrundsmusik: "Of Silence" – DEX 1200 (Epidemic Sound). Filen music/of-silence.mp3 lægges i repoet af ejeren (licens). */
+  var bgm=document.getElementById('bgm'),sb=document.getElementById('soundBtn');
+  if(bgm&&sb){
+    var wanted=localStorage.getItem('luxdeck-music')!=='off';
+    bgm.volume=0.35;
+    function ui(on){sb.setAttribute('aria-pressed',on?'true':'false');sb.querySelector('.lbl').textContent=on?'Musik':'Musik fra';}
+    function tryPlay(){if(!wanted)return;bgm.play().then(function(){ui(true)}).catch(function(){ui(false)});}
+    fetch(bgm.getAttribute('src'),{method:'HEAD'}).then(function(r){
+      if(!r.ok)return;
+      sb.hidden=false;ui(false);
+      tryPlay(); /* autoplay virker kun hvis browseren tillader det */
+      var kick=function(){tryPlay();window.removeEventListener('pointerdown',kick);window.removeEventListener('keydown',kick);};
+      window.addEventListener('pointerdown',kick);window.addEventListener('keydown',kick);
+      sb.addEventListener('click',function(e){e.stopPropagation();
+        if(bgm.paused){wanted=true;localStorage.setItem('luxdeck-music','on');bgm.play().then(function(){ui(true)}).catch(function(){ui(false)});}
+        else{wanted=false;localStorage.setItem('luxdeck-music','off');bgm.pause();ui(false);}
+      });
+    }).catch(function(){});
   }
   var oa=document.getElementById('openAll'),ca=document.getElementById('closeAll');
   if(oa)oa.addEventListener('click',function(){document.querySelectorAll('details.bom').forEach(function(d){d.open=true})});
