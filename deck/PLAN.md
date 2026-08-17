@@ -7,7 +7,7 @@ Companion to `pool/PLAN.md`. Date: 2026-08-17
 - 5.0 m wide × 6.5 m deep, bottom-right corner chamfered 1.5 × 1.5 m (2.12 m diagonal).
 - Right edge 5.0 m, then 1.5 m in, 2.12 m diagonal, 2.0 m bottom edge (incl. small block ~0.5 × 1.5 m at bottom-left).
 - Openings: pool 2 × 3 m (top-left), biofilter 2 × 2 m (below pool), sandbox Ø 2.36 m centred ~2.2 m from left edge / 4.6 m from back edge — it overlaps the filter's right side; filter wall is cast as an arc around the ring.
-- Deck top **30 cm above ground**. Small block bottom-left = **tech/storage box** 0.5 × 1.5 m, 50 cm high above deck (pump controller, outdoor socket, valves, hose, storage).
+- Deck top **30 cm above ground**. Small block bottom-left = **tech/storage box** 0.5 × 1.5 m, 50 cm high, standing ON the deck along the left edge at the front (below the filter). Filter's SW corner gets a small notch where the box overlaps (~30 × 40 cm).
 
 ### Deck board area
 

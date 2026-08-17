@@ -199,7 +199,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
     - Membran: Mapelastic 2 lag ≥2 mm på 36 m² (bund 10 m² + vægge 24 m² + vægtoppe/hulkehl ~2 m²), fuldflade Mapenet.
     - Terrasse 5,0×6,5 m minus affasning, pool, filter, sandkasse ≈ 20,5 m² brædder (inkl. brædder over pool-/filtervægtoppe). Terrassetop 30 cm over terræn på 18 jordskruer.
     - Højdestak 30 cm: skruehoved ~0–3 cm over terræn + 47×200 bjælke + 45×95 strø + 26 mm brædt (≈ 30–33 cm). Alternativt 45×145 bjælke.
-    - Teknikboks 0,5×1,5 m, 50 cm høj, står på terrassen i nederste venstre hjørne; pumpen selv står i poolen, boksen huser stik/HPFI, ventiler, slange, opbevaring.
+    - Teknikboks 0,5×1,5 m, 50 cm høj, står på terrassen langs venstre kant forrest (under filteret; filterets SV-hjørne får et lille hak); pumpen selv står i poolen, boksen huser stik/HPFI, ventiler, slange, opbevaring.
     - Vandpris DANVA-snit; din kommune kan være 50–70 kr/m³.
     - Fragt på tømmer/blokke fra byggemarked ikke medregnet ud over 800 kr til blokke — hent selv med trailer.
 
