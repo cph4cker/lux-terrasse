@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lux deck · Én have, to ønsker</title>
+<meta name="description" content="Forslag til zen-terrasse med sandcirkel, naturpool og levende biofilter. Plan, 3D-model, budget og stykliste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ECEBE5; --paper-2:#E3E1D9; --ink:#17201C; --ink-2:#48524D; --mist:#858C87;
+  --water:#234A42; --water-2:#3B6B60; --water-3:#7FA79C;
+  --pine:#B98A5B; --pine-2:#8F6640; --corten:#8B4A2C; --sand:#E8DFCB; --sand-2:#D6C9AE;
+  --line:rgba(23,32,28,.14); --line-2:rgba(23,32,28,.28);
+  --display:"Shippori Mincho",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --max:1180px; --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.1;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(30px,4vw,46px)}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:60ch}
+section{padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--line)}
+section .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:32px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+section .head .lede{margin:0}
+@media(max-width:800px){section .head{grid-template-columns:1fr}}
+:focus-visible{outline:2px solid var(--water);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand svg{width:22px;height:22px}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:14px;overflow-x:auto}
+.nav li a{text-decoration:none;color:var(--ink-2);white-space:nowrap}
+.nav li a:hover{color:var(--ink)}
+@media(max-width:700px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding:clamp(56px,8vw,110px) 0 clamp(48px,7vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(46px,7.2vw,96px);font-weight:500;letter-spacing:-.015em;margin:14px 0 22px}
+.hero h1 em{font-style:italic;color:var(--water)}
+.hero .lede{margin-bottom:28px}
+.cta{display:inline-flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--ink);transition:transform .2s ease,background .2s}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost:hover{background:rgba(23,32,28,.06)}
+.enso-wrap{position:relative;aspect-ratio:1;max-width:520px;margin:0 auto;width:100%}
+.enso-wrap svg{width:100%;height:100%;display:block}
+.enso-stroke{fill:none;stroke:var(--ink);stroke-width:13;stroke-linecap:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2.2s cubic-bezier(.65,0,.3,1) .3s forwards}
+.enso-stroke.thin{stroke-width:6;stroke:var(--ink-2);opacity:.55;animation-delay:.45s;animation-duration:2.1s}
+.rake{fill:none;stroke:var(--sand-2);stroke-width:1.2;opacity:0;animation:fade 1.2s ease 2.2s forwards}
+.pebble{fill:var(--ink-2);opacity:0;animation:fade .8s ease 2.6s forwards}
+.pebble.b{fill:var(--water)}
+@keyframes draw{to{stroke-dashoffset:75}}
+@keyframes fade{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.enso-stroke{animation:none;stroke-dashoffset:75}.rake,.pebble{animation:none;opacity:1}}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.hero-meta b{display:block;font-family:var(--display);font-size:24px;font-weight:500;color:var(--ink);letter-spacing:0}
+
+/* two voices */
+.voices{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line)}
+@media(max-width:800px){.voices{grid-template-columns:1fr}}
+.voice{background:var(--paper);padding:clamp(28px,4vw,48px)}
+.voice.water{background:var(--water);color:#E9EFEB}
+.voice.water .eyebrow{color:var(--water-3)}
+.voice h3{font-size:clamp(28px,3vw,38px);margin:8px 0 16px}
+.voice p{color:inherit;opacity:.9;max-width:44ch}
+.voice ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+.voice li{padding-left:18px;position:relative}
+.voice li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--corten)}
+.voice.water li::before{background:var(--water-3)}
+.bridge{margin-top:2px;border:1px solid var(--line);border-top:0;padding:22px clamp(20px,4vw,48px);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;background:var(--paper-2)}
+.bridge b{font-family:var(--display);font-weight:500;font-size:20px}
+
+/* model */
+.model-frame{position:relative;width:100%;aspect-ratio:16/9;background:#101412;border:1px solid var(--line-2);overflow:hidden}
+.model-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.model-caption{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--ink-2);margin-top:12px}
+.model-caption a{color:var(--water)}
+
+/* plan */
+.plan-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media(max-width:900px){.plan-grid{grid-template-columns:1fr}}
+.plan-svg{width:100%;height:auto;display:block}
+.plan-svg text{font-family:var(--mono);font-size:13px;fill:var(--ink-2)}
+.plan-svg .dim{stroke:var(--line-2);stroke-width:1}
+.plan-svg .deck{fill:var(--pine);stroke:var(--pine-2);stroke-width:1.5}
+.plan-svg .boards{stroke:rgba(80,50,20,.22);stroke-width:1}
+.plan-svg .wall{fill:#B9B7AF}
+.plan-svg .pool{fill:var(--water)}
+.plan-svg .filter{fill:#5D7F4E}
+.plan-svg .sand{fill:var(--sand);stroke:var(--corten);stroke-width:3}
+.plan-svg .rakeline{fill:none;stroke:var(--sand-2);stroke-width:1}
+.plan-svg .box{fill:var(--pine-2);stroke:var(--pine-2)}
+.plan-svg .weir{fill:var(--water-3)}
+.plan-svg g[data-k]{transition:opacity .25s ease}
+.plan-svg.dim-others g[data-k]:not(.on){opacity:.28}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:2px;border:1px solid var(--line);background:var(--line)}
+.legend li{background:var(--paper);padding:16px 18px;display:grid;grid-template-columns:18px 1fr auto;gap:14px;align-items:start;cursor:default}
+.legend li:hover,.legend li.on{background:var(--paper-2)}
+.legend .sw{width:18px;height:18px;border-radius:3px;margin-top:4px}
+.legend b{display:block;font-weight:600;font-size:16px}
+.legend span.d{font-size:14px;color:var(--ink-2)}
+.legend .m{font-family:var(--mono);font-size:13px;color:var(--ink-2);white-space:nowrap}
+.callout{margin-top:22px;padding:18px 20px;border-left:3px solid var(--corten);background:var(--paper-2);font-size:15px}
+.callout b{font-weight:600}
+
+/* water */
+.water-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media(max-width:900px){.water-grid{grid-template-columns:1fr}}
+.section-svg{width:100%;height:auto;display:block}
+.section-svg text{font-family:var(--mono);font-size:12px;fill:var(--ink-2)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:18px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:30px;line-height:1;color:var(--water);border-right:1px solid var(--line);padding-right:12px}
+.steps b{display:block;font-weight:600}
+.steps p{margin:2px 0 0;font-size:15px;color:var(--ink-2)}
+.pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--line-2);border-radius:999px}
+@keyframes flow{to{stroke-dashoffset:-40}}
+.flowline{stroke-dasharray:6 6;animation:flow 1.6s linear infinite}
+@media (prefers-reduced-motion:reduce){.flowline{animation:none}}
+
+/* materials */
+.mats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+@media(max-width:1000px){.mats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mats{grid-template-columns:1fr}}
+.mat{background:var(--paper);padding:0 0 22px}
+.mat .swatch{height:120px;position:relative;overflow:hidden}
+.mat .swatch.pine{background:repeating-linear-gradient(90deg,var(--pine) 0 28px,var(--pine-2) 28px 30px)}
+.mat .swatch.corten{background:radial-gradient(120% 90% at 20% 10%,#A65F39 0,var(--corten) 45%,#5E2F19 100%)}
+.mat .swatch.concrete{background:linear-gradient(135deg,#B9B7AF,#8F8D86)}
+.mat .swatch.membrane{background:linear-gradient(180deg,#5F6A66,var(--water))}
+.mat h3{padding:18px 20px 6px;font-size:20px}
+.mat p{padding:0 20px;font-size:14.5px;color:var(--ink-2);margin:0}
+.mat .k{padding:12px 20px 0;font-family:var(--mono);font-size:12px;color:var(--mist)}
+
+/* budget */
+.budget-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media(max-width:900px){.budget-top{grid-template-columns:1fr}}
+.big{font-family:var(--display);font-size:clamp(56px,8vw,104px);line-height:1;letter-spacing:-.02em;font-weight:500}
+.big small{font-size:.35em;color:var(--mist);letter-spacing:0;font-family:var(--mono)}
+.range{margin-top:18px;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.range-bar{height:6px;background:var(--paper-2);border-radius:3px;position:relative;margin:10px 0 6px;overflow:hidden}
+.range-bar span{position:absolute;top:0;bottom:0;background:linear-gradient(90deg,var(--water-3),var(--water));border-radius:3px}
+.range-bar i{position:absolute;top:-4px;width:2px;height:14px;background:var(--corten);transform:translateX(-1px)}
+.range-marks{display:flex;justify-content:space-between}
+.splits{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-top:26px}
+@media(max-width:560px){.splits{grid-template-columns:repeat(2,1fr)}}
+.splits div{background:var(--paper);padding:14px 16px}
+.splits b{display:block;font-family:var(--display);font-size:24px;font-weight:500}
+.splits span{font-size:13px;color:var(--ink-2)}
+.bars{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.bars a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) 84px;gap:14px;align-items:center;text-decoration:none;font-size:14.5px}
+@media(max-width:560px){.bars a{grid-template-columns:1fr 70px}.bars .bar-track{display:none}}
+.bar-label b{font-family:var(--mono);font-weight:500;color:var(--mist);margin-right:6px}
+.bar-track{height:10px;background:var(--paper-2);border-radius:2px;overflow:hidden}
+.bar-fill{display:block;height:100%;width:var(--w);background:var(--water);transform-origin:left;animation:grow 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}}
+@media (prefers-reduced-motion:reduce){.bar-fill{animation:none}}
+.bar-num{font-family:var(--mono);text-align:right;font-size:14px}
+.bars a:hover .bar-fill{background:var(--corten)}
+.fine{font-size:14px;color:var(--ink-2);margin-top:22px;max-width:70ch}
+
+/* BOM */
+.bom{border:1px solid var(--line);margin-bottom:-1px;background:var(--paper)}
+.bom summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:44px 1fr auto 24px;align-items:center;gap:14px;padding:16px 18px;font-size:16px}
+.bom summary::-webkit-details-marker{display:none}
+.bom summary:hover{background:var(--paper-2)}
+.bom-letter{font-family:var(--mono);color:var(--mist)}
+.bom-name{font-weight:500}
+.bom-sum{font-family:var(--mono);font-size:14px}
+.bom-chev{width:10px;height:10px;border-right:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);transform:rotate(45deg);transition:transform .2s;justify-self:end;margin-right:6px}
+.bom[open] .bom-chev{transform:rotate(-135deg)}
+.bom-body{padding:6px 18px 22px;border-top:1px solid var(--line)}
+.bom-note{font-size:14px;color:var(--ink-2);padding:12px 0 6px;max-width:80ch}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+th{text-align:left;font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mist);padding:12px 10px 8px;border-bottom:1px solid var(--line-2)}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num,th.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+td.strong{font-weight:500;color:var(--ink)}
+td.vare{min-width:260px}
+td .spec{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+td .note{font-size:12.5px;color:var(--corten);margin-top:2px}
+td.shop a{color:var(--water)}
+.badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:3px;white-space:nowrap}
+.badge.v{background:rgba(35,74,66,.12);color:var(--water)}
+.badge.e{background:rgba(139,74,44,.12);color:var(--corten)}
+.bom-tools{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;font-size:14px}
+.bom-tools button{font:inherit;font-size:14px;background:none;border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;cursor:pointer;color:var(--ink)}
+.bom-tools button:hover{background:var(--paper-2)}
+.bom-total{display:flex;justify-content:space-between;align-items:baseline;padding:20px 18px;border:1px solid var(--line);border-top:0;background:var(--paper-2);font-family:var(--mono)}
+.bom-total b{font-family:var(--display);font-size:26px;font-weight:500}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line);counter-reset:t}
+@media(max-width:1000px){.timeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.timeline{grid-template-columns:1fr}}
+.timeline li{background:var(--paper);padding:20px 20px 24px;counter-increment:t;position:relative}
+.timeline li::before{content:"Trin " counter(t);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
+.timeline b{display:block;font-family:var(--display);font-size:21px;font-weight:500;margin:8px 0 6px}
+.timeline p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.timeline .wk{position:absolute;top:18px;right:18px;font-family:var(--mono);font-size:12px;color:var(--water)}
+
+/* forbehold */
+.risks{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;list-style:none;margin:0;padding:0}
+@media(max-width:760px){.risks{grid-template-columns:1fr}}
+.risks li{padding-left:22px;position:relative;font-size:15.5px}
+.risks li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border:1.5px solid var(--corten);border-radius:50%}
+.risks b{font-weight:600}
+
+footer{border-top:1px solid var(--line);padding:40px 0 60px;font-size:14px;color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--water)}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sektioner">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Lux deck, til toppen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 1 0 6.6 2.9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      Lux deck
+    </a>
+    <ul>
+      <li><a href="#ide">Idéen</a></li>
+      <li><a href="#model">3D</a></li>
+      <li><a href="#plan">Plan</a></li>
+      <li><a href="#vand">Vandet</a></li>
+      <li><a href="#materialer">Materialer</a></li>
+      <li><a href="#budget">Budget</a></li>
+      <li><a href="#stykliste">Stykliste</a></li>
+      <li><a href="#forloeb">Forløb</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Forslag · august 2026 · terrasse, naturpool &amp; sandcirkel</div>
+      <h1>Én have.<br>To <em>ønsker.</em></h1>
+      <p class="lede">En cirkel af revet sand at sidde ved i stilhed. Og et bassin med levende, klart vand uden klor at svømme i. Bundet sammen af én terrasse i termofyr, tredive centimeter over græsset.</p>
+      <div class="cta">
+        <a class="btn solid" href="#model">Se 3D-modellen</a>
+        <a class="btn ghost" href="#budget">Budget &amp; stykliste</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>5,0 × 6,5 m</b>terrasse</div>
+        <div><b>2 × 3 m</b>naturpool, 150 cm</div>
+        <div><b>Ø 2,36 m</b>sandcirkel i corten</div>
+        <div><b>92.645 kr</b>materialer, alt selvbyg</div>
+      </div>
+    </div>
+    <div class="enso-wrap" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <g class="rakes">
+          <circle class="rake" cx="200" cy="200" r="118"/>
+          <circle class="rake" cx="200" cy="200" r="104"/>
+          <circle class="rake" cx="200" cy="200" r="90"/>
+          <circle class="rake" cx="200" cy="200" r="76"/>
+          <circle class="rake" cx="200" cy="200" r="62"/>
+          <circle class="rake" cx="200" cy="200" r="48"/>
+          <circle class="rake" cx="200" cy="200" r="34"/>
+        </g>
+        <path class="enso-stroke" d="M236 44c-64-14-136 30-150 96-16 74 30 150 106 164 76 12 152-32 166-108 8-46-10-96-46-124"/>
+        <path class="enso-stroke thin" d="M240 60c-52-8-112 26-124 82-14 62 26 128 90 140 66 10 128-30 140-92 6-38-8-78-36-104"/>
+        <ellipse class="pebble" cx="164" cy="222" rx="13" ry="9" transform="rotate(-18 164 222)"/>
+        <ellipse class="pebble b" cx="188" cy="204" rx="8" ry="6"/>
+        <ellipse class="pebble" cx="242" cy="238" rx="10" ry="7" transform="rotate(22 242 238)"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section id="ide">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Idéen</div><h2>Ro og vand<br>i samme rum</h2></div>
+      <p class="lede">Haven er 5 meter bred. Det er lige præcis nok til, at de to ønsker kan stå side om side uden at gå i vejen for hinanden. Sandcirklen får den venstre halvdel foran poolen. Vandet får det bageste hjørne, hvor hækken lukker om det.</p>
+    </div>
+    <div class="voices">
+      <article class="voice">
+        <div class="eyebrow">Til ham · stilhed</div>
+        <h3>En cirkel af sand</h3>
+        <p>Karesansui – tørhaven – er ikke pynt. Det er en øvelse. Man river mønstre i sandet, og hver morgen kan man begynde forfra. Cirklen på 2,36 meter er skåret ind i terrassen med en tynd ring af cortenstål, der ruster langsomt til en varm, mat kant. Wabi-sabi: skønheden i det, der ældes.</p>
+        <ul>
+          <li>Ovntørret kvartssand 0,4–0,8 mm, fint nok til skarpe river</li>
+          <li>To–tre store sten fra en dansk mark som fokus</li>
+          <li>Ringen ligger 1–2 cm over dækket, så sandet bliver på plads</li>
+        </ul>
+      </article>
+      <article class="voice water">
+        <div class="eyebrow">Til hende · vand</div>
+        <h3>En pool, der er levende</h3>
+        <p>Ingen klor. Ingen blå plastdug. Bassinet er 2 × 3 meter og 150 cm dybt, med grå mineralske vægge, der med tiden får en naturlig patina. Vandet holdes klart af et plantet grusfilter ved siden af – iris, dunhammer og siv renser det, som en søbred gør. Man svømmer blandt planter, ikke kemi.</p>
+        <ul>
+          <li>Ca. 8,4 m³ vand, hele volumen gennem filteret hver 1,5 time</li>
+          <li>Pumpen bruger ca. 45 W – som en pære</li>
+          <li>Vandet løber selv tilbage over en flad sten</li>
+        </ul>
+      </article>
+    </div>
+    <div class="bridge"><b>Terrassen binder det sammen.</b><span>Termofyr 26 × 140 mm på jordskruer – ingen beton i haven ud over selve bassinet. Én flade, der går fra den eksisterende terrasse ved huset og helt ud til hækken.</span></div>
+  </div>
+</section>
+
+<section id="model">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">3D-model</div><h2>Drej selv</h2></div>
+      <p class="lede">Træk med musen eller fingeren for at dreje. Rul for at zoome. Modellen viser proportionerne – de nøjagtige mål står i planen nedenfor.</p>
+    </div>
+    <div class="model-frame">
+      <iframe title="Lux deck" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" loading="lazy" src="https://sketchfab.com/models/bbd90c593f8e462a872cbd05be922bb4/embed?autostart=0&ui_theme=dark"></iframe>
+    </div>
+    <div class="model-caption">
+      <span><a href="https://sketchfab.com/3d-models/lux-deck-bbd90c593f8e462a872cbd05be922bb4" target="_blank" rel="noopener">Lux deck</a> af <a href="https://sketchfab.com/behrensthomsen" target="_blank" rel="noopener">Christian</a> på Sketchfab</span>
+      <span>Åbn i fuld skærm med ikonet nederst til højre i modellen</span>
+    </div>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Planen</div><h2>Set ovenfra</h2></div>
+      <p class="lede">Alle mål er i centimeter. Peg på et element i listen for at fremhæve det. Den affasede kant nederst til højre følger den eksisterende terrasse.</p>
+    </div>
+    <div class="plan-grid">
+      <svg class="plan-svg" id="planSvg" viewBox="-110 -30 660 730" role="img" aria-label="Plantegning af terrasse med pool, biofilter, sandcirkel og teknikboks">
+        <!-- deck -->
+        <g data-k="deck">
+          <polygon class="deck" points="0,0 500,0 500,500 350,500 200,650 0,650"/>
+          <g class="boards">
+            <line x1="0" y1="14.5" x2="500" y2="14.5"/><line x1="0" y1="29" x2="500" y2="29"/><line x1="0" y1="43.5" x2="500" y2="43.5"/><line x1="0" y1="58" x2="500" y2="58"/><line x1="0" y1="72.5" x2="500" y2="72.5"/><line x1="0" y1="87" x2="500" y2="87"/><line x1="0" y1="101.5" x2="500" y2="101.5"/><line x1="0" y1="116" x2="500" y2="116"/><line x1="0" y1="130.5" x2="500" y2="130.5"/><line x1="0" y1="145" x2="500" y2="145"/><line x1="0" y1="159.5" x2="500" y2="159.5"/><line x1="0" y1="174" x2="500" y2="174"/><line x1="0" y1="188.5" x2="500" y2="188.5"/><line x1="0" y1="203" x2="500" y2="203"/><line x1="0" y1="217.5" x2="500" y2="217.5"/><line x1="0" y1="232" x2="500" y2="232"/><line x1="0" y1="246.5" x2="500" y2="246.5"/><line x1="0" y1="261" x2="500" y2="261"/><line x1="0" y1="275.5" x2="500" y2="275.5"/><line x1="0" y1="290" x2="500" y2="290"/><line x1="0" y1="304.5" x2="500" y2="304.5"/><line x1="0" y1="319" x2="500" y2="319"/><line x1="0" y1="333.5" x2="500" y2="333.5"/><line x1="0" y1="348" x2="500" y2="348"/><line x1="0" y1="362.5" x2="500" y2="362.5"/><line x1="0" y1="377" x2="500" y2="377"/><line x1="0" y1="391.5" x2="500" y2="391.5"/><line x1="0" y1="406" x2="500" y2="406"/><line x1="0" y1="420.5" x2="500" y2="420.5"/><line x1="0" y1="435" x2="500" y2="435"/><line x1="0" y1="449.5" x2="500" y2="449.5"/><line x1="0" y1="464" x2="500" y2="464"/><line x1="0" y1="478.5" x2="500" y2="478.5"/><line x1="0" y1="493" x2="500" y2="493"/><line x1="0" y1="507.5" x2="342.5" y2="507.5"/><line x1="0" y1="522" x2="328" y2="522"/><line x1="0" y1="536.5" x2="313.5" y2="536.5"/><line x1="0" y1="551" x2="299" y2="551"/><line x1="0" y1="565.5" x2="284.5" y2="565.5"/><line x1="0" y1="580" x2="270" y2="580"/><line x1="0" y1="594.5" x2="255.5" y2="594.5"/><line x1="0" y1="609" x2="241" y2="609"/><line x1="0" y1="623.5" x2="226.5" y2="623.5"/><line x1="0" y1="638" x2="212" y2="638"/>
+          </g>
+        </g>
+        <!-- walls -->
+        <g data-k="pool">
+          <rect class="wall" x="0" y="0" width="238" height="338"/>
+          <rect class="pool" x="19" y="19" width="200" height="300"/>
+          <text x="119" y="160" text-anchor="middle" style="fill:#DCE7E2;font-size:14px">Pool</text>
+          <text x="119" y="180" text-anchor="middle" style="fill:#B7CCC4">200 × 300 · dybde 150</text>
+        </g>
+        <g data-k="filter">
+          <rect class="wall" x="238" y="0" width="219" height="238"/>
+          <rect class="filter" x="238" y="19" width="200" height="200"/>
+          <rect class="weir" x="219" y="60" width="19" height="40"/>
+          <text x="338" y="112" text-anchor="middle" style="fill:#E4EBD9;font-size:14px">Biofilter</text>
+          <text x="338" y="132" text-anchor="middle" style="fill:#CDD9BC">200 × 200 · dybde 100</text>
+          <text x="338" y="150" text-anchor="middle" style="fill:#CDD9BC;font-size:11px">iris · dunhammer · siv</text>
+        </g>
+        <g data-k="sand">
+          <circle class="sand" cx="150" cy="470" r="118"/>
+          <circle class="rakeline" cx="150" cy="470" r="100"/><circle class="rakeline" cx="150" cy="470" r="84"/><circle class="rakeline" cx="150" cy="470" r="68"/><circle class="rakeline" cx="150" cy="470" r="52"/><circle class="rakeline" cx="150" cy="470" r="36"/><circle class="rakeline" cx="150" cy="470" r="20"/>
+          <ellipse cx="128" cy="486" rx="12" ry="8" fill="#5A5F5A" transform="rotate(-20 128 486)"/>
+          <ellipse cx="166" cy="452" rx="8" ry="6" fill="#3F4A45"/>
+          <text x="150" y="536" text-anchor="middle" style="fill:#7A6A4E">Sandcirkel Ø 236</text>
+        </g>
+        <g data-k="box">
+          <rect class="box" x="-70" y="500" width="70" height="150"/>
+          <text x="-35" y="570" text-anchor="middle" transform="rotate(-90 -35 570)" style="fill:#F1E7D8;font-size:11px">Teknikboks 50 × 150</text>
+        </g>
+        <!-- dims -->
+        <g class="dims">
+          <line class="dim" x1="0" y1="-14" x2="500" y2="-14"/><line class="dim" x1="0" y1="-20" x2="0" y2="-8"/><line class="dim" x1="500" y1="-20" x2="500" y2="-8"/>
+          <text x="250" y="-19" text-anchor="middle">500</text>
+          <line class="dim" x1="518" y1="0" x2="518" y2="500"/><line class="dim" x1="512" y1="0" x2="524" y2="0"/><line class="dim" x1="512" y1="500" x2="524" y2="500"/>
+          <text x="530" y="254" style="writing-mode:vertical-rl">500</text>
+          <line class="dim" x1="-88" y1="0" x2="-88" y2="650"/><line class="dim" x1="-94" y1="0" x2="-82" y2="0"/><line class="dim" x1="-94" y1="650" x2="-82" y2="650"/>
+          <text x="-96" y="325" text-anchor="end" style="writing-mode:vertical-rl;transform:rotate(180deg);transform-origin:-96px 325px">650</text>
+          <text x="440" y="522" text-anchor="middle">150</text>
+          <text x="300" y="595" text-anchor="middle" transform="rotate(-45 300 595)">212</text>
+          <text x="100" y="672" text-anchor="middle">200</text>
+          <text x="250" y="700" text-anchor="middle" style="fill:var(--mist)">↑ hæk · nederst: eksisterende terrasse og hus til højre</text>
+        </g>
+      </svg>
+      <div>
+        <ul class="legend" id="legend">
+          <li data-k="pool"><span class="sw" style="background:var(--water)"></span><div><b>Naturpool</b><span class="d">Bagerste venstre hjørne, langsiden mod hækken. Grå mineralvægge, vand i plan med dækket.</span></div><span class="m">200 × 300 × 150</span></li>
+          <li data-k="filter"><span class="sw" style="background:#5D7F4E"></span><div><b>Biofilter</b><span class="d">Plantet grusbassin ved siden af poolen. Deler væg med den. Bunden ligger 50 cm højere end poolens.</span></div><span class="m">200 × 200 × 100</span></li>
+          <li data-k="sand"><span class="sw" style="background:var(--sand);border:2px solid var(--corten)"></span><div><b>Sandcirkel</b><span class="d">Foran poolen, skåret ind i dækket. Cortenring 15 cm høj på en base af komprimeret grus.</span></div><span class="m">Ø 236</span></li>
+          <li data-k="deck"><span class="sw" style="background:var(--pine)"></span><div><b>Terrasse</b><span class="d">Termofyr 26 × 140 på strøer og jordskruer. Affaset hjørne mod den eksisterende terrasse.</span></div><span class="m">500 × 650 · +30</span></li>
+          <li data-k="box"><span class="sw" style="background:var(--pine-2)"></span><div><b>Teknikboks</b><span class="d">Uden for dækkets kant, forrest til venstre. Stik, ventiler, slange og opbevaring. Låg i samme brædder.</span></div><span class="m">50 × 150 × 50</span></li>
+        </ul>
+        <div class="callout"><b>Justeret i forhold til 3D-modellen:</b> i modellen ligger sandcirklen delvist oven på filteret. Det kan ikke bygges, så filteret er her rykket op ved siden af poolen langs baghækken. Poolen, cirklen og terrassens omrids er uændrede. Vil I hellere have filteret foran poolen, må cirklen blive mindre eller terrassen længere.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vand">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Sådan virker vandet</div><h2>Op gennem grus,<br>hjem over sten</h2></div>
+      <p class="lede">Filteret er et opstrøms-grusfilter. Pumpen løfter vandet ind i bunden af filteret; det siver op gennem tre lag grus og planternes rødder og løber af sig selv tilbage i poolen. Ingen kemi, ingen filterpatroner – bakterier og planter gør arbejdet.</p>
+    </div>
+    <div class="water-grid">
+      <svg class="section-svg" viewBox="0 0 640 300" role="img" aria-label="Snit gennem pool og biofilter med vandets vej">
+        <!-- ground -->
+        <rect x="0" y="252" width="640" height="48" fill="#D9D5CA"/>
+        <!-- deck line -->
+        <line x1="0" y1="82" x2="640" y2="82" stroke="var(--pine)" stroke-width="6"/>
+        <!-- pool -->
+        <rect x="40" y="82" width="300" height="170" fill="#B9B7AF"/>
+        <rect x="52" y="82" width="276" height="158" fill="var(--water)"/>
+        <rect x="52" y="82" width="276" height="10" fill="var(--water-2)"/>
+        <text x="190" y="170" text-anchor="middle" style="fill:#DCE7E2;font-size:14px">Pool · 150 cm</text>
+        <!-- filter -->
+        <rect x="328" y="82" width="230" height="120" fill="#B9B7AF"/>
+        <rect x="340" y="82" width="206" height="108" fill="#5D7F4E"/>
+        <rect x="340" y="150" width="206" height="40" fill="#8A8A7A"/>
+        <rect x="340" y="120" width="206" height="30" fill="#A6A38F"/>
+        <rect x="340" y="100" width="206" height="20" fill="#C9C1A6"/>
+        <rect x="340" y="82" width="206" height="10" fill="var(--water-3)"/>
+        <text x="443" y="177" text-anchor="middle" style="fill:#EDEDE6;font-size:11px">16–32 mm</text>
+        <text x="443" y="140" text-anchor="middle" style="fill:#F1EFE6;font-size:11px">8–16 mm</text>
+        <text x="443" y="114" text-anchor="middle" style="fill:#5A5445;font-size:11px">4–8 mm · planter</text>
+        <!-- plants -->
+        <g stroke="#2F5D2A" stroke-width="2.5" fill="none" stroke-linecap="round">
+          <path d="M370 100c-2-20 4-40 2-58"/><path d="M382 100c6-18 2-36 8-52"/><path d="M420 100c-4-16 2-30-4-46"/><path d="M470 100c4-22-2-38 6-56"/><path d="M500 100c-2-14 6-30 2-44"/><path d="M520 100c6-18 0-32 8-48"/>
+        </g>
+        <!-- manifold -->
+        <g stroke="#EFEFE8" stroke-width="3" fill="none"><line x1="350" y1="184" x2="536" y2="184"/></g>
+        <g fill="#EFEFE8"><circle cx="370" cy="181" r="1.6"/><circle cx="395" cy="181" r="1.6"/><circle cx="420" cy="181" r="1.6"/><circle cx="445" cy="181" r="1.6"/><circle cx="470" cy="181" r="1.6"/><circle cx="495" cy="181" r="1.6"/><circle cx="520" cy="181" r="1.6"/></g>
+        <!-- pump + pipe -->
+        <rect x="270" y="212" width="34" height="22" rx="3" fill="#2A2F2C"/>
+        <text x="287" y="250" text-anchor="middle" style="font-size:10px">pumpe</text>
+        <path class="flowline" d="M304 223h24v-30h230" fill="none" stroke="#EFEFE8" stroke-width="3"/>
+        <path class="flowline" d="M558 193v-9h-22" fill="none" stroke="#EFEFE8" stroke-width="3"/>
+        <!-- up arrows -->
+        <g class="flowline" stroke="#EFEFE8" stroke-width="2" fill="none"><line x1="400" y1="180" x2="400" y2="96"/><line x1="443" y1="180" x2="443" y2="96"/><line x1="486" y1="180" x2="486" y2="96"/></g>
+        <!-- weir -->
+        <rect x="322" y="82" width="20" height="8" fill="#9C9382"/>
+        <path d="M344 84c-8 0-14 3-18 8" fill="none" stroke="var(--water-3)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M326 92c-2 4-2 8-1 12" fill="none" stroke="var(--water-3)" stroke-width="2.5" stroke-linecap="round" class="flowline"/>
+        <text x="332" y="72" text-anchor="middle" style="font-size:10px">overløb</text>
+        <!-- labels -->
+        <text x="12" y="76" style="font-size:10px">dæk +30</text>
+        <text x="600" y="76" text-anchor="end" style="font-size:10px">jordskrue</text>
+        <line x1="600" y1="88" x2="600" y2="270" stroke="#7A7F7B" stroke-width="4"/>
+        <line x1="600" y1="88" x2="580" y2="88" stroke="#7A7F7B" stroke-width="4"/>
+        <text x="320" y="292" text-anchor="middle" style="fill:var(--mist);font-size:11px">snit gennem pool og filter · ikke i skala</text>
+      </svg>
+      <div>
+        <ol class="steps">
+          <li><div><b>Skimmeren tager overfladen</b><p>En stående skimmer i poolens hjørne trækker blade og pollen af overfladen. Pumpen står bag den, 7 000 l/t på 45 W.</p></div></li>
+          <li><div><b>Ind i bunden af filteret</b><p>Et 50 mm rør fører vandet gennem væggen til et perforeret rørgitter under 70 cm grus.</p></div></li>
+          <li><div><b>Op gennem grus og rødder</b><p>Groft grus nederst, finere øverst. Bakterier på stenene omsætter næring, planterne optager resten. Vandet bliver klart – ikke sterilt.</p></div></li>
+          <li><div><b>Hjem over en flad sten</b><p>Filterets vandspejl står 5–8 cm over poolens. En udsparing i fællesvæggen leder vandet tilbage som en lille kaskade – lyden er en del af haven.</p></div></li>
+        </ol>
+        <div class="pill-row"><span class="pill">ingen klor</span><span class="pill">ingen plastdug</span><span class="pill">skylles 1–2 × årligt</span><span class="pill">45 W</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="materialer">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Materialer</div><h2>Fire ting,<br>der ældes smukt</h2></div>
+      <p class="lede">Alt er valgt, så det bliver kønnere med tiden i stedet for grimmere. Ingen overflader, der skal males, olieres eller skiftes efter tre sæsoner.</p>
+    </div>
+    <div class="mats">
+      <article class="mat"><div class="swatch pine"></div><h3>Termofyr</h3><p>Fyr varmebehandlet ved 200 °C – hårdere, formstabil og rådbestandig uden kemi. Honningfarvet nu, sølvgrå om nogle år hvis den får lov. Skruet med rustfri A4-skruer.</p><div class="k">26 × 140 mm · glat/glat · 5 mm fuge</div></article>
+      <article class="mat"><div class="swatch corten"></div><h3>Cortenstål</h3><p>Ringen om sandet ruster i overfladen og stopper så. Ingen vedligehold. Den rustrøde kant mod det hvide sand er hele kontrasten i tørhaven.</p><div class="k">Ø 236 cm · 15 cm høj · 3 mm</div></article>
+      <article class="mat"><div class="swatch concrete"></div><h3>Fundamentblok + beton</h3><p>Bassinet mures i hule betonblokke, som armeres og fyldes med beton – én massiv skal på en armeret bundplade. Bygget til at holde vandtrykket i 50 år.</p><div class="k">19 cm vægge · Ø10 lodret · Ø8 pr. skifte</div></article>
+      <article class="mat"><div class="swatch membrane"></div><h3>Mineralsk membran</h3><p>Grå, cementbaseret og elastisk. Påføres som to lag på pudsede vægge – ingen dug, ingen synlige samlinger. Overfladen får med tiden en naturlig biofilm som en søbred.</p><div class="k">Mapei Mapelastic · 2 mm · 36 m²</div></article>
+    </div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Budget</div><h2>Hvad det koster</h2></div>
+      <p class="lede">Materialer og leje, indhentet fra danske forhandlere i august 2026. Alt arbejde udføres af jer selv – der er ingen løn i tallene. Priser mærket <span class="badge v">verificeret</span> er fundet på en konkret vare; <span class="badge e">estimat</span> er et kvalificeret skøn, der skal bekræftes.</p>
+    </div>
+    <div class="budget-top">
+      <div>
+        <div class="big">92.645<small> kr</small></div>
+        <div class="range">
+          <div>Med 10 % til uforudset: <b>101.910 kr</b></div>
+          <div class="range-bar"><span style="left:0;width:54.7%"></span><i style="left:33.5%"></i></div>
+          <div class="range-marks"><span>lav 77.971</span><span>høj 121.710</span></div>
+        </div>
+        <div class="splits">
+          <div><b>68.786</b><span>Pool + biofilter</span></div>
+          <div><b>16.779</b><span>Terrasse</span></div>
+          <div><b>4.921</b><span>Sandcirkel</span></div>
+          <div><b>2.160</b><span>Teknikboks</span></div>
+        </div>
+        <p class="fine">Lav ende: al jord genbruges på grunden, ingen elektriker (stik med indbygget HPFI), almindeligt sandkassesand, mindre pumpe. Høj ende: al jord køres væk (4 læs) plus 10 % uforudset.</p>
+      </div>
+      <div>
+        <ul class="bars">
+          <li><a href="#bom-A"><span class="bar-label"><b>A</b> Udgravning &amp; underlag</span><span class="bar-track"><span class="bar-fill" style="--w:74.6%"></span></span><span class="bar-num">16.163</span></a></li>
+<li><a href="#bom-B"><span class="bar-label"><b>B</b> Beton, blokke &amp; armering</span><span class="bar-track"><span class="bar-fill" style="--w:100.0%"></span></span><span class="bar-num">21.676</span></a></li>
+<li><a href="#bom-C"><span class="bar-label"><b>C</b> Vandtætning</span><span class="bar-track"><span class="bar-fill" style="--w:44.9%"></span></span><span class="bar-num">9.734</span></a></li>
+<li><a href="#bom-D"><span class="bar-label"><b>D</b> Pumpe &amp; VVS</span><span class="bar-track"><span class="bar-fill" style="--w:37.3%"></span></span><span class="bar-num">8.077</span></a></li>
+<li><a href="#bom-E"><span class="bar-label"><b>E</b> Filtergrus &amp; planter</span><span class="bar-track"><span class="bar-fill" style="--w:27.6%"></span></span><span class="bar-num">5.976</span></a></li>
+<li><a href="#bom-F"><span class="bar-label"><b>F</b> El &amp; vand</span><span class="bar-track"><span class="bar-fill" style="--w:33.0%"></span></span><span class="bar-num">7.160</span></a></li>
+<li><a href="#bom-G"><span class="bar-label"><b>G</b> Terrasse</span><span class="bar-track"><span class="bar-fill" style="--w:77.4%"></span></span><span class="bar-num">16.779</span></a></li>
+<li><a href="#bom-H"><span class="bar-label"><b>H</b> Sandcirkel</span><span class="bar-track"><span class="bar-fill" style="--w:22.7%"></span></span><span class="bar-num">4.921</span></a></li>
+<li><a href="#bom-I"><span class="bar-label"><b>I</b> Teknikboks</span><span class="bar-track"><span class="bar-fill" style="--w:10.0%"></span></span><span class="bar-num">2.160</span></a></li>
+        </ul>
+        <p class="fine">Klik på en linje for at åbne styklisten for den del.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stykliste">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Stykliste</div><h2>Alt, der skal købes</h2></div>
+      <p class="lede">Hver vare med antal, pris, forhandler og link. Åbn en sektion ad gangen, eller fold alle ud og print. Antal er rundet op til reelle pakkestørrelser.</p>
+    </div>
+    <div class="bom-tools"><button type="button" id="openAll">Fold alle ud</button><button type="button" id="closeAll">Fold alle sammen</button><a href="https://github.com/cph4cker/lux-terrasse/blob/main/BUDGET.md" target="_blank" rel="noopener" style="align-self:center;color:var(--water)">Åbn som tekstfil →</a></div>
+    <details class="bom" id="bom-A">
+<summary><span class="bom-letter">A</span><span class="bom-name">Udgravning &amp; underlag</span><span class="bom-sum">16.163 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Genbrug så meget jord som muligt (hæv bede, terrasse-bagfyld). Kør kun 1 læs væk.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Minigraver 1,5–1,8 t, leje</div><div class="spec">2 dage; Loxam listepris 1 765 kr/dag, lokale udlejere 1 100–1 400</div><div class="note">Lokal udlejer sparer ~700–1 300 kr</div></td>
+<td class="num">2 dag</td>
+<td class="num">1.765,50</td>
+<td class="num strong">3.531</td>
+<td class="shop"><a href="https://www.loxam.dk/p/minigraver-1-0-1-7-t/057-0002-014471" target="_blank" rel="noopener">Loxam</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Levering/afhentning minigraver</div><div class="spec">tur/retur, eller trailer selv</div><div class="note">700–1 700 kr efter postnr</div></td>
+<td class="num">1 stk</td>
+<td class="num">1.400,00</td>
+<td class="num strong">1.400</td>
+<td class="shop"><a href="https://lejdinmaskine.dk/leje-af-minigraver/" target="_blank" rel="noopener">Lejdinmaskine</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Pladevibrator 100 kg, leje</div><div class="spec">1 dag, til stabilgrus under slab + sandkasse</div></td>
+<td class="num">1 dag</td>
+<td class="num">402,59</td>
+<td class="num strong">403</td>
+<td class="shop"><a href="https://www.loxam.dk/p/pladevibrator-100kg/020-0011-014275" target="_blank" rel="noopener">Loxam</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Bortkørsel ren jord, grabbil</div><div class="spec">fast pris pr. læs op til 10 t. 25 m³ = 40–45 t = 4 læs. Budget: 1 læs, resten genbruges på grunden</div><div class="note">Alt jord væk = +19 800 kr</div></td>
+<td class="num">1 læs</td>
+<td class="num">6.599,00</td>
+<td class="num strong">6.599</td>
+<td class="shop"><a href="https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/" target="_blank" rel="noopener">RN Entreprenør</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Stabilgrus 0–32 mm, bigbag 1 500 kg</div><div class="spec">15 cm under slab (2,4×5,6 m ≈ 2 m³ ≈ 4 t)</div><div class="note">Løst læs fra vognmand billigere ved 4+ t</div></td>
+<td class="num">3 bigbag</td>
+<td class="num">1.100,00</td>
+<td class="num strong">3.300</td>
+<td class="shop"><a href="https://www.grusdirekte.dk/" target="_blank" rel="noopener">GrusDirekte / lokal vognmand</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Geotekstil rulle 2,1×25 m</div><div class="spec">under stabilgrus + sandkasse</div><div class="note">Deles med sandkasse</div></td>
+<td class="num">1 rulle</td>
+<td class="num">929,95</td>
+<td class="num strong">930</td>
+<td class="shop"><a href="https://www.bauhaus.dk/geotekstil-2x2-fiberdug" target="_blank" rel="noopener">Bauhaus (Byggros)</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-B">
+<summary><span class="bom-letter">B</span><span class="bom-name">Slab, blokke, beton, armering, mørtel</span><span class="bom-sum">21.676 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Alt i B er ESTIMAT undtagen 15 cm-blokken (dit screenshot). Ring 2 leverandører på beton – prisen svinger mest her.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>RBR Fundamentblok 19×20×50 cm</div><div class="spec">poolvægge, 8 skifter × 22 = 176 +10 %</div><div class="note">15 cm er 18,50 – 19 cm typisk 22–26 kr</div></td>
+<td class="num">185 stk</td>
+<td class="num">23,95</td>
+<td class="num strong">4.431</td>
+<td class="shop">byggemarked (RBR)</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>RBR Fundamentblok 15×20×50 cm</div><div class="spec">filtervægge, 5 skifter × 13 = 65 +10 %</div><div class="note">72 stk/palle</div></td>
+<td class="num">80 stk</td>
+<td class="num">18,50</td>
+<td class="num strong">1.480</td>
+<td class="shop">byggemarked (RBR)</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Levering blokke (2–3 paller)</div><div class="spec">fri fragt først ved 5 hele paller</div></td>
+<td class="num">1 stk</td>
+<td class="num">800,00</td>
+<td class="num strong">800</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Færdigbeton C25/30, slab</div><div class="spec">2,4×5,6×0,15 = 2,0 m³, leveret</div><div class="note">1 500–1 900 kr/m³</div></td>
+<td class="num">2 m³</td>
+<td class="num">1.650,00</td>
+<td class="num strong">3.300</td>
+<td class="shop">Unicon / IBF / lokal</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Færdigbeton C25/30, vægfyld</div><div class="spec">2,5 m³, 2. levering efter opmuring</div><div class="note">Flydende konsistens (S4) til blokceller</div></td>
+<td class="num">2,5 m³</td>
+<td class="num">1.650,00</td>
+<td class="num strong">4.125</td>
+<td class="shop">Unicon / IBF / lokal</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Småbil-/leveringstillæg beton</div><div class="spec">2 leveringer under 4 m³</div><div class="note">Blandebil &#x27;betal hvad du bruger&#x27; undgår spild</div></td>
+<td class="num">2 stk</td>
+<td class="num">1.200,00</td>
+<td class="num strong">2.400</td>
+<td class="shop">betonleverandør</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Armeringsnet Ø6 150×150, 2,35×5,0 m</div><div class="spec">slab, 1 lag, 13,5 m² + overlap</div></td>
+<td class="num">2 net</td>
+<td class="num">380,00</td>
+<td class="num strong">760</td>
+<td class="shop">byggemarked / Stark</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Kamstål Ø10, 6 m</div><div class="spec">lodret hver 50 cm + startere i slab, ~80 m</div></td>
+<td class="num">14 stk</td>
+<td class="num">65,00</td>
+<td class="num strong">910</td>
+<td class="shop">byggemarked / Stark</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Kamstål Ø8, 6 m</div><div class="spec">vandret i hvert skifte, ~120 m</div></td>
+<td class="num">20 stk</td>
+<td class="num">45,00</td>
+<td class="num strong">900</td>
+<td class="shop">byggemarked / Stark</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Bindetråd + afstandsklodser</div><div class="spec">1 rl tråd, 50 klodser 30 mm</div></td>
+<td class="num">1 sæt</td>
+<td class="num">210,00</td>
+<td class="num strong">210</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Forskalling slab-kant</div><div class="spec">brædder 25×100 ~16 m + pløkke + skruer</div><div class="note">Genbrug til teknikboks-låg</div></td>
+<td class="num">1 sæt</td>
+<td class="num">300,00</td>
+<td class="num strong">300</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Plastfolie under slab</div><div class="spec">0,15 mm, 4×12,5 m</div><div class="note">Fugtspærre, kurer beton</div></td>
+<td class="num">1 rulle</td>
+<td class="num">150,00</td>
+<td class="num strong">150</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>KC-mørtel / muremørtel 25 kg</div><div class="spec">opmuring af blokke, ~12 sække</div></td>
+<td class="num">12 sæk</td>
+<td class="num">55,00</td>
+<td class="num strong">660</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Cementmørtel/pudsmørtel 25 kg</div><div class="spec">skim ~36 m² à 5 mm + hulkehl</div><div class="note">Alt: Skalflex Sokkelpuds Vandtæt 249,95 kr/25 kg (Silvan) til hulkehl</div></td>
+<td class="num">15 sæk</td>
+<td class="num">60,00</td>
+<td class="num strong">900</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Kvældbånd (hydrophilic) 20×10 mm</div><div class="spec">i støbeskel slab/væg + om rørgennemføringer, ~12 m</div><div class="note">Sikrer koldfugen slab↔væg</div></td>
+<td class="num">1 rulle 10 m</td>
+<td class="num">350,00</td>
+<td class="num strong">350</td>
+<td class="shop">byggemarked / VVS</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-C">
+<summary><span class="bom-letter">C</span><span class="bom-name">Vandtætning (Mapelastic-system, grå)</span><span class="bom-sum">9.734 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Primer ikke nødvendig på cementpuds/beton (Mapei TDS). Alternativ: Vandex BB 75 25 kg 949 kr (byggecenter.dk) – stiv, billigere pr. m², men følger revner dårligere.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Mapei Mapelastic 32 kg sæt</div><div class="spec">A 24 kg + B 8 kg; 1,7 kg/m²/mm; 2 mm på 36 m² = 122 kg</div><div class="note">Kampagne −20 % (vejl. 1 721). Bestillingsvare</div></td>
+<td class="num">4 sæt</td>
+<td class="num">1.375,86</td>
+<td class="num strong">5.503</td>
+<td class="shop"><a href="https://kakelgiganten.dk/" target="_blank" rel="noopener">kakelgiganten.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Mapeband Easy 10 m × 13 cm</div><div class="spec">hjørner, samlinger, gennemføringer, ~25 m</div></td>
+<td class="num">3 rulle</td>
+<td class="num">278,75</td>
+<td class="num strong">836</td>
+<td class="shop"><a href="https://www.fugeshop.dk/mapei-mapeband-easy" target="_blank" rel="noopener">fugeshop.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Mapeband inderhjørne, præfab</div><div class="spec">4 pool + 4 filter</div><div class="note">Kan undværes ved at folde bånd</div></td>
+<td class="num">8 stk</td>
+<td class="num">68,28</td>
+<td class="num strong">546</td>
+<td class="shop"><a href="https://kakelgiganten.dk/products/mapeband-inderhjorne" target="_blank" rel="noopener">kakelgiganten.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Mapenet 150 glasfibernet 1×50 m</div><div class="spec">fuldflade mellem lag 1 og 2 – anbefalet på blokvæg</div><div class="note">Spar 1 100 kr: kun net i hjørner/samlinger (10 m² stykke)</div></td>
+<td class="num">1 rulle</td>
+<td class="num">1.654,48</td>
+<td class="num strong">1.654</td>
+<td class="shop"><a href="https://kakelgiganten.dk/" target="_blank" rel="noopener">kakelgiganten.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Fragt kakelgiganten (palle, 128 kg)</div></td>
+<td class="num">1 stk</td>
+<td class="num">795,00</td>
+<td class="num strong">795</td>
+<td class="shop"><a href="https://kakelgiganten.dk/pages/faq" target="_blank" rel="noopener">kakelgiganten.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Fragt fugeshop</div></td>
+<td class="num">1 stk</td>
+<td class="num">99,00</td>
+<td class="num strong">99</td>
+<td class="shop">fugeshop.dk</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Ruller, pensler, spande, piskeris til boremaskine</div><div class="spec">2 lag på 36 m²</div></td>
+<td class="num">1 sæt</td>
+<td class="num">300,00</td>
+<td class="num strong">300</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-D">
+<summary><span class="bom-letter">D</span><span class="bom-name">VVS, pumpe, skimmer</span><span class="bom-sum">8.077 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Ingen returløbs-rør: vandet løber selv over overløbet i fællesvæggen tilbage i poolen.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Oase AquaMax Eco Premium 7000</div><div class="spec">afløser for 6000 (udgået); 7 000 l/h, 2 indløb (bund + skimmer)</div><div class="note">Alt: Eco Classic 5500 2 345 kr, Eco Premium 5000 2 995 kr</div></td>
+<td class="num">1 stk</td>
+<td class="num">3.695,00</td>
+<td class="num strong">3.695</td>
+<td class="shop"><a href="https://koishopper.dk/products/aquamax-6000-eco-premium-filterpumpe-havedam" target="_blank" rel="noopener">koishopper.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Oase AquaSkim 20 skimmer</div><div class="spec">stående, til 20 m² overflade</div><div class="note">Skal forlænges/stå på sokkel ved 150 cm dybde</div></td>
+<td class="num">1 stk</td>
+<td class="num">595,00</td>
+<td class="num strong">595</td>
+<td class="shop"><a href="https://koishopper.dk/products/aquaskim-20" target="_blank" rel="noopener">koishopper.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC trykrør 50 mm PN10, 1 m</div><div class="spec">pumpe→filter, filterdræn, ~15 m</div><div class="note">fynshavedam 113 kr/m – undgå</div></td>
+<td class="num">15 m</td>
+<td class="num">55,00</td>
+<td class="num strong">825</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/612-roer/1527-pvc-ror-1-meter/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC rør 50 mm til manifold (perforeres selv)</div><div class="spec">gitter i filterbund, ~10 m, bor 6–8 mm huller</div></td>
+<td class="num">10 m</td>
+<td class="num">55,00</td>
+<td class="num strong">550</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/612-roer/1527-pvc-ror-1-meter/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC vinkel 90° 50 mm lim</div></td>
+<td class="num">8 stk</td>
+<td class="num">20,00</td>
+<td class="num strong">160</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/607-lim-lim/1491-pvc-vinkel-90-grader-lim-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC vinkel 45° 50 mm lim</div></td>
+<td class="num">4 stk</td>
+<td class="num">20,00</td>
+<td class="num strong">80</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/607-lim-lim/1438-pvc-vinkel-45-grader-lim-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>PVC T-stykke 50 mm lim</div><div class="spec">manifold-grene</div></td>
+<td class="num">4 stk</td>
+<td class="num">25,00</td>
+<td class="num strong">100</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/607-lim-lim/1487-pvc-t-stykke-lim-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC samlemuffe 50 mm</div></td>
+<td class="num">6 stk</td>
+<td class="num">16,00</td>
+<td class="num strong">96</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/607-lim-lim/1483-pvc-samlemuffe-lim-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>PVC slutmuffe 50 mm</div><div class="spec">manifold-ender</div></td>
+<td class="num">4 stk</td>
+<td class="num">15,00</td>
+<td class="num strong">60</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/607-lim-lim/1482-pvc-slutmuffe-lim-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>PVC kuglehane 50 mm, dobbelt union</div><div class="spec">1 på pumpelinje, 1 på filterdræn – union så pumpe kan tages op</div><div class="note">Budget-hane uden union 89 kr – men så kan du ikke skille</div></td>
+<td class="num">2 stk</td>
+<td class="num">349,00</td>
+<td class="num strong">698</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/609-ventiler-haner/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Overgange pumpe/skimmer (gevind→lim, slangestuds)</div><div class="spec">1½ tomme til 50 mm</div></td>
+<td class="num">1 sæt</td>
+<td class="num">120,00</td>
+<td class="num strong">120</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/685-gevind-lim/" target="_blank" rel="noopener">koimad.dk</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Murgennemføring 50 mm</div><div class="spec">3 stk: PVC-rørstump indstøbt m. limet flange + kvældbånd, tætnet m. Mapeband</div><div class="note">Sæt i væggen FØR cellerne fyldes</div></td>
+<td class="num">3 stk</td>
+<td class="num">150,00</td>
+<td class="num strong">450</td>
+<td class="shop"><a href="https://www.koimad.dk/shop/608-gennemfoeringer/1604-pvc-tankgennemforing/" target="_blank" rel="noopener">koimad.dk / byggemarked</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Tangit PVC-lim 250 g + rens 125 ml</div><div class="spec">~40 samlinger</div></td>
+<td class="num">1 sæt</td>
+<td class="num">268,00</td>
+<td class="num strong">268</td>
+<td class="shop"><a href="https://koishopper.dk/products/rensevaeske" target="_blank" rel="noopener">Bauhaus / koishopper</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Spændebånd 40–60 mm rustfri</div><div class="spec">pumpe/skimmer-slanger</div></td>
+<td class="num">6 stk</td>
+<td class="num">25,00</td>
+<td class="num strong">150</td>
+<td class="shop"><a href="https://www.bauhaus.dk/gardena-spaendeband-40-60-mm-2-stk" target="_blank" rel="noopener">Bauhaus</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Teflontape</div></td>
+<td class="num">2 rl</td>
+<td class="num">15,00</td>
+<td class="num strong">30</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Fragt pumpe/rør (2 shops)</div></td>
+<td class="num">1 stk</td>
+<td class="num">200,00</td>
+<td class="num strong">200</td>
+<td class="shop"></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-E">
+<summary><span class="bom-letter">E</span><span class="bom-name">Filtermedie &amp; planter</span><span class="bom-sum">5.976 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Skyl alt grus før det kommer i filteret (støv = mudret pool i uger).</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Nøddesten 16–32 mm, bigbag 1 500 kg</div><div class="spec">bundlag 30 cm ≈ 1,2 m³ – 1 bigbag = 1,04 m³, spæd op m. rest af 8–16</div><div class="note">&#x27;fra&#x27;-pris inkl. levering, varierer m. postnr</div></td>
+<td class="num">1 bigbag</td>
+<td class="num">1.750,00</td>
+<td class="num strong">1.750</td>
+<td class="shop"><a href="https://www.grusdirekte.dk/produkt/noeddesten-16-32mm-bigbag-1500-kg-1508.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Ærtesten 8–16 mm, bigbag 1 500 kg</div><div class="spec">mellemlag 30 cm ≈ 1,2 m³</div></td>
+<td class="num">1 bigbag</td>
+<td class="num">1.750,00</td>
+<td class="num strong">1.750</td>
+<td class="shop"><a href="https://www.grusdirekte.dk/produkt/aertesten-8-16mm-bigbag-1500-kg-1502.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Perlesten 4–8 mm, bigbag 1 000 kg</div><div class="spec">plantelag 10–15 cm ≈ 0,5 m³</div><div class="note">Lokal vognmand løst: ~250–375 kr/t + kørsel</div></td>
+<td class="num">1 bigbag</td>
+<td class="num">1.390,00</td>
+<td class="num strong">1.390</td>
+<td class="shop"><a href="https://www.grusdirekte.dk/produkt/perlesten-4-8mm-bigbag-1000-kg-117.asp" target="_blank" rel="noopener">GrusDirekte.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Iris pseudacorus (gul iris)</div><div class="note">15 % mængderabat indregnet</div></td>
+<td class="num">10 stk</td>
+<td class="num">33,15</td>
+<td class="num strong">332</td>
+<td class="shop"><a href="https://www.jespersplanteskole.dk/gul-iris-iris-pseudacorus" target="_blank" rel="noopener">Jespers Planteskole</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Typha angustifolia (dunhammer)</div><div class="note">Vælg evt. Typha minima – mindre aggressiv</div></td>
+<td class="num">6 stk</td>
+<td class="num">29,75</td>
+<td class="num strong">178</td>
+<td class="shop"><a href="https://www.jespersplanteskole.dk/smalbladet-dunhammer-typha-angustifolia-flere-varianter" target="_blank" rel="noopener">Jespers Planteskole</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Juncus effusus (lyse-siv)</div></td>
+<td class="num">6 stk</td>
+<td class="num">38,25</td>
+<td class="num strong">230</td>
+<td class="shop"><a href="https://www.jespersplanteskole.dk/lyse-siv-juncus-effusus-flere-varianter" target="_blank" rel="noopener">Jespers Planteskole</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Mentha aquatica (vandmynte)</div><div class="note">Breder sig – godt til næringsoptag</div></td>
+<td class="num">8 stk</td>
+<td class="num">24,65</td>
+<td class="num strong">197</td>
+<td class="shop"><a href="https://www.jespersplanteskole.dk/vandmynte-mentha-aquatica" target="_blank" rel="noopener">Jespers Planteskole</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Fragt planter</div></td>
+<td class="num">1 stk</td>
+<td class="num">149,00</td>
+<td class="num strong">149</td>
+<td class="shop">Jespers Planteskole</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-F">
+<summary><span class="bom-letter">F</span><span class="bom-name">El &amp; vand</span><span class="bom-sum">7.160 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>PRCD stikkontakt m. fejlstrømsafbryder 16 A 30 mA IP54</div><div class="spec">plug-in HPFI – lovlig DIY-løsning fra eksisterende udendørs stik</div></td>
+<td class="num">1 stk</td>
+<td class="num">259,00</td>
+<td class="num strong">259</td>
+<td class="shop"><a href="https://www.lampemania.dk/stikkontakt-med-fejlstromsafbryder-fk-prcd-2-16a-230v-sikkerhedsstik-ip54/" target="_blank" rel="noopener">Lampemania</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Udendørs dobbelt stikkontakt IP44 (LK Opus 73)</div><div class="spec">monteres i teknikboks</div><div class="note">Fast installation SKAL laves af autoriseret elinstallatør</div></td>
+<td class="num">1 stk</td>
+<td class="num">194,95</td>
+<td class="num strong">195</td>
+<td class="shop"><a href="https://www.bauhaus.dk/lk-opus-73-dobbelt-stikkontakt-med-jord-lysegraa-ip44" target="_blank" rel="noopener">Bauhaus</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Installationskabel 3G1,5 halogenfri, til nedgravning</div></td>
+<td class="num">20 m</td>
+<td class="num">14,00</td>
+<td class="num strong">280</td>
+<td class="shop"><a href="https://www.wattoo.dk/3g1-5-mm-proff-installationskabel-halogenfri-pr-meter-9909000147" target="_blank" rel="noopener">Wattoo.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Kabelrør 50 mm dobbeltvægget, 25 m m. træktråd</div><div class="note">Biltema ~250–300 kr</div></td>
+<td class="num">1 rulle</td>
+<td class="num">460,00</td>
+<td class="num strong">460</td>
+<td class="shop"><a href="https://www.wattoo.dk/kabelroer-peh-dv-50-40-r25-m-roed-25-meter-7930506101" target="_blank" rel="noopener">Wattoo.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Kabeldækbånd &#x27;Pas på elkabel&#x27; 50 m</div><div class="note">Harald Nyborg billigere</div></td>
+<td class="num">1 rulle</td>
+<td class="num">300,00</td>
+<td class="num strong">300</td>
+<td class="shop"><a href="https://www.wattoo.dk/kabeldaek-100x2-0-roed-d-mrk-50-meter-1430105503" target="_blank" rel="noopener">Wattoo.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Elektriker: tilslutning fast udendørs gruppe</div><div class="spec">hvis du vil have fast stik i boksen (ikke forlængerledning)</div><div class="note">Kan undlades: PRCD + udendørs forlænger fra eksisterende stik</div></td>
+<td class="num">1 stk</td>
+<td class="num">3.500,00</td>
+<td class="num strong">3.500</td>
+<td class="shop">lokal elinstallatør</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Vand: fyld, tøm (cement-pH), genfyld</div><div class="spec">~25 m³ à DK-snit inkl. afledning</div><div class="note">HOFOR 49,57 – Odense 65,98 – DANVA snit ~86</div></td>
+<td class="num">25 m³</td>
+<td class="num">86,65</td>
+<td class="num strong">2.166</td>
+<td class="shop"><a href="https://www.danva.dk/nyheder/2026/danskernes-vandregning-stiger-med-5-42/" target="_blank" rel="noopener">lokal forsyning</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-G">
+<summary><span class="bom-letter">G</span><span class="bom-name">Terrasse</span><span class="bom-sum">16.779 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Højdestak: skruehoved ~35 mm + bjælke 200 + strø 95 + brædt 26 ≈ 356 mm → skruer drejes så hovedet står ~0–3 cm over terræn, eller brug 45×145 bjælke (301 mm).</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Thermo Fyr terrassebrædder 26×140 glat/glat, 5 100 mm</div><div class="spec">~20,5 m² × 6,9 m/m² = 141 m + 15 % = 165 m</div><div class="note">49,95 kr/m. Bland længder 3 300/5 100 efter rækker</div></td>
+<td class="num">32 stk</td>
+<td class="num">254,75</td>
+<td class="num strong">8.152</td>
+<td class="shop">(dit screenshot)</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Thermo Fyr 26×140, 5 100 mm – forkant/fascia</div><div class="spec">brædt på kant langs synlige kanter ~15 m</div><div class="note">Kan droppes</div></td>
+<td class="num">3 stk</td>
+<td class="num">254,75</td>
+<td class="num strong">764</td>
+<td class="shop">(samme)</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Trykimp. bjælke 47×200 mm NTR AB, 4,2 m</div><div class="spec">hovedbjælker på jordskruer c/c ~2 m, ~26 m</div><div class="note">45×145 (jem&amp;fix 125,10/3,6 m) sparer ~470 kr hvis skruehoveder ender højere</div></td>
+<td class="num">7 stk</td>
+<td class="num">210,00</td>
+<td class="num strong">1.470</td>
+<td class="shop"><a href="https://www.davidsen.dk/reglar-c-id525415" target="_blank" rel="noopener">Davidsen</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Trykimp. strøer 45×95 mm, 3,6 m</div><div class="spec">c/c 500 mm oven på bjælker, ~55 m</div><div class="note">Dobbelt strø under brædde-stød</div></td>
+<td class="num">16 stk</td>
+<td class="num">71,10</td>
+<td class="num strong">1.138</td>
+<td class="shop"><a href="https://www.jemogfix.dk/impraegneret-reglar-45-x-95-x-3600-mm/4310/9057360/" target="_blank" rel="noopener">jem &amp; fix</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Phønix murpap 11 cm × 20 m (strøbånd)</div><div class="spec">på alle strøer/bjælker</div></td>
+<td class="num">3 rulle</td>
+<td class="num">99,00</td>
+<td class="num strong">297</td>
+<td class="shop"><a href="https://www.jemogfix.dk/phoenix-murpap-11-cm-x-20-meter/4210/9036209/" target="_blank" rel="noopener">jem &amp; fix</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Jordskrue U-type 68/885 mm, galv.</div><div class="spec">18 stk, 390 kg/stk, hovedet ≤150 mm over terræn</div><div class="note">Fri fragt &gt;2 000 kr. Blød/leret jord: 68/1000 (171 kr)</div></td>
+<td class="num">18 stk</td>
+<td class="num">152,00</td>
+<td class="num strong">2.736</td>
+<td class="shop"><a href="https://jordskruer.dk/jordskrue-til-terrasse-u-type-68-885mm/" target="_blank" rel="noopener">jordskruer.dk</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Bræddebolte M10×100 / franske skruer til U-beslag</div><div class="spec">2 pr. skrue + reserve</div></td>
+<td class="num">40 stk</td>
+<td class="num">6,50</td>
+<td class="num strong">260</td>
+<td class="shop"><a href="https://www.harald-nyborg.dk/vvs-byg-og-maling/soem-skruer-og-beslag/maskinskruer-bolte-og-moetrikker" target="_blank" rel="noopener">Harald Nyborg / jem &amp; fix</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Rundstål/T-stang til håndmontage</div><div class="spec">Ø25 × 1,2 m gennem hullet i skruetoppen</div></td>
+<td class="num">1 stk</td>
+<td class="num">150,00</td>
+<td class="num strong">150</td>
+<td class="shop">Harald Nyborg / Bauhaus</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Leje el-jordskruemaskine, 1 uge (buffer)</div><div class="spec">kun hvis jorden er hård/leret</div><div class="note">Spar 625 kr i sandjord</div></td>
+<td class="num">1 uge</td>
+<td class="num">625,00</td>
+<td class="num strong">625</td>
+<td class="shop"><a href="https://jyskskruefundament.dk/product/leje-af-el-skruemaskine-op-til-100cm/" target="_blank" rel="noopener">Jysk Skruefundament</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Vinkelbeslag m/rib 88×88×65 galv.</div><div class="spec">strø→bjælke</div></td>
+<td class="num">40 stk</td>
+<td class="num">3,70</td>
+<td class="num strong">148</td>
+<td class="shop"><a href="https://www.jemogfix.dk/bygningsbeslag/140801/" target="_blank" rel="noopener">jem &amp; fix</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Beslagskruer CSA 5,0×40, 250 stk</div></td>
+<td class="num">2 pk</td>
+<td class="num">169,00</td>
+<td class="num strong">338</td>
+<td class="shop"><a href="https://www.jemogfix.dk/beslagskrue-csa-5-0-x-40-mm-250-stk/5111/9028550/" target="_blank" rel="noopener">jem &amp; fix</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>A4 rustfri terrasseskruer 4,3×56 TX, 200 stk</div><div class="spec">2 pr. brædt pr. strø ≈ 660 + fascia + boks ≈ 800</div><div class="note">Thermo = sur → KUN rustfri A4</div></td>
+<td class="num">4 pk</td>
+<td class="num">83,50</td>
+<td class="num strong">334</td>
+<td class="shop"><a href="https://www.harald-nyborg.dk/expandet-rustfri-a4-skrue-43-x-56-mm-200-stk" target="_blank" rel="noopener">Harald Nyborg</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>A4 rustfri skruer 4,8×75, 100 stk</div><div class="spec">fascia, ramme, gennemskruning</div></td>
+<td class="num">2 pk</td>
+<td class="num">83,50</td>
+<td class="num strong">167</td>
+<td class="shop"><a href="https://www.harald-nyborg.dk/expandet-rustfri-a4-skrue-48-x-75-mm-100-stk" target="_blank" rel="noopener">Harald Nyborg</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Gummi-/EPDM-klods 10 mm + lægte</div><div class="spec">strøer der hviler på poolens vægtop – glidende, ikke fastgjort</div><div class="note">Terrasse og pool skal kunne sætte sig uafhængigt</div></td>
+<td class="num">1 sæt</td>
+<td class="num">200,00</td>
+<td class="num strong">200</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-H">
+<summary><span class="bom-letter">H</span><span class="bom-name">Zen-sandkasse</span><span class="bom-sum">4.921 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Geotekstil under grus/sand tages fra rullen i A.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Rundt højbed cortenstål Ø236 cm, H 15 cm, 3 mm</div><div class="spec">sektioner + samlebeslag</div></td>
+<td class="num">1 stk</td>
+<td class="num">1.270,75</td>
+<td class="num strong">1.271</td>
+<td class="shop">(dit screenshot)</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Stabilgrus 0–32, bigbag 1 500 kg</div><div class="spec">hævet base 10–15 cm under ringen (4,4 m² × 0,15 = 0,66 m³ ≈ 1,2 t)</div><div class="note">Køb sammen med A → 4 bigbags</div></td>
+<td class="num">1 bigbag</td>
+<td class="num">1.100,00</td>
+<td class="num strong">1.100</td>
+<td class="shop"><a href="https://www.grusdirekte.dk/" target="_blank" rel="noopener">GrusDirekte / lokal</a></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Dana kvartssand 0,4–0,8 mm, ovntørret, 25 kg</div><div class="spec">0,7 t = 28 sække, zen-look</div><div class="note">Sandkassesand fra byggemarked ~600 kr for 0,7 t</div></td>
+<td class="num">28 sæk</td>
+<td class="num">75,00</td>
+<td class="num strong">2.100</td>
+<td class="shop"><a href="https://epogear.dk/vare/dana-kvarts-sand-25kg/" target="_blank" rel="noopener">EpoGear.dk / Bauhaus / Silvan</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Fragt sand</div><div class="spec">700 kg</div></td>
+<td class="num">1 stk</td>
+<td class="num">300,00</td>
+<td class="num strong">300</td>
+<td class="shop"></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Zen-rive</div></td>
+<td class="num">1 stk</td>
+<td class="num">150,00</td>
+<td class="num strong">150</td>
+<td class="shop"></td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+<details class="bom" id="bom-I">
+<summary><span class="bom-letter">I</span><span class="bom-name">Teknik-/opbevaringsboks 0,5×1,5×0,5 m</span><span class="bom-sum">2.160 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<div class="bom-body">
+<p class="bom-note">Låget = terrassebrædder på 45×45-ramme, hængslet mod terrassen. Bund: åben mod terrassebrædderne (dræn) eller trådnet.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
+<tbody>
+<tr>
+<td class="vare"><div>Trykimp. reglar 45×45 mm, 3,0 m</div><div class="spec">ramme ~15 m + låg-ramme</div></td>
+<td class="num">6 stk</td>
+<td class="num">35,25</td>
+<td class="num strong">212</td>
+<td class="shop"><a href="https://www.jemogfix.dk/impraegneret-reglar-45-x-45-x-3000-mm/4112/9057298/" target="_blank" rel="noopener">jem &amp; fix</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Thermo Fyr 26×140, 5 100 mm – beklædning + låg</div><div class="spec">sider 2×(1,5+0,5)×0,5 = 2 m² + låg 0,75 m² ≈ 2,8 m² ≈ 20 m + spild</div></td>
+<td class="num">5 stk</td>
+<td class="num">254,75</td>
+<td class="num strong">1.274</td>
+<td class="shop">(samme som terrasse)</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Vormann T-hængsel rustfri 100×60 mm</div><div class="spec">låg 1,5 m – tag 3</div></td>
+<td class="num">3 stk</td>
+<td class="num">44,95</td>
+<td class="num strong">135</td>
+<td class="shop"><a href="https://www.bauhaus.dk/vormann-t-haengsel-galvaniseret-rustfri-stal-100x60-mm" target="_blank" rel="noopener">Bauhaus</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Gasfjeder 150 N, 27 cm m. beslag</div><div class="spec">holder låget oppe</div><div class="note">Valgfri</div></td>
+<td class="num">2 stk</td>
+<td class="num">59,95</td>
+<td class="num strong">120</td>
+<td class="shop"><a href="https://www.bauhaus.dk/gasfjeder-solv-150-n" target="_blank" rel="noopener">Bauhaus</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Ventilationsrist 150×150 plast</div><div class="spec">2 stk krydsventilation – el må ikke stå i fugt</div></td>
+<td class="num">2 stk</td>
+<td class="num">25,00</td>
+<td class="num strong">50</td>
+<td class="shop"><a href="https://www.bauhaus.dk/opvarmning/ventilationsanlaeg-tilbehoer/murriste" target="_blank" rel="noopener">Bauhaus</a></td>
+<td class="conf"><span class="badge v">verificeret</span></td>
+</tr><tr>
+<td class="vare"><div>Håndtag + hasp/lås rustfri</div></td>
+<td class="num">1 sæt</td>
+<td class="num">120,00</td>
+<td class="num strong">120</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Tagpap/EPDM-strimmel til lågkant</div><div class="spec">vand skal ikke ind ved hængsler</div></td>
+<td class="num">1 stk</td>
+<td class="num">100,00</td>
+<td class="num strong">100</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr><tr>
+<td class="vare"><div>Kroge/hylde indvendig</div><div class="spec">slange, net, rive</div></td>
+<td class="num">1 sæt</td>
+<td class="num">150,00</td>
+<td class="num strong">150</td>
+<td class="shop">byggemarked</td>
+<td class="conf"><span class="badge e">estimat</span></td>
+</tr>
+</tbody></table></div>
+</div>
+</details>
+    <div class="bom-total"><span>Materialer i alt, ekskl. uforudset</span><b>92.645 kr</b></div>
+  </div>
+</section>
+
+<section id="forloeb">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Byggeforløb</div><h2>Ni uger,<br>otte trin</h2></div>
+      <p class="lede">Betonen bestemmer tempoet: bundpladen skal hærde en uge, væggene fire. Terrassen bygges, mens man venter. Rækkefølgen er den, indkøbene følger.</p>
+    </div>
+    <ol class="timeline">
+      <li><span class="wk">uge 1</span><b>Grav og fundér</b><p>Minigraver, 15 cm stabilgrus, komprimering. Bundplade i armeret beton med startjern til væggene.</p></li>
+      <li><span class="wk">uge 2–3</span><b>Mur bassinet</b><p>Fundamentblokke i mørtel, armering i hvert skifte. Rørgennemføringer og overløb sættes nu. Cellerne fyldes med beton.</p></li>
+      <li><span class="wk">uge 3–6</span><b>Hærd og bagfyld</b><p>28 dages hærdning. Imens: bagfyld i lag, jordskruer i, teknikboks-ramme, bestilling af membran og tømmer.</p></li>
+      <li><span class="wk">uge 7</span><b>Puds og membran</b><p>Skim, hulkehl i alle hjørner, to lag grå Mapelastic med bånd og net. En uges hærdning.</p></li>
+      <li><span class="wk">uge 8</span><b>Vand ind, vand ud</b><p>Fyld, lad stå en uge, tøm (cementen hæver pH), fyld igen. Bjælker, strøer og brædder lægges samtidig.</p></li>
+      <li><span class="wk">uge 8</span><b>Sandcirklen</b><p>Grusbase komprimeres i niveau med dækket, cortenringen samles, brædderne skæres i cirkel med 10 mm luft.</p></li>
+      <li><span class="wk">uge 9</span><b>Filteret plantes</b><p>Rørgitter, skyllet grus i tre lag, planter. Pumpe og skimmer i, strøm via HPFI-stik. Vandet sættes i gang.</p></li>
+      <li><span class="wk">sidst</span><b>Sand og låg</b><p>Kvartssand i cirklen, kantbrædder, låg på teknikboksen. Første river i sandet.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="forbehold">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Forbehold</div><h2>Det, vi skal<br>have afklaret</h2></div>
+      <p class="lede">Budgettet er materialer og leje. Fire ting kan flytte tallet, og to kræver et ja fra andre end os.</p>
+    </div>
+    <ul class="risks">
+      <li><b>Beton og blokke</b> (sektion B, ca. 22.000 kr) er skøn – prisen på færdigbeton svinger mest. To leverandører ringes op, før budgettet låses.</li>
+      <li><b>Jorden.</b> 25 m³ udgravning er 40–45 ton. Der er budgetteret ét læs væk; resten skal have et sted at være på grunden. Alt væk koster ca. 20.000 kr mere.</li>
+      <li><b>El.</b> En fast udendørs installation skal laves af en autoriseret elinstallatør (ca. 3.500 kr). Alternativet – et stik med indbygget fejlstrømsafbryder fra et eksisterende udendørs stik – er lovligt selvbyg og med i lavprisen.</li>
+      <li><b>Kommunen.</b> Et bassin på 8–9 m³ kan kræve anmeldelse eller ligge under lokalplanens regler. Tjekkes før første spadestik.</li>
+      <li><b>Jordbund.</b> Jordskruer holder dårligt i løs bagfyld. Bagfyldes i lag og komprimeres, eller strøerne ved poolen hviler på bassinets vægtop på en gummiklods.</li>
+      <li><b>Placeringen af filteret</b> er justeret i forhold til 3D-modellen (se planen). Det skal I være enige i, før bassinet mures.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Udarbejdet af Christian · august 2026 · <a href="https://sketchfab.com/3d-models/lux-deck-bbd90c593f8e462a872cbd05be922bb4" target="_blank" rel="noopener">3D-model på Sketchfab</a></span>
+    <span>Priser inkl. moms, hentet 17.08.2026. Kan ændre sig.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var svg=document.getElementById('planSvg'),leg=document.getElementById('legend');
+  if(svg&&leg){
+    var items=leg.querySelectorAll('li[data-k]');
+    function set(k){
+      svg.classList.toggle('dim-others',!!k);
+      svg.querySelectorAll('g[data-k]').forEach(function(g){g.classList.toggle('on',g.getAttribute('data-k')===k)});
+      items.forEach(function(li){li.classList.toggle('on',li.getAttribute('data-k')===k)});
+    }
+    items.forEach(function(li){
+      li.addEventListener('mouseenter',function(){set(li.getAttribute('data-k'))});
+      li.addEventListener('mouseleave',function(){set(null)});
+      li.tabIndex=0;
+      li.addEventListener('focus',function(){set(li.getAttribute('data-k'))});
+      li.addEventListener('blur',function(){set(null)});
+      li.addEventListener('click',function(){var on=li.classList.contains('on');set(on?null:li.getAttribute('data-k'))});
+    });
+  }
+  var oa=document.getElementById('openAll'),ca=document.getElementById('closeAll');
+  if(oa)oa.addEventListener('click',function(){document.querySelectorAll('details.bom').forEach(function(d){d.open=true})});
+  if(ca)ca.addEventListener('click',function(){document.querySelectorAll('details.bom').forEach(function(d){d.open=false})});
+  if(location.hash&&location.hash.indexOf('#bom-')===0){var d=document.querySelector(location.hash);if(d)d.open=true;}
+  window.addEventListener('hashchange',function(){if(location.hash.indexOf('#bom-')===0){var d=document.querySelector(location.hash);if(d)d.open=true;}});
+})();
+</script>
+</body>
+</html>
