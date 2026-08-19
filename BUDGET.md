@@ -10,28 +10,28 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Del | DKK |
 |---|---:|
 | A. Udgravning & underlag | 7.033 |
-| B. Slab, blokke, beton, armering, mørtel | 21.186 |
+| B. Slab, blokke, beton, armering, mørtel | 20.548 |
 | C. Vandtætning (Mapelastic-system, grå) | 9.734 |
 | D. VVS, pumpe, skimmer | 8.077 |
 | E. Filtermedie & planter | 4.385 |
 | F. El & vand | 3.660 |
 | G. Terrasse | 16.779 |
-| H. Zen-sandkasse | 4.921 |
+| H. Zen-sandkasse | 3.421 |
 | I. Teknik-/opbevaringsboks 0,5×1,5×0,5 m | 2.160 |
-| **I alt** | **77.935** |
-| +10 % uforudset | 7.794 |
-| **Budget inkl. uforudset** | **85.729** |
+| **I alt** | **75.797** |
+| +10 % uforudset | 7.580 |
+| **Budget inkl. uforudset** | **83.377** |
 
 | Samlet pr. hoveddel | DKK |
 |---|---:|
-| Pool + biofilter (A–F) | 54.075 |
+| Pool + biofilter (A–F) | 53.437 |
 | Terrasse (G) | 16.779 |
-| Zen-sandkasse (H) | 4.921 |
+| Zen-sandkasse (H) | 3.421 |
 | Teknikboks (I) | 2.160 |
 
-**Spænd:** lav ~73.360 kr (sandkassesand, Eco Classic-pumpe, mindre Mapenet, ingen skruemaskine) — høj ~107.505 kr (jorden må alligevel køres væk med grabbil, 3 læs ≈ 19.800 kr, + 10 % uforudset). Jord og elektriker klares selv/via bekendt og er taget ud af tallet.
+**Spænd:** lav ~74.697 kr (Mapenet kun i hjørner/samlinger) — høj ~86.127 kr (færdigbeton til bundpladen + 10 % uforudset). Afklaret 2026-08-19: jord på trailer til genbrugspladsen (0), elektriker via bekendt (0), hvidt sandkassesand, Eco Premium 7000, fascia med, gasfjeder på låget, el-skruemaskine nødvendig (sten og ler), tomrør til 230 V og 12 V lægges i etape 1, kommune OK, sandcirkel-placering låst.
 
-**Etaper:** Etape 1 (A, B, G, H, I: hul, bundplade, vægge, terrasse, sandcirkel) = 52.079 kr. Etape 2 (C, D, E, F: membran, VVS, filter, el/vand) = 25.856 kr, når budgettet er klar. Rørgennemføringer sættes i etape 1.
+**Etaper:** Etape 1 (A, B, G, H, I: hul, bundplade, vægge, terrasse, sandcirkel) = 49.941 kr. Etape 2 (C, D, E, F: membran, VVS, filter, el/vand) = 25.856 kr, når budgettet er klar. Rørgennemføringer sættes i etape 1.
 
 
 ## A. Udgravning & underlag
@@ -41,18 +41,18 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Minigraver 1,5–1,8 t, leje | 2 dage til ~20 m³; aftalt pris hos lokal udlejer | 2 | dag | 500,00 | 1.000 | lokal udlejer | verified | Loxam listepris 1 765 kr/dag |
 | Levering/afhentning minigraver | tur/retur, eller trailer selv | 1 | stk | 1.400,00 | 1.400 | [Lejdinmaskine](https://lejdinmaskine.dk/leje-af-minigraver/) | estimat | 700–1 700 kr efter postnr |
 | Pladevibrator 100 kg, leje | 1 dag, til stabilgrus under slab + sandkasse | 1 | dag | 402,59 | 403 | [Loxam](https://www.loxam.dk/p/pladevibrator-100kg/020-0011-014275) | verified |  |
-| Bortkørsel ren jord | Vi kører selv / genbruger på grunden. Hullet er ~20 m³ ≈ 34 t | 0 | læs | 0,00 | 0 | selv | verified | Grabbil 6 599 kr/læs à 10 t hvis nødvendigt ([RN Entreprenør](https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/)) |
+| Bortkørsel ren jord | På trailer til genbrugspladsen, selv. Hullet er ~20 m³ ≈ 34 t | 0 | læs | 0,00 | 0 | selv | verified | Grabbil 6 599 kr/læs à 10 t hvis nødvendigt ([RN Entreprenør](https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/)) |
 | Stabilgrus 0–32 mm, bigbag 1 500 kg | 15 cm under slab (2,4×5,6 m ≈ 2 m³ ≈ 4 t) | 3 | bigbag | 1.100,00 | 3.300 | [GrusDirekte / lokal vognmand](https://www.grusdirekte.dk/) | estimat | Løst læs fra vognmand billigere ved 4+ t |
 | Geotekstil rulle 2,1×25 m | under stabilgrus + sandkasse | 1 | rulle | 929,95 | 930 | [Bauhaus (Byggros)](https://www.bauhaus.dk/geotekstil-2x2-fiberdug) | estimat | Deles med sandkasse |
 | **Sum A** | | | | | **7.033** | | | |
 
-> Jorden genbruges på grunden (hæv bede, terrasse-bagfyld) eller køres væk af os selv. Ingen grabbil i budgettet.
+> Jorden køres på trailer til genbrugspladsen af os selv. Ingen grabbil i budgettet.
 
 ## B. Slab, blokke, beton, armering, mørtel
 
 | Vare | Spec | Antal | Enhed | Stk-pris | Total | Butik | Sikkerhed | Note |
 |---|---|---:|---|---:|---:|---|---|---|
-| RBR Fundamentblok 19×20×50 cm | poolvægge, 8 skifter × 22 = 176 +10 % | 185 | stk | 23,95 | 4.431 | byggemarked (RBR) | estimat | 15 cm er 18,50 – 19 cm typisk 22–26 kr |
+| RBR Fundamentblok 19×20×50 cm | poolvægge, 8 skifter × 22 = 176 +10 % | 185 | stk | 20,50 | 3.793 | byggemarked (RBR) | verified | Pris bekræftet |
 | RBR Fundamentblok 15×20×50 cm | filterets 2 lige vægge, 5 skifter × 9 = 45 +10 % | 50 | stk | 18,50 | 925 | byggemarked (RBR) | verified | 72 stk/palle |
 | Levering blokke (2–3 paller) | fri fragt først ved 5 hele paller | 1 | stk | 800,00 | 800 | byggemarked | estimat |  |
 | Cement, Aalborg Basis/Rapid 25 kg | egen blanding ~C25: 330 kg/m³ × 4,8 m³ (slab 2,0 + blokfyld 2,4 + buet væg 0,4) ≈ 1 600 kg | 64 | sæk | 60,00 | 3.840 | byggemarked | estimat | Køb på palle (48 stk) = billigere |
@@ -69,7 +69,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Cementmørtel/pudsmørtel 25 kg | skim ~36 m² à 5 mm + hulkehl | 15 | sæk | 60,00 | 900 | byggemarked | estimat | Alt: Skalflex Sokkelpuds Vandtæt 249,95 kr/25 kg (Silvan) til hulkehl |
 | Forskalling til buet filtervæg | 6 mm bøjelig krydsfinér + lægter, væggen om sandcirklen støbes (r ≈ 1,3 m, ~2,4 m lang, 15 cm tyk) | 1 | sæt | 450,00 | 450 | byggemarked | estimat | Nemmere end at mure buen i blokke |
 | Kvældbånd (hydrophilic) 20×10 mm | i støbeskel slab/væg + om rørgennemføringer, ~12 m | 1 | rulle 10 m | 350,00 | 350 | byggemarked / VVS | estimat | Sikrer koldfugen slab↔væg |
-| **Sum B** | | | | | **21.186** | | | |
+| **Sum B** | | | | | **20.548** | | | |
 
 > Alt i B er ESTIMAT undtagen 15 cm-blokken (dit screenshot). Beton blandes selv: 4,8 m³ ≈ 11 t cement+grus at skovle – slab (2 m³) skal støbes i én arbejdsdag uden pauser, ellers får du en støbeskel. Færdigbeton til slab alene ville koste ~4 500 kr.
 
@@ -153,7 +153,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Jordskrue U-type 68/885 mm, galv. | 18 stk, 390 kg/stk, hovedet ≤150 mm over terræn | 18 | stk | 152,00 | 2.736 | [jordskruer.dk](https://jordskruer.dk/jordskrue-til-terrasse-u-type-68-885mm/) | verified | Fri fragt >2 000 kr. Blød/leret jord: 68/1000 (171 kr) |
 | Bræddebolte M10×100 / franske skruer til U-beslag | 2 pr. skrue + reserve | 40 | stk | 6,50 | 260 | [Harald Nyborg / jem & fix](https://www.harald-nyborg.dk/vvs-byg-og-maling/soem-skruer-og-beslag/maskinskruer-bolte-og-moetrikker) | estimat |  |
 | Rundstål/T-stang til håndmontage | Ø25 × 1,2 m gennem hullet i skruetoppen | 1 | stk | 150,00 | 150 | Harald Nyborg / Bauhaus | estimat |  |
-| Leje el-jordskruemaskine, 1 uge (buffer) | kun hvis jorden er hård/leret | 1 | uge | 625,00 | 625 | [Jysk Skruefundament](https://jyskskruefundament.dk/product/leje-af-el-skruemaskine-op-til-100cm/) | estimat | Spar 625 kr i sandjord |
+| Leje el-jordskruemaskine, 1 uge | jorden er sten og ler | 1 | uge | 625,00 | 625 | [Jysk Skruefundament](https://jyskskruefundament.dk/product/leje-af-el-skruemaskine-op-til-100cm/) | estimat | Rammer en skrue en sten, flyttes den 20–30 cm |
 | Vinkelbeslag m/rib 88×88×65 galv. | strø→bjælke | 40 | stk | 3,70 | 148 | [jem & fix](https://www.jemogfix.dk/bygningsbeslag/140801/) | verified |  |
 | Beslagskruer CSA 5,0×40, 250 stk |  | 2 | pk | 169,00 | 338 | [jem & fix](https://www.jemogfix.dk/beslagskrue-csa-5-0-x-40-mm-250-stk/5111/9028550/) | verified |  |
 | A4 rustfri terrasseskruer 4,3×56 TX, 200 stk | 2 pr. brædt pr. strø ≈ 660 + fascia + boks ≈ 800 | 4 | pk | 83,50 | 334 | [Harald Nyborg](https://www.harald-nyborg.dk/expandet-rustfri-a4-skrue-43-x-56-mm-200-stk) | verified | Thermo = sur → KUN rustfri A4 |
@@ -169,10 +169,10 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 |---|---|---:|---|---:|---:|---|---|---|
 | Rundt højbed cortenstål Ø236 cm, H 15 cm, 3 mm | sektioner + samlebeslag | 1 | stk | 1.270,75 | 1.271 | (dit screenshot) | verified |  |
 | Stabilgrus 0–32, bigbag 1 500 kg | hævet base 10–15 cm under ringen (4,4 m² × 0,15 = 0,66 m³ ≈ 1,2 t) | 1 | bigbag | 1.100,00 | 1.100 | [GrusDirekte / lokal](https://www.grusdirekte.dk/) | estimat | Køb sammen med A → 4 bigbags |
-| Dana kvartssand 0,4–0,8 mm, ovntørret, 25 kg | 0,7 t = 28 sække, zen-look | 28 | sæk | 75,00 | 2.100 | [EpoGear.dk / Bauhaus / Silvan](https://epogear.dk/vare/dana-kvarts-sand-25kg/) | verified | Sandkassesand fra byggemarked ~600 kr for 0,7 t |
+| Hvidt sandkassesand, vasket | 0,7 t, bigbag eller 25 kg-sække | 0,7 | t | 850,00 | 600 | byggemarked | estimat | Dana kvartssand 0,4–0,8 mm (2 100 kr) fravalgt |
 | Fragt sand | 700 kg | 1 | stk | 300,00 | 300 |  | estimat |  |
 | Zen-rive |  | 1 | stk | 150,00 | 150 |  | estimat |  |
-| **Sum H** | | | | | **4.921** | | | |
+| **Sum H** | | | | | **3.421** | | | |
 
 > Geotekstil under grus/sand tages fra rullen i A.
 
@@ -183,7 +183,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Trykimp. reglar 45×45 mm, 3,0 m | ramme ~15 m + låg-ramme | 6 | stk | 35,25 | 212 | [jem & fix](https://www.jemogfix.dk/impraegneret-reglar-45-x-45-x-3000-mm/4112/9057298/) | verified |  |
 | Thermo Fyr 26×140, 5 100 mm – beklædning + låg | sider 2×(1,5+0,5)×0,5 = 2 m² + låg 0,75 m² ≈ 2,8 m² ≈ 20 m + spild | 5 | stk | 254,75 | 1.274 | (samme som terrasse) | verified |  |
 | Vormann T-hængsel rustfri 100×60 mm | låg 1,5 m – tag 3 | 3 | stk | 44,95 | 135 | [Bauhaus](https://www.bauhaus.dk/vormann-t-haengsel-galvaniseret-rustfri-stal-100x60-mm) | verified |  |
-| Gasfjeder 150 N, 27 cm m. beslag | holder låget oppe | 2 | stk | 59,95 | 120 | [Bauhaus](https://www.bauhaus.dk/gasfjeder-solv-150-n) | verified | Valgfri |
+| Gasfjeder 150 N, 27 cm m. beslag | holder låget oppe | 2 | stk | 59,95 | 120 | [Bauhaus](https://www.bauhaus.dk/gasfjeder-solv-150-n) | verified |  |
 | Ventilationsrist 150×150 plast | 2 stk krydsventilation – el må ikke stå i fugt | 2 | stk | 25,00 | 50 | [Bauhaus](https://www.bauhaus.dk/opvarmning/ventilationsanlaeg-tilbehoer/murriste) | verified |  |
 | Håndtag + hasp/lås rustfri |  | 1 | sæt | 120,00 | 120 | byggemarked | estimat |  |
 | Tagpap/EPDM-strimmel til lågkant | vand skal ikke ind ved hængsler | 1 | stk | 100,00 | 100 | byggemarked | estimat |  |
@@ -209,13 +209,9 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 
     | Tiltag | Ca. |
     |---|---:|
-    | Sandkassesand i stedet for kvartssand | −1 500 |
-    | Oase Eco Classic 5500 i stedet for Eco Premium 7000 | −1 350 |
     | Mapenet kun i hjørner/samlinger (10 m² i stedet for 50 m² rulle) | −1 100 |
-    | Drop skruemaskine-leje (sandjord, håndmontage) | −625 |
     | Løst grus fra lokal vognmand i stedet for bigbags (5 t samlet) | −1 000 til −2 000 |
     | Færdigbeton til slab alene (2 m³ på én gang, ingen støbeskel-risiko) | +2 000 til +2 500 |
-    | Drop fascia-brædder | −765 |
 
     ## Indkøbsrækkefølge (følger byggerækkefølgen)
 
@@ -231,7 +227,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
     ## Kontrol
 
     - Alle rækketotaler = antal × stk-pris; sektionssummer og totalen er beregnet maskinelt.
-    - Sektion B (blokke/beton/armering) er skøn — research-agenten hang. Ring 2 betonleverandører + tjek 19 cm-blokpris før du låser budgettet.
+    - Sektion B: blokpriser bekræftet (15 cm 18,50 / 19 cm 20,50). Cement, grus og armering er stadig skøn.
     - 2 URL'er fra research (Mapelastic, Mapenet på kakelgiganten) pegede på forkerte produktsider og er erstattet af shop-forsiden — søg produktnavnet der.
-    - Ikke medregnet: coping/kantdetalje ved poolkant, trappe/adgang til pool, belysning, evt. anmeldelse til kommunen (tjek lokalplan/BR18 for bassin), forsikring.
+    - Ikke medregnet: evt. lille støbt trappe i den ene side (besluttes før murene, ca. 1.500 kr), 12 V-lys (tomrør lægges), forsikring. Kantdetalje = terrassebrædt over vægtop. Kommune: OK.
     
