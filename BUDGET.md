@@ -1,6 +1,6 @@
 # Budget & stykliste — Naturpool, biofilter, terrasse, zen-sandkasse, teknikboks
 
-Dato: 2026-08-17. Alle priser DKK inkl. moms, hentet fra danske webshops aug. 2026 (mærket *verified*) eller skøn (*estimat*). Alt arbejde udføres selv — ingen løn medregnet undtagen valgfri elektriker.
+Dato: 2026-08-17. Alle priser DKK inkl. moms, hentet fra danske webshops aug. 2026 (mærket *verified*) eller skøn (*estimat*). Alt arbejde udføres selv — ingen løn medregnet; elektriker via bekendt (0 kr).
 
 Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 
@@ -9,42 +9,44 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 
 | Del | DKK |
 |---|---:|
-| A. Udgravning & underlag | 16.163 |
+| A. Udgravning & underlag | 7.033 |
 | B. Slab, blokke, beton, armering, mørtel | 21.186 |
 | C. Vandtætning (Mapelastic-system, grå) | 9.734 |
 | D. VVS, pumpe, skimmer | 8.077 |
 | E. Filtermedie & planter | 4.385 |
-| F. El & vand | 7.160 |
+| F. El & vand | 3.660 |
 | G. Terrasse | 16.779 |
 | H. Zen-sandkasse | 4.921 |
 | I. Teknik-/opbevaringsboks 0,5×1,5×0,5 m | 2.160 |
-| **I alt** | **90.565** |
-| +10 % uforudset | 9.056 |
-| **Budget inkl. uforudset** | **99.621** |
+| **I alt** | **77.935** |
+| +10 % uforudset | 7.794 |
+| **Budget inkl. uforudset** | **85.729** |
 
 | Samlet pr. hoveddel | DKK |
 |---|---:|
-| Pool + biofilter (A–F) | 66.705 |
+| Pool + biofilter (A–F) | 54.075 |
 | Terrasse (G) | 16.779 |
 | Zen-sandkasse (H) | 4.921 |
 | Teknikboks (I) | 2.160 |
 
-**Spænd:** lav ~75.891 kr (al jord genbruges, ingen elektriker, sandkassesand, Eco Classic-pumpe, mindre Mapenet, ingen skruemaskine) — høj ~119.421 kr (al jord køres væk + 10 % uforudset).
+**Spænd:** lav ~73.360 kr (sandkassesand, Eco Classic-pumpe, mindre Mapenet, ingen skruemaskine) — høj ~107.505 kr (jorden må alligevel køres væk med grabbil, 3 læs ≈ 19.800 kr, + 10 % uforudset). Jord og elektriker klares selv/via bekendt og er taget ud af tallet.
+
+**Etaper:** Etape 1 (A, B, G, H, I: hul, bundplade, vægge, terrasse, sandcirkel) = 52.079 kr. Etape 2 (C, D, E, F: membran, VVS, filter, el/vand) = 25.856 kr, når budgettet er klar. Rørgennemføringer sættes i etape 1.
 
 
 ## A. Udgravning & underlag
 
 | Vare | Spec | Antal | Enhed | Stk-pris | Total | Butik | Sikkerhed | Note |
 |---|---|---:|---|---:|---:|---|---|---|
-| Minigraver 1,5–1,8 t, leje | 2 dage til ~20 m³; Loxam listepris 1 765 kr/dag, lokale udlejere 1 100–1 400 | 2 | dag | 1.765,50 | 3.531 | [Loxam](https://www.loxam.dk/p/minigraver-1-0-1-7-t/057-0002-014471) | verified | Lokal udlejer sparer ~700–1 300 kr |
+| Minigraver 1,5–1,8 t, leje | 2 dage til ~20 m³; aftalt pris hos lokal udlejer | 2 | dag | 500,00 | 1.000 | lokal udlejer | verified | Loxam listepris 1 765 kr/dag |
 | Levering/afhentning minigraver | tur/retur, eller trailer selv | 1 | stk | 1.400,00 | 1.400 | [Lejdinmaskine](https://lejdinmaskine.dk/leje-af-minigraver/) | estimat | 700–1 700 kr efter postnr |
 | Pladevibrator 100 kg, leje | 1 dag, til stabilgrus under slab + sandkasse | 1 | dag | 402,59 | 403 | [Loxam](https://www.loxam.dk/p/pladevibrator-100kg/020-0011-014275) | verified |  |
-| Bortkørsel ren jord, grabbil | fast pris pr. læs op til 10 t. Hullet er ~20 m³ (pool 8 m² × 1,6 m + filter 5 m² × 1,0 m + arbejdsplads) ≈ 34 t = 3–4 læs. Budget: 1 læs, resten genbruges på grunden | 1 | læs | 6.599,00 | 6.599 | [RN Entreprenør](https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/) | verified | Alt jord væk = +13 200–19 800 kr |
+| Bortkørsel ren jord | Vi kører selv / genbruger på grunden. Hullet er ~20 m³ ≈ 34 t | 0 | læs | 0,00 | 0 | selv | verified | Grabbil 6 599 kr/læs à 10 t hvis nødvendigt ([RN Entreprenør](https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/)) |
 | Stabilgrus 0–32 mm, bigbag 1 500 kg | 15 cm under slab (2,4×5,6 m ≈ 2 m³ ≈ 4 t) | 3 | bigbag | 1.100,00 | 3.300 | [GrusDirekte / lokal vognmand](https://www.grusdirekte.dk/) | estimat | Løst læs fra vognmand billigere ved 4+ t |
 | Geotekstil rulle 2,1×25 m | under stabilgrus + sandkasse | 1 | rulle | 929,95 | 930 | [Bauhaus (Byggros)](https://www.bauhaus.dk/geotekstil-2x2-fiberdug) | estimat | Deles med sandkasse |
-| **Sum A** | | | | | **16.163** | | | |
+| **Sum A** | | | | | **7.033** | | | |
 
-> Genbrug så meget jord som muligt (hæv bede, terrasse-bagfyld). Kør kun 1 læs væk.
+> Jorden genbruges på grunden (hæv bede, terrasse-bagfyld) eller køres væk af os selv. Ingen grabbil i budgettet.
 
 ## B. Slab, blokke, beton, armering, mørtel
 
@@ -135,9 +137,9 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Installationskabel 3G1,5 halogenfri, til nedgravning |  | 20 | m | 14,00 | 280 | [Wattoo.dk](https://www.wattoo.dk/3g1-5-mm-proff-installationskabel-halogenfri-pr-meter-9909000147) | verified |  |
 | Kabelrør 50 mm dobbeltvægget, 25 m m. træktråd |  | 1 | rulle | 460,00 | 460 | [Wattoo.dk](https://www.wattoo.dk/kabelroer-peh-dv-50-40-r25-m-roed-25-meter-7930506101) | verified | Biltema ~250–300 kr |
 | Kabeldækbånd 'Pas på elkabel' 50 m |  | 1 | rulle | 300,00 | 300 | [Wattoo.dk](https://www.wattoo.dk/kabeldaek-100x2-0-roed-d-mrk-50-meter-1430105503) | verified | Harald Nyborg billigere |
-| Elektriker: tilslutning fast udendørs gruppe | hvis du vil have fast stik i boksen (ikke forlængerledning) | 1 | stk | 3.500,00 | 3.500 | lokal elinstallatør | estimat | Kan undlades: PRCD + udendørs forlænger fra eksisterende stik |
+| Elektriker: tilslutning fast udendørs gruppe | fast stik i boksen – vi kender en elektriker | 1 | stk | 0,00 | 0 | bekendt elinstallatør | verified | Skal stadig udføres/anmeldes af autoriseret installatør; markedspris ~3 500 kr |
 | Vand: fyld, tøm (cement-pH), genfyld | ~25 m³ à DK-snit inkl. afledning | 25 | m³ | 86,65 | 2.166 | [lokal forsyning](https://www.danva.dk/nyheder/2026/danskernes-vandregning-stiger-med-5-42/) | estimat | HOFOR 49,57 – Odense 65,98 – DANVA snit ~86 |
-| **Sum F** | | | | | **7.160** | | | |
+| **Sum F** | | | | | **3.660** | | | |
 
 ## G. Terrasse
 
@@ -192,12 +194,12 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 
     ## Antagelser
 
-    - Pool indv. 2,0×3,0 m, vægge 8 skifter = 160 cm (150 cm vand). Filter indv. 2,0×2,0 m under poolen, 5 skifter = 100 cm, bund 50 cm over poolbund, fælles væg. Sandcirklen (Ø 236, centrum ca. 2,2 m fra venstre kant / 4,6 m fra bagkant) skærer ind i filterets højre side; filtervæggen støbes i en bue om cirklen → netto planteareal ca. 1,6 m² (26 % af poolens overflade; pumpet grusfilter dimensioneres normalt til 10–30 %). Kan forlænges 60 cm mod syd for 2,2 m². Overkanter i plan med terrassen.
+    - Pool indv. 2,0×3,0 m, vægge 8 skifter = 160 cm (150 cm vand). Filter indv. 2,0×2,0 m under poolen, 5 skifter = 100 cm, bund 50 cm over poolbund, fælles væg. Sandcirklen (Ø 236, centrum ca. 2,2 m fra venstre kant / 4,6 m fra bagkant) skærer ind i filterets højre side; filtervæggen støbes i en bue om cirklen → netto planteareal ca. 1,6 m² (26 % af poolens overflade; pumpet grusfilter dimensioneres normalt til 10–30 %). Kan forlænges 60 cm mod syd for 2,2 m². Vægtoppe 13 cm under terrassens overside (strøerne hviler på dem).
     - Poolvægge 19 cm blok, filtervægge 15 cm. Alle celler fyldt, Ø10 lodret pr. 50 cm (startere i slab), Ø8 vandret i hvert skifte.
     - Slab 15 cm på 15 cm stabilgrus, 2,4×5,6 m ≈ 2,0 m³. Blokfyld ≈ 2,4 m³ + buet filtervæg 0,4 m³. Al beton blandes selv i lejet blander (~C25: 1 del cement : 5–6 dele betongrus 0–16, lav vandmængde).
 - Udgravning ~20 m³: pool 2,4×3,4 m × 1,6 m dyb (160 væg + 15 slab + 15 grus − 30 cm over terræn) + filter 2,4×2,2 × 1,0 m + arbejdsplads. Jord vejer ~1,7 t/m³ → ~34 t. Kun 1 læs (10 t) er budgetteret kørt væk.
     - Membran: Mapelastic 2 lag ≥2 mm på 36 m² (bund 10 m² + vægge 24 m² + vægtoppe/hulkehl ~2 m²), fuldflade Mapenet.
-    - Terrasse 5,0×6,5 m minus affasning, pool, filter, sandkasse ≈ 20,5 m² brædder (inkl. brædder over pool-/filtervægtoppe). Terrassetop 30 cm over terræn på 18 jordskruer.
+    - Terrasse 5,0×6,5 m minus affasning, pool, filter, sandkasse ≈ 20,5 m² brædder (inkl. brædder over pool-/filtervægtoppe). Terrassetop 30 cm over terræn på 18 jordskruer. Terrassen hviler på poolkanten: vægtop støbes 13 cm under dæktop (brædt 26 + strø 95 + EPDM 10); strøerne ligger løst på EPDM-klods med lægte som sidestop, intet skrues i bassinet.
     - Højdestak 30 cm: skruehoved ~0–3 cm over terræn + 47×200 bjælke + 45×95 strø + 26 mm brædt (≈ 30–33 cm). Alternativt 45×145 bjælke.
     - Teknikboks 0,5×1,5 m, 50 cm høj, står på terrassen langs venstre kant forrest (under filteret; filterets SV-hjørne får et lille hak); pumpen selv står i poolen, boksen huser stik/HPFI, ventiler, slange, opbevaring.
     - Vandpris DANVA-snit; din kommune kan være 50–70 kr/m³.
@@ -207,13 +209,10 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 
     | Tiltag | Ca. |
     |---|---:|
-    | Genbrug al jord på grunden (hæv bede, bagfyld) i stedet for 1 læs væk | −6 600 |
-    | Ingen elektriker: PRCD + udendørs forlænger fra eksisterende stik | −3 500 |
     | Sandkassesand i stedet for kvartssand | −1 500 |
     | Oase Eco Classic 5500 i stedet for Eco Premium 7000 | −1 350 |
     | Mapenet kun i hjørner/samlinger (10 m² i stedet for 50 m² rulle) | −1 100 |
     | Drop skruemaskine-leje (sandjord, håndmontage) | −625 |
-    | Lokal maskinudlejer i stedet for Loxam | −700 til −1 300 |
     | Løst grus fra lokal vognmand i stedet for bigbags (5 t samlet) | −1 000 til −2 000 |
     | Færdigbeton til slab alene (2 m³ på én gang, ingen støbeskel-risiko) | +2 000 til +2 500 |
     | Drop fascia-brædder | −765 |

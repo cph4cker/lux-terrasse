@@ -218,7 +218,9 @@ td.shop a{color:var(--water)}
 /* timeline */
 .timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line);counter-reset:t}
 @media(max-width:1000px){.timeline{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.timeline{grid-template-columns:1fr}}
+.timeline.five{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1000px){.timeline.five{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.timeline,.timeline.five{grid-template-columns:1fr}}
 .timeline li{background:var(--paper);padding:20px 20px 24px;counter-increment:t;position:relative}
 .timeline li::before{content:"Trin " counter(t);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
 .timeline b{display:block;font-family:var(--display);font-size:21px;font-weight:500;margin:8px 0 6px}
@@ -250,6 +252,7 @@ footer a{color:var(--water)}
       <li><a href="#model">3D</a></li>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#vand">Vandet</a></li>
+      <li><a href="#konstruktion">Terrassen</a></li>
       <li><a href="#materialer">Materialer</a></li>
       <li><a href="#budget">Budget</a></li>
       <li><a href="#stykliste">Stykliste</a></li>
@@ -483,6 +486,77 @@ footer a{color:var(--water)}
   </div>
 </section>
 
+<section id="konstruktion">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Terrassens konstruktion</div><h2>Hviler på<br>poolkanten</h2></div>
+      <p class="lede">Dækket står på jordskruer uden for udgravningen og lægger sig ind over bassinet: de strøer, der når poolen, hviler på vægtoppen på en gummiklods uden at være skruet fast. Pool og terrasse kan sætte sig hver for sig, og det yderste brædt bliver selve poolkanten. Derfor støbes vægtoppen 13 cm under dækket.</p>
+    </div>
+    <div class="water-grid">
+      <svg class="section-svg" viewBox="0 0 640 300" role="img" aria-label="Snit gennem poolkant og terrasse: strøer hviler på vægtoppen, bjælker på jordskruer uden for udgravningen">
+        <!-- terræn + udgravning -->
+        <rect x="150" y="108" width="490" height="192" fill="#D9D5CA"/>
+        <rect x="150" y="108" width="86" height="192" fill="#CCC5B2"/>
+        <line x1="236" y1="108" x2="236" y2="300" stroke="#A9A392" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="193" y="236" text-anchor="middle" style="font-size:10px">bagfyld i lag</text>
+        <text x="193" y="250" text-anchor="middle" style="font-size:10px">komprimeret</text>
+        <text x="193" y="270" text-anchor="middle" style="font-size:10px;fill:var(--corten)">ingen skruer</text>
+        <text x="632" y="120" text-anchor="end" style="font-size:10px">terræn</text>
+        <!-- pool + væg -->
+        <rect x="0" y="80" width="150" height="220" fill="#B9B7AF"/>
+        <rect x="0" y="95" width="121.5" height="205" fill="var(--water)"/>
+        <rect x="0" y="80" width="121.5" height="15" fill="var(--paper)"/>
+        <rect x="0" y="95" width="121.5" height="8" fill="var(--water-2)"/>
+        <text x="60" y="200" text-anchor="middle" style="fill:#DCE7E2;font-size:11px">pool</text>
+        <text x="60" y="216" text-anchor="middle" style="fill:#DCE7E2;font-size:10px">vand ~10 cm</text>
+        <text x="60" y="230" text-anchor="middle" style="fill:#DCE7E2;font-size:10px">under vægtop</text>
+        <text x="136" y="200" text-anchor="middle" transform="rotate(-90 136 200)" style="font-size:10px;fill:#F3F1EA">19 cm blok</text>
+        <!-- jordskruer + bjælker -->
+        <g stroke="#7A7F7B" stroke-width="4"><line x1="250" y1="110" x2="250" y2="300"/><line x1="550" y1="110" x2="550" y2="300"/></g>
+        <g fill="#5E625F"><rect x="242" y="105" width="16" height="6" rx="1"/><rect x="542" y="105" width="16" height="6" rx="1"/></g>
+        <g fill="#7E7F62"><rect x="246" y="78" width="8" height="30"/><rect x="546" y="78" width="8" height="30"/></g>
+        <text x="262" y="98" style="font-size:10px">bjælke 47×200</text>
+        <text x="562" y="98" style="font-size:10px">bjælke 47×200</text>
+        <text x="540" y="190" text-anchor="end" style="font-size:10px">jordskrue Ø68</text>
+        <text x="540" y="204" text-anchor="end" style="font-size:10px">18 stk · uden beton</text>
+        <!-- strø -->
+        <rect x="126" y="64" width="514" height="14" fill="#9A9B7C"/>
+        <text x="400" y="74" text-anchor="middle" style="font-size:10px;fill:#F3F1EA">strø 45×95 · c/c 500 · murpap på toppen</text>
+        <!-- EPDM + lægte på vægtop -->
+        <rect x="126" y="78" width="22" height="2" fill="#2A2F2C"/>
+        <rect x="121.5" y="72" width="4.5" height="8" fill="#7E7F62"/>
+        <line x1="148" y1="88" x2="138" y2="81" stroke="#2A2F2C" stroke-width="1"/>
+        <text x="152" y="92" style="font-size:10px">EPDM 10 mm</text>
+        <text x="152" y="104" style="font-size:10px">løs, glider</text>
+        <!-- brædder -->
+        <rect x="118.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="141.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="163.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="186.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="208.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="231.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="253.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="276.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="298.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="321.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="343.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="366.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="388.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="411.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="433.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="456.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="478.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="501.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="523.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="546.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="568.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="591.0" y="60" width="21" height="4" fill="var(--pine)"/><rect x="613.5" y="60" width="21" height="4" fill="var(--pine)"/><rect x="636.0" y="60" width="21" height="4" fill="var(--pine)"/>
+        <text x="330" y="52" text-anchor="middle" style="font-size:10px">termofyr 26×140 · 5 mm fuge · A4-skruer, 2 pr. strø</text>
+        <line x1="118.5" y1="58" x2="118.5" y2="66" stroke="var(--corten)" stroke-width="1"/>
+        <text x="12" y="52" style="font-size:10px">dæk +30</text>
+        <!-- mål -->
+        <g stroke="#7A7F7B" stroke-width="1" fill="none"><line x1="610" y1="60" x2="610" y2="108"/><line x1="606" y1="60" x2="614" y2="60"/><line x1="606" y1="108" x2="614" y2="108"/></g>
+        <text x="616" y="88" style="font-size:10px">30</text>
+        <g stroke="#7A7F7B" stroke-width="1" fill="none"><line x1="110" y1="60" x2="110" y2="80"/><line x1="106" y1="60" x2="114" y2="60"/><line x1="106" y1="80" x2="114" y2="80"/></g>
+        <text x="104" y="74" text-anchor="end" style="font-size:10px">13</text>
+        <text x="104" y="91" text-anchor="end" style="font-size:10px">vægtop</text>
+        <g stroke="#7A7F7B" stroke-width="1" fill="none"><line x1="250" y1="286" x2="550" y2="286"/><line x1="250" y1="282" x2="250" y2="290"/><line x1="550" y1="282" x2="550" y2="290"/></g>
+        <rect x="380" y="279" width="40" height="14" fill="#D9D5CA"/>
+        <text x="400" y="290" text-anchor="middle" style="font-size:10px">c/c 2,0 m</text>
+        <text x="400" y="128" text-anchor="middle" style="fill:var(--mist);font-size:11px">snit vinkelret på poolens langside · ca. 1:70</text>
+      </svg>
+      <div>
+        <ol class="steps">
+          <li><div><b>Jordskruer uden for hullet</b><p>18 stk Ø68, c/c 2 m, toppen i terræn. Ingen skruer i bagfylden – den sætter sig. Ingen beton.</p></div></li>
+          <li><div><b>Bjælker 47×200 på skruerne</b><p>I U-beslag, nivelleret så dæktop = vægtop + 13 cm. Murpap på alt træ, der vender opad.</p></div></li>
+          <li><div><b>Strøer 45×95 c/c 500</b><p>På tværs af bjælkerne, vinkelbeslag. De yderste når ind over poolen og hviler på vægtoppen på 10 mm EPDM – løst, med en lægte som sidestop. Intet skrues i bassinet.</p></div></li>
+          <li><div><b>Brædder fra poolkanten og ud</b><p>Termofyr 26×140, 5 mm fuge, to A4-skruer pr. strø. Det første brædt rager 2 cm ud over vægens inderside og bliver kanten, du sidder på.</p></div></li>
+        </ol>
+        <div class="pill-row"><span class="pill">ingen beton</span><span class="pill">18 jordskruer</span><span class="pill">vægtop −13 cm</span><span class="pill">glider på EPDM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="materialer">
   <div class="wrap">
     <div class="head">
@@ -506,28 +580,28 @@ footer a{color:var(--water)}
     </div>
     <div class="budget-top">
       <div>
-        <div class="big">90.565<small> kr</small></div>
+        <div class="big">77.935<small> kr</small></div>
         <div class="range">
-          <div>Med 10 % til uforudset: <b>99.621 kr</b></div>
-          <div class="range-bar"><span style="left:0;width:54.5%"></span><i style="left:33.7%"></i></div>
-          <div class="range-marks"><span>lav 75.891</span><span>høj 119.421</span></div>
+          <div>Med 10 % til uforudset: <b>85.729 kr</b></div>
+          <div class="range-bar"><span style="left:0;width:36.2%"></span><i style="left:13.4%"></i></div>
+          <div class="range-marks"><span>lav 73.360</span><span>høj 107.505</span></div>
         </div>
         <div class="splits">
-          <div><b>66.705</b><span>Pool + biofilter</span></div>
+          <div><b>54.075</b><span>Pool + biofilter</span></div>
           <div><b>16.779</b><span>Terrasse</span></div>
           <div><b>4.921</b><span>Sandcirkel</span></div>
           <div><b>2.160</b><span>Teknikboks</span></div>
         </div>
-        <p class="fine">Lav ende: al jord genbruges på grunden, ingen elektriker (stik med indbygget HPFI), almindeligt sandkassesand, mindre pumpe. Høj ende: al jord køres væk (4 læs) plus 10 % uforudset.</p>
+        <p class="fine">Jord og elektriker klarer vi selv og via bekendte – det er taget ud af tallet. Lav ende: almindeligt sandkassesand, mindre pumpe, mindre Mapenet, ingen skruemaskine. Høj ende: jorden må alligevel køres væk med grabbil (3 læs, ca. 19.800 kr) plus 10 % uforudset.</p>
       </div>
       <div>
         <ul class="bars">
-          <li><a href="#bom-A"><span class="bar-label"><b>A</b> Udgravning &amp; underlag</span><span class="bar-track"><span class="bar-fill" style="--w:76.3%"></span></span><span class="bar-num">16.163</span></a></li>
+          <li><a href="#bom-A"><span class="bar-label"><b>A</b> Udgravning &amp; underlag</span><span class="bar-track"><span class="bar-fill" style="--w:33.2%"></span></span><span class="bar-num">7.033</span></a></li>
 <li><a href="#bom-B"><span class="bar-label"><b>B</b> Beton, blokke &amp; armering</span><span class="bar-track"><span class="bar-fill" style="--w:100.0%"></span></span><span class="bar-num">21.186</span></a></li>
 <li><a href="#bom-C"><span class="bar-label"><b>C</b> Vandtætning</span><span class="bar-track"><span class="bar-fill" style="--w:45.9%"></span></span><span class="bar-num">9.734</span></a></li>
 <li><a href="#bom-D"><span class="bar-label"><b>D</b> Pumpe &amp; VVS</span><span class="bar-track"><span class="bar-fill" style="--w:38.1%"></span></span><span class="bar-num">8.077</span></a></li>
 <li><a href="#bom-E"><span class="bar-label"><b>E</b> Filtergrus &amp; planter</span><span class="bar-track"><span class="bar-fill" style="--w:20.7%"></span></span><span class="bar-num">4.385</span></a></li>
-<li><a href="#bom-F"><span class="bar-label"><b>F</b> El &amp; vand</span><span class="bar-track"><span class="bar-fill" style="--w:33.8%"></span></span><span class="bar-num">7.160</span></a></li>
+<li><a href="#bom-F"><span class="bar-label"><b>F</b> El &amp; vand</span><span class="bar-track"><span class="bar-fill" style="--w:17.3%"></span></span><span class="bar-num">3.660</span></a></li>
 <li><a href="#bom-G"><span class="bar-label"><b>G</b> Terrasse</span><span class="bar-track"><span class="bar-fill" style="--w:79.2%"></span></span><span class="bar-num">16.779</span></a></li>
 <li><a href="#bom-H"><span class="bar-label"><b>H</b> Sandcirkel</span><span class="bar-track"><span class="bar-fill" style="--w:23.2%"></span></span><span class="bar-num">4.921</span></a></li>
 <li><a href="#bom-I"><span class="bar-label"><b>I</b> Teknikboks</span><span class="bar-track"><span class="bar-fill" style="--w:10.2%"></span></span><span class="bar-num">2.160</span></a></li>
@@ -546,18 +620,18 @@ footer a{color:var(--water)}
     </div>
     <div class="bom-tools"><button type="button" id="openAll">Fold alle ud</button><button type="button" id="closeAll">Fold alle sammen</button><a href="https://github.com/cph4cker/lux-terrasse/blob/main/BUDGET.md" target="_blank" rel="noopener" style="align-self:center;color:var(--water)">Åbn som tekstfil →</a></div>
     <details class="bom" id="bom-A">
-<summary><span class="bom-letter">A</span><span class="bom-name">Udgravning &amp; underlag</span><span class="bom-sum">16.163 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<summary><span class="bom-letter">A</span><span class="bom-name">Udgravning &amp; underlag</span><span class="bom-sum">7.033 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
 <div class="bom-body">
-<p class="bom-note">Genbrug så meget jord som muligt (hæv bede, terrasse-bagfyld). Kør kun 1 læs væk.</p>
+<p class="bom-note">Jorden genbruges på grunden (hæv bede, terrasse-bagfyld) eller køres væk af os selv. Ingen grabbil i budgettet.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
 <tbody>
 <tr>
-<td class="vare"><div>Minigraver 1,5–1,8 t, leje</div><div class="spec">2 dage til ~20 m³; Loxam listepris 1 765 kr/dag, lokale udlejere 1 100–1 400</div><div class="note">Lokal udlejer sparer ~700–1 300 kr</div></td>
+<td class="vare"><div>Minigraver 1,5–1,8 t, leje</div><div class="spec">2 dage til ~20 m³; aftalt pris hos lokal udlejer</div><div class="note">Loxam listepris er 1 765 kr/dag</div></td>
 <td class="num">2 dag</td>
-<td class="num">1.765,50</td>
-<td class="num strong">3.531</td>
-<td class="shop"><a href="https://www.loxam.dk/p/minigraver-1-0-1-7-t/057-0002-014471" target="_blank" rel="noopener">Loxam</a></td>
+<td class="num">500,00</td>
+<td class="num strong">1.000</td>
+<td class="shop">lokal udlejer</td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Levering/afhentning minigraver</div><div class="spec">tur/retur, eller trailer selv</div><div class="note">700–1 700 kr efter postnr</div></td>
@@ -574,11 +648,11 @@ footer a{color:var(--water)}
 <td class="shop"><a href="https://www.loxam.dk/p/pladevibrator-100kg/020-0011-014275" target="_blank" rel="noopener">Loxam</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
-<td class="vare"><div>Bortkørsel ren jord, grabbil</div><div class="spec">fast pris pr. læs op til 10 t. Hullet er ~20 m³ (pool 8 m² × 1,6 m + filter 5 m² × 1,0 m + arbejdsplads) ≈ 34 t = 3–4 læs. Budget: 1 læs, resten genbruges på grunden</div><div class="note">Alt jord væk = +13 200–19 800 kr</div></td>
-<td class="num">1 læs</td>
-<td class="num">6.599,00</td>
-<td class="num strong">6.599</td>
-<td class="shop"><a href="https://rn-entreprenoer.dk/vare/afhentning-af-jord-med-grab-fast-pris-og-hurtig-service/" target="_blank" rel="noopener">RN Entreprenør</a></td>
+<td class="vare"><div>Bortkørsel ren jord</div><div class="spec">Vi kører selv / genbruger jorden på grunden. Hullet er ~20 m³ (pool 8 m² × 1,6 m + filter 5 m² × 1,0 m + arbejdsplads) ≈ 34 t</div><div class="note">Grabbil koster 6 599 kr pr. læs à 10 t, hvis det alligevel bliver nødvendigt</div></td>
+<td class="num">0 læs</td>
+<td class="num">0,00</td>
+<td class="num strong">0</td>
+<td class="shop">selv</td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Stabilgrus 0–32 mm, bigbag 1 500 kg</div><div class="spec">15 cm under slab (2,4×5,6 m ≈ 2 m³ ≈ 4 t)</div><div class="note">Løst læs fra vognmand billigere ved 4+ t</div></td>
@@ -979,7 +1053,7 @@ footer a{color:var(--water)}
 </div>
 </details>
 <details class="bom" id="bom-F">
-<summary><span class="bom-letter">F</span><span class="bom-name">El &amp; vand</span><span class="bom-sum">7.160 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
+<summary><span class="bom-letter">F</span><span class="bom-name">El &amp; vand</span><span class="bom-sum">3.660 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
 <div class="bom-body">
 
 <div class="tablewrap"><table>
@@ -1021,12 +1095,12 @@ footer a{color:var(--water)}
 <td class="shop"><a href="https://www.wattoo.dk/kabeldaek-100x2-0-roed-d-mrk-50-meter-1430105503" target="_blank" rel="noopener">Wattoo.dk</a></td>
 <td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
-<td class="vare"><div>Elektriker: tilslutning fast udendørs gruppe</div><div class="spec">hvis du vil have fast stik i boksen (ikke forlængerledning)</div><div class="note">Kan undlades: PRCD + udendørs forlænger fra eksisterende stik</div></td>
+<td class="vare"><div>Elektriker: tilslutning fast udendørs gruppe</div><div class="spec">fast stik i boksen – vi kender en elektriker</div><div class="note">Skal stadig udføres og anmeldes af autoriseret installatør; markedspris ~3 500 kr</div></td>
 <td class="num">1 stk</td>
-<td class="num">3.500,00</td>
-<td class="num strong">3.500</td>
-<td class="shop">lokal elinstallatør</td>
-<td class="conf"><span class="badge e">estimat</span></td>
+<td class="num">0,00</td>
+<td class="num strong">0</td>
+<td class="shop">bekendt elinstallatør</td>
+<td class="conf"><span class="badge v">verificeret</span></td>
 </tr><tr>
 <td class="vare"><div>Vand: fyld, tøm (cement-pH), genfyld</div><div class="spec">~25 m³ à DK-snit inkl. afledning</div><div class="note">HOFOR 49,57 – Odense 65,98 – DANVA snit ~86</div></td>
 <td class="num">25 m³</td>
@@ -1041,7 +1115,7 @@ footer a{color:var(--water)}
 <details class="bom" id="bom-G">
 <summary><span class="bom-letter">G</span><span class="bom-name">Terrasse</span><span class="bom-sum">16.779 kr</span><span class="bom-chev" aria-hidden="true"></span></summary>
 <div class="bom-body">
-<p class="bom-note">Højdestak: skruehoved ~35 mm + bjælke 200 + strø 95 + brædt 26 ≈ 356 mm → skruer drejes så hovedet står ~0–3 cm over terræn, eller brug 45×145 bjælke (301 mm).</p>
+<p class="bom-note">Højdestak: skruehoved ~35 mm + bjælke 200 + strø 95 + brædt 26 ≈ 356 mm → skruer drejes så hovedet står ~0–3 cm over terræn, eller brug 45×145 bjælke (301 mm). Poolens vægtop støbes 13 cm under dæktop (brædt 26 + strø 95 + EPDM 10), så strøerne kan hvile på den.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Vare</th><th class="num">Antal</th><th class="num">Stk-pris</th><th class="num">Total</th><th>Butik</th><th>Kilde</th></tr></thead>
 <tbody>
@@ -1260,26 +1334,30 @@ footer a{color:var(--water)}
 </tbody></table></div>
 </div>
 </details>
-    <div class="bom-total"><span>Materialer i alt, ekskl. uforudset</span><b>90.565 kr</b></div>
+    <div class="bom-total"><span>Materialer i alt, ekskl. uforudset</span><b>77.935 kr</b></div>
   </div>
 </section>
 
 <section id="forloeb">
   <div class="wrap">
     <div class="head">
-      <div><div class="eyebrow">Byggeforløb</div><h2>Ni uger,<br>ni trin</h2></div>
-      <p class="lede">Betonen bestemmer tempoet: bundpladen skal hærde en uge, væggene fire. Terrassen bygges, mens man venter. Rækkefølgen er den, indkøbene følger.</p>
+      <div><div class="eyebrow">Byggeforløb</div><h2>To etaper,<br>ni trin</h2></div>
+      <p class="lede">Etape 1 er det, budgettet rækker til nu: hul, bundplade, vægge, terrasse og sandcirkel – ca. 52.100 kr af de 77.900. Etape 2 – membran, rør, pumpe og filtergrus – kommer, når pengene er der (ca. 25.900 kr). Bassinet står tørt imens, og rørgennemføringerne er sat fra starten, så intet skal brydes op.</p>
     </div>
-    <ol class="timeline">
-      <li><span class="wk">uge 1</span><b>Grav og fundér</b><p>Minigraver, 15 cm stabilgrus, komprimering. Bundplade i armeret beton med startjern til væggene.</p></li>
-      <li><span class="wk">uge 2–3</span><b>Mur bassinet</b><p>Fundamentblokke i mørtel, armering i hvert skifte. Rørgennemføringer og overløb sættes nu. Cellerne fyldes med beton.</p></li>
-      <li><span class="wk">uge 3–6</span><b>Hærd og bagfyld</b><p>28 dages hærdning. Imens: bagfyld i lag, jordskruer i, teknikboks-ramme, bestilling af membran og tømmer.</p></li>
-      <li><span class="wk">uge 4–6</span><b>Terrassen</b><p>Mens betonen hærder: bjælker på jordskruerne, strøer, termofyr-brædder med 5 mm fuge. Udsparing til sandcirkel og teknikboks skæres nu.</p></li>
-      <li><span class="wk">uge 7</span><b>Puds og membran</b><p>Skim, hulkehl i alle hjørner, to lag grå Mapelastic med bånd og net. En uges hærdning.</p></li>
-      <li><span class="wk">uge 8</span><b>Vand ind, vand ud</b><p>Fyld, lad stå en uge, tøm (cementen hæver pH), fyld igen.</p></li>
-      <li><span class="wk">uge 8</span><b>Sandcirklen</b><p>Grusbase komprimeres i niveau med dækket, cortenringen samles, brædderne skæres i cirkel med 10 mm luft.</p></li>
-      <li><span class="wk">uge 9</span><b>Filteret plantes</b><p>Rørgitter, skyllet grus i tre lag, planter. Pumpe og skimmer i, strøm via HPFI-stik. Vandet sættes i gang.</p></li>
-      <li><span class="wk">sidst</span><b>Sand og låg</b><p>Kvartssand i cirklen, kantbrædder, låg på teknikboksen. Første river i sandet.</p></li>
+    <p class="eyebrow" style="margin:0 0 10px">Etape 1 · ca. 7 uger · nu</p>
+    <ol class="timeline five">
+      <li><span class="wk">uge 1</span><b>Grav og fundér</b><p>Minigraver, 15 cm stabilgrus, komprimering. Bundplade i armeret beton med startjern til væggene. Jorden bliver på grunden eller køres væk af os selv.</p></li>
+      <li><span class="wk">uge 2–3</span><b>Mur bassinet</b><p>Fundamentblokke i mørtel, armering i hvert skifte. Rørgennemføringer og overløb sættes nu, selv om rørene først kommer i etape 2. Cellerne fyldes med beton.</p></li>
+      <li><span class="wk">uge 3–6</span><b>Hærd og bagfyld</b><p>28 dages hærdning. Imens: bagfyld i lag, jordskruer i uden for udgravningen, teknikboks-ramme, tømmer hjem.</p></li>
+      <li><span class="wk">uge 4–6</span><b>Terrassen</b><p>Bjælker på jordskruerne, strøer c/c 500 – de yderste hviler på poolens vægtop på EPDM-klodser. Termofyr-brædder med 5 mm fuge, fra poolkanten og ud. Udsparing til sandcirkel og teknikboks skæres nu.</p></li>
+      <li><span class="wk">uge 7</span><b>Sandcirklen</b><p>Grusbase komprimeres i niveau med dækket, cortenringen samles, brædderne skæres i cirkel med 10 mm luft. Kvartssand i, kantbrædder, låg på teknikboksen. Første river i sandet.</p></li>
+    </ol>
+    <p class="eyebrow" style="margin:28px 0 10px">Etape 2 · ca. 3 uger · når budgettet er klar</p>
+    <ol class="timeline" style="counter-reset:t 5">
+      <li><span class="wk">uge 1</span><b>Puds og membran</b><p>Skim, hulkehl i alle hjørner, to lag grå Mapelastic med bånd og net. Alt arbejde sker indefra – terrassen bliver liggende. En uges hærdning.</p></li>
+      <li><span class="wk">uge 2</span><b>Vand ind, vand ud</b><p>Fyld, lad stå en uge, tøm (cementen hæver pH), fyld igen.</p></li>
+      <li><span class="wk">uge 2–3</span><b>Rør, pumpe og strøm</b><p>PVC-rør gennem de forberedte gennemføringer, rørgitter i filterbunden, pumpe og skimmer i poolen. Stik i teknikboksen – elektrikeren trækker den faste gruppe.</p></li>
+      <li><span class="wk">uge 3</span><b>Filteret fyldes</b><p>Skyllet grus i tre lag, planter i det øverste. Vandet sættes i gang og løber hjem over overløbet.</p></li>
     </ol>
   </div>
 </section>
@@ -1288,12 +1366,12 @@ footer a{color:var(--water)}
   <div class="wrap">
     <div class="head">
       <div><div class="eyebrow">Forbehold</div><h2>Det, vi skal<br>have afklaret</h2></div>
-      <p class="lede">Budgettet er materialer og leje. Fire ting kan flytte tallet, og to kræver et ja fra andre end os.</p>
+      <p class="lede">Budgettet er materialer og leje. Tre ting kan flytte tallet, og to kræver et ja fra andre end os.</p>
     </div>
     <ul class="risks">
       <li><b>Beton og blokke</b> (sektion B, ca. 21.000 kr) er skøn. Betonen blandes selv i lejet blander – 4,8 m³ er ca. 11 ton cement og grus at skovle, og bundpladen skal støbes færdig på én dag. Færdigbeton til bundpladen alene koster ca. 2.000 kr mere.</li>
-      <li><b>Jorden.</b> Hullet til pool og filter er ca. 20 m³ – pool 8 m² × 1,6 m dyb, filter 5 m² × 1 m, plus lidt arbejdsplads – og jord vejer 1,7 t/m³, så det er 30–35 ton. Der er budgetteret ét læs væk; resten skal have et sted at være på grunden. Alt væk koster 13–20.000 kr mere.</li>
-      <li><b>El.</b> En fast udendørs installation skal laves af en autoriseret elinstallatør (ca. 3.500 kr). Alternativet – et stik med indbygget fejlstrømsafbryder fra et eksisterende udendørs stik – er lovligt selvbyg og med i lavprisen.</li>
+      <li><b>Jorden.</b> Hullet til pool og filter er ca. 20 m³ – pool 8 m² × 1,6 m dyb, filter 5 m² × 1 m, plus lidt arbejdsplads – og jord vejer 1,7 t/m³, så det er 30–35 ton. Vi genbruger og kører selv, så der er 0 kr i budgettet. Må det alligevel væk med grabbil, koster det ca. 6.600 kr pr. læs à 10 t (13–20.000 kr for det hele).</li>
+      <li><b>El.</b> En fast udendørs installation skal laves og anmeldes af en autoriseret elinstallatør. Vi kender en, så den står til 0 kr – markedsprisen er ca. 3.500 kr. Alternativet – et stik med indbygget fejlstrømsafbryder fra et eksisterende udendørs stik – er lovligt selvbyg.</li>
       <li><b>Kommunen.</b> Et bassin på 8–9 m³ kan kræve anmeldelse eller ligge under lokalplanens regler. Tjekkes før første spadestik.</li>
       <li><b>Jordbund.</b> Jordskruer holder dårligt i løs bagfyld. Bagfyldes i lag og komprimeres, eller strøerne ved poolen hviler på bassinets vægtop på en gummiklods.</li>
       <li><b>Den buede filtervæg</b> om sandcirklen støbes i beton med bøjelig forskalling i stedet for at mures i blokke. Radius og placering af cirklen skal ligge fast, før filteret støbes.</li>
