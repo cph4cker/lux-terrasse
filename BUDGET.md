@@ -10,7 +10,7 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Del | DKK |
 |---|---:|
 | A. Udgravning & underlag | 7.033 |
-| B. Slab, blokke, beton, armering, mørtel | 20.548 |
+| B. Slab, blokke, beton, armering, mørtel | 22.048 |
 | C. Vandtætning (Mapelastic-system, grå) | 9.734 |
 | D. VVS, pumpe, skimmer | 8.077 |
 | E. Filtermedie & planter | 4.385 |
@@ -18,20 +18,20 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | G. Terrasse | 16.779 |
 | H. Zen-sandkasse | 3.421 |
 | I. Teknik-/opbevaringsboks 0,5×1,5×0,5 m | 2.160 |
-| **I alt** | **75.797** |
-| +10 % uforudset | 7.580 |
-| **Budget inkl. uforudset** | **83.377** |
+| **I alt** | **77.297** |
+| +10 % uforudset | 7.730 |
+| **Budget inkl. uforudset** | **85.027** |
 
 | Samlet pr. hoveddel | DKK |
 |---|---:|
-| Pool + biofilter (A–F) | 53.437 |
+| Pool + biofilter (A–F) | 54.937 |
 | Terrasse (G) | 16.779 |
 | Zen-sandkasse (H) | 3.421 |
 | Teknikboks (I) | 2.160 |
 
-**Spænd:** lav ~74.697 kr (Mapenet kun i hjørner/samlinger) — høj ~86.127 kr (færdigbeton til bundpladen + 10 % uforudset). Afklaret 2026-08-19: jord på trailer til genbrugspladsen (0), elektriker via bekendt (0), hvidt sandkassesand, Eco Premium 7000, fascia med, gasfjeder på låget, el-skruemaskine nødvendig (sten og ler), tomrør til 230 V og 12 V lægges i etape 1, kommune OK, sandcirkel-placering låst.
+**Spænd:** lav ~76.197 kr (Mapenet kun i hjørner/samlinger) — høj ~87.777 kr (færdigbeton til bundpladen + 10 % uforudset). Afklaret 2026-08-19: jord på trailer til genbrugspladsen (0), elektriker via bekendt (0), hvidt sandkassesand, Eco Premium 7000, fascia med, gasfjeder på låget, el-skruemaskine nødvendig (sten og ler), tomrør til 230 V og 12 V lægges i etape 1, kommune OK, sandcirkel-placering låst.
 
-**Etaper:** Etape 1 (A, B, G, H, I: hul, bundplade, vægge, terrasse, sandcirkel) = 49.941 kr. Etape 2 (C, D, E, F: membran, VVS, filter, el/vand) = 25.856 kr, når budgettet er klar. Rørgennemføringer sættes i etape 1.
+**Etaper:** Etape 1 (A, B, G, H, I: hul, bundplade, vægge, terrasse, sandcirkel) = 51.441 kr. Etape 2 (C, D, E, F: membran, VVS, filter, el/vand) = 25.856 kr, når budgettet er klar. Rørgennemføringer sættes i etape 1.
 
 
 ## A. Udgravning & underlag
@@ -67,9 +67,10 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
 | Plastfolie under slab | 0,15 mm, 4×12,5 m | 1 | rulle | 150,00 | 150 | byggemarked | estimat | Fugtspærre, kurer beton |
 | KC-mørtel / muremørtel 25 kg | opmuring af blokke, ~12 sække | 12 | sæk | 55,00 | 660 | byggemarked | estimat |  |
 | Cementmørtel/pudsmørtel 25 kg | skim ~36 m² à 5 mm + hulkehl | 15 | sæk | 60,00 | 900 | byggemarked | estimat | Alt: Skalflex Sokkelpuds Vandtæt 249,95 kr/25 kg (Silvan) til hulkehl |
+| Trappe i det ene hjørne, 3 trin | mures i 15 cm-blokke, fyldes med beton sammen med væggene; ~60 cm bred, trin 25 × 30 cm | 1 | stk | 1.500,00 | 1.500 | byggemarked | estimat | ~30 blokke + 0,3 m³ beton + 2 m² membran |
 | Forskalling til buet filtervæg | 6 mm bøjelig krydsfinér + lægter, væggen om sandcirklen støbes (r ≈ 1,3 m, ~2,4 m lang, 15 cm tyk) | 1 | sæt | 450,00 | 450 | byggemarked | estimat | Nemmere end at mure buen i blokke |
 | Kvældbånd (hydrophilic) 20×10 mm | i støbeskel slab/væg + om rørgennemføringer, ~12 m | 1 | rulle 10 m | 350,00 | 350 | byggemarked / VVS | estimat | Sikrer koldfugen slab↔væg |
-| **Sum B** | | | | | **20.548** | | | |
+| **Sum B** | | | | | **22.048** | | | |
 
 > Alt i B er ESTIMAT undtagen 15 cm-blokken (dit screenshot). Beton blandes selv: 4,8 m³ ≈ 11 t cement+grus at skovle – slab (2 m³) skal støbes i én arbejdsdag uden pauser, ellers får du en støbeskel. Færdigbeton til slab alene ville koste ~4 500 kr.
 
@@ -229,5 +230,5 @@ Se `pool/PLAN.md` og `deck/PLAN.md` for konstruktion og byggerækkefølge.
     - Alle rækketotaler = antal × stk-pris; sektionssummer og totalen er beregnet maskinelt.
     - Sektion B: blokpriser bekræftet (15 cm 18,50 / 19 cm 20,50). Cement, grus og armering er stadig skøn.
     - 2 URL'er fra research (Mapelastic, Mapenet på kakelgiganten) pegede på forkerte produktsider og er erstattet af shop-forsiden — søg produktnavnet der.
-    - Ikke medregnet: evt. lille støbt trappe i den ene side (besluttes før murene, ca. 1.500 kr), 12 V-lys (tomrør lægges), forsikring. Kantdetalje = terrassebrædt over vægtop. Kommune: OK.
+    - Ikke medregnet: 12 V-lys (tomrør lægges), forsikring. Trappe (3 trin, hjørne) er med i B. Kantdetalje = terrassebrædt over vægtop. Kommune: OK.
     
