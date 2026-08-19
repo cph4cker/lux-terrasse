@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-08-19.** Kun historik. Gældende konstruktion, koter og mængder står i `index.html` og `BUDGET.md` (koteskema: dæk og vægtoppe +35, vand +20, filterbund 60 cm over poolbund, terrassen på egne jordskruer 50 cm fra væggen, 12 V-pumpe).
+
 # Deck + Zen Sandbox — Build Plan
 
 Companion to `pool/PLAN.md`. Date: 2026-08-17

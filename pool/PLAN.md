@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-08-19.** Kun historik. Gældende konstruktion, koter og mængder står i `index.html` og `BUDGET.md` (koteskema: dæk og vægtoppe +35, vand +20, filterbund 60 cm over poolbund, terrassen på egne jordskruer 50 cm fra væggen, 12 V-pumpe).
+
 # Nature Pool + Biofilter — Build Plan
 
 Part of the deck project (5.0 × 6.5 m deck, zen sandbox Ø 2.36 m, small block bottom-left).
