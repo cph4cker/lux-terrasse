@@ -1,0 +1,419 @@
+====================================================================================================
+LUX DECK - KOMPLET STYKLISTE (BOM)
+Naturpool 2x3 m, biofilter, termofyr-terrasse +35, zen-sandcirkel, teknikboks
+Priser DKK inkl. moms, verificeret 19.-20. august 2026. Alt arbejde selvbyg.
+Fuld dokumentation: https://github.com/cph4cker/lux-terrasse (BUDGET.md, review/)
+====================================================================================================
+
+A. UDGRAVNING & UNDERLAG   [6.473 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Minigraver 1,5–1,8 t, leje
+      2 dage til ~20 m³; aftalt pris hos lokal udlejer
+      2 dag  a 500,00 kr  =  1.000 kr    (lokal udlejer, verified)
+      OBS: Loxam listepris 1 765 kr/dag
+
+[ ] Levering/afhentning minigraver
+      tur/retur, eller trailer selv
+      1 stk  a 1.400,00 kr  =  1.400 kr    (Lejdinmaskine, estimat)
+      OBS: 700–1 700 kr efter postnr
+
+[ ] Pladevibrator 100 kg, leje
+      1 dag under pladerne; sandbase med håndstamper
+      1 dag  a 402,59 kr  =  403 kr    (Loxam, verified)
+
+[ ] Bortkørsel ren jord
+      På trailer til genbrugspladsen, selv. ~20 m³ fast ≈ 25 m³ løst ≈ 34 t; ca. 8 m³ tilbage som
+      bagfyld → ca. 12 m³ / 20 t væk = ~27 læs à 750 kg eller 8 læs à 2,5 t
+      0 læs  a 0,00 kr  =  0 kr    (selv, verified)
+      OBS: Spørg genbrugspladsen om dagsgrænse. Grabbil 6 599 kr/læs à 10 t
+
+[ ] Dykpumpe AL-KO Drain 7000 (urent vand, flyder) + 25 m fladslange
+      regnvand i hullet, tømning af poolen (pH-skyl), regnvand i det tørre bassin i etape 1,
+      filterskyl
+      1 sæt  a 690,00 kr  =  690 kr    (Bauhaus / byggemarked, verified)
+      OBS: Bauhaus 490 + slange ~200
+
+[ ] Presenning 6×8 m, kraftig, m. øjer
+      vinterafdækning af det tørre bassin (åbning 2,4×5,6 m) mellem etape 1 og 2
+      1 stk  a 300,00 kr  =  300 kr    (byggemarked, estimat)
+
+[ ] Stabilgrus 0–32 mm, løst læs fra lokal vognmand
+      4 t under de to plader + 1,2 t base til sandcirklen + lidt; leveres i samme aftale som
+      betongrus (uge 0)
+      6 t  a 380,00 kr  =  2.280 kr    (lokal vognmand, estimat)
+      OBS: 4 bigbags ville koste ~7 000 kr i dag. Ring 2 vognmænd, t-pris leveret
+
+[ ] Fiberdug 100 g/m², 2×25 m
+      adskillelse ler/stabilgrus under pladerne + under sandcirklens base; behov ~21 m²
+      1 rulle  a 400,00 kr  =  400 kr    (Harald Nyborg / jem & fix, estimat)
+      OBS: Byggros-rullen (930 kr) var overkill til en statisk plade
+
+B. SLAB, BLOKKE, BETON, ARMERING, MØRTEL   [20.578 kr]
+----------------------------------------------------------------------------------------------------
+[ ] RBR Fundamentblok 19×20×50 cm
+      poolvægge, 8 skifter × 22 = 176 +10 %
+      185 stk  a 20,50 kr  =  3.792 kr    (byggemarked (RBR), verified)
+      OBS: Aftalt pris (webpris i dag ~24 kr). 3 paller + 5 løse
+
+[ ] RBR Fundamentblok 15×20×50 cm
+      filterets 2 lige vægge 5 skifter × 9 = 45 + trappen ~30 = 75 = 1 hel palle (72) + 3
+      75 stk  a 18,50 kr  =  1.388 kr    (byggemarked (RBR), verified)
+      OBS: Aftalt pris
+
+[ ] Levering blokke + cement (5 paller)
+      3 paller 19 cm + 1 palle 15 cm + 1 palle cement = 5 paller → fri kranlevering hos de fleste
+      byggemarkeder
+      1 stk  a 0,00 kr  =  0 kr    (byggemarked, estimat)
+      OBS: Bekræft ved bestilling; ellers ~800 kr
+
+[ ] Cement, Aalborg Basis 25 kg
+      egen blanding ~C25: 310 kg/m³ × 5,0 m³ (plade 2,0 + cellefyld 2,3 + buevæg 0,4 + trappe 0,3)
+      ≈ 1 580 kg
+      64 sæk  a 82,00 kr  =  5.248 kr    (byggemarked, estimat)
+      OBS: Løs hos Bygma 100,95; palle/jem & fix 80–85
+
+[ ] Betongrus 0–16 mm (støbemix), løst leveret
+      ~1,9 t/m³ × 4,8 m³ ≈ 9,5 t – samme vognmand som stabilgrus
+      10 t  a 400,00 kr  =  4.000 kr    (lokal vognmand / grus.dk, estimat)
+      OBS: Bigbags i stedet: ~9 × 850 kr
+
+[ ] Betonblander 130–160 l, købt brugt (DBA), sælges igen
+      netto: køb ~1 200, sælg ~700 efter etape 2. Leje var 2 uger, reelt 3 (plade uge 1, cellefyld
+      uge 3) = 1 650
+      1 uge  a 500,00 kr  =  500 kr    (DBA / Marketplace, estimat)
+      OBS: I beholder den til puds og mørtel i etape 2
+
+[ ] Stavvibrator 800 W, købt (HN ~750), sælges for ~300
+      cellefyld tager 2–3 dage – leje pr. dag er dyrere end at eje den. Trillebør/skovle har I
+      1 sæt  a 450,00 kr  =  450 kr    (Harald Nyborg / DBA, estimat)
+
+[ ] Armeringsnet Ø6 150×150, 2,35×5,0 m
+      slab, 1 lag, 13,5 m² + overlap
+      2 net  a 380,00 kr  =  760 kr    (byggemarked / Stark, estimat)
+
+[ ] Kamstål Ø10, 6 m
+      startjern pr. 50 cm, bukkes i L (40 cm ben i pladen), bindes til nettet før støbning
+      14 stk  a 65,00 kr  =  910 kr    (byggemarked / Stark, estimat)
+
+[ ] Kamstål Ø8, 6 m
+      vandret i hvert skifte (blokkens not), hjørner + 15 % stød, net i buevæg
+      26 stk  a 45,00 kr  =  1.170 kr    (byggemarked / Stark, estimat)
+
+[ ] Bindetråd + afstandsklodser
+      1 rl tråd, 50 klodser 30 mm
+      1 sæt  a 210,00 kr  =  210 kr    (byggemarked, estimat)
+
+[ ] Forskalling slab-kant
+      brædder 25×100 ~16 m + pløkke + skruer
+      1 sæt  a 300,00 kr  =  300 kr    (byggemarked, estimat)
+      OBS: Genbrug til teknikboks-låg
+
+[ ] Plastfolie under slab
+      0,15 mm, 4×12,5 m
+      1 rulle  a 150,00 kr  =  150 kr    (byggemarked, estimat)
+      OBS: Fugtspærre, kurer beton
+
+[ ] Puds, selvblandet 1:3 (6 sk. cement + 0,5 t bakkesand 0–4 + plastificering)
+      skim ~36 m² à 10 mm + hulkehl + slidpuds på vægtoppe ≈ 730 kg. Sandet kommer med vognmanden;
+      1. skifte lægges i samme mørtel
+      1 sæk  a 800,00 kr  =  800 kr    (byggemarked + vognmand, estimat)
+      OBS: 30 sække færdigpuds ville koste ~1 800. Kræver en mand der kan trække puds – Mapelastic
+           tilgiver hårrevner
+
+[ ] Trappe i det ene hjørne, 3 trin
+      blokkene (30 stk) står i 15 cm-linjen, beton og cement i de 64 sække / 10 t; her kun ekstra
+      membran 2 m² + småt
+      1 stk  a 250,00 kr  =  250 kr    (byggemarked, estimat)
+
+[ ] Forskalling til buet filtervæg
+      6 mm bøjelig krydsfinér; afstives med forskallingsbrædderne fra pladen (genbrug)
+      1 sæt  a 300,00 kr  =  300 kr    (byggemarked, estimat)
+      OBS: Nemmere end at mure buen i blokke
+
+[ ] Kvældbånd (hydrophilic) 20×10 mm
+      om de 3 rørgennemføringer + koldfuge plade/1. skifte ~12 m
+      1 rulle 10 m  a 350,00 kr  =  350 kr    (byggemarked / VVS, estimat)
+      OBS: Sikrer koldfugen slab↔væg
+
+C. VANDTÆTNING (MAPELASTIC-SYSTEM, GRÅ)   [12.739 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Mapei Mapelastic 32 kg sæt
+      A 24 kg + B 8 kg; 1,7 kg/m²/mm; 2 mm på 36 m² = 122 kg
+      5 sæt  a 1.795,00 kr  =  8.975 kr    (kakelgiganten.dk, verified)
+      OBS: Kampagnepris aug. 2026 (vejl. 2 245). 5 sæt er minimum – løber I tør i 2. lag, venter I
+           1–2 uger + ny fragt
+
+[ ] Mapeband Easy 10 m × 13 cm
+      pool 10 m + filter 8,4 m + lodrette hjørner 10 m + 3 rør + trappe ≈ 33 m
+      4 rulle  a 278,75 kr  =  1.115 kr    (fugeshop.dk, verified)
+
+[ ] Mapenet 150 glasfibernet 1×50 m
+      fuldflade mellem lag 1 og 2 – anbefalet på blokvæg
+      1 rulle  a 1.654,48 kr  =  1.654 kr    (kakelgiganten.dk, verified)
+      OBS: Spar 1 100 kr: kun net i hjørner/samlinger (10 m² stykke)
+
+[ ] Fragt kakelgiganten (palle, 160 kg)
+      alt Mapei i én ordre
+      1 stk  a 795,00 kr  =  795 kr    (kakelgiganten.dk, verified)
+
+[ ] Ruller, pensler, spande, piskeris til boremaskine
+      spande og piskeris har I
+      1 sæt  a 200,00 kr  =  200 kr    (byggemarked, estimat)
+
+D. VVS, PUMPE, SKIMMER   [7.643 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Oase AquaMax Eco Premium 6000/12 V (inkl. trafo)
+      12 V SELV, lovlig i badezonen; 6 000 l/t, ~45 W; trafo i teknikboksen
+      1 stk  a 4.259,00 kr  =  4.259 kr    (fynshavedam.dk, verified)
+      OBS: Spørg om AquaSkim 20 samme sted = 1 fragt. Drøvles med kuglehane til ~3–4 m³/t
+
+[ ] Oase AquaSkim 20 skimmer
+      stående; på muret sokkel af 6 blokke i poolhjørnet, pumpen bag den
+      1 stk  a 595,00 kr  =  595 kr    (koishopper.dk, verified)
+
+[ ] PVC trykrør 50 mm PN10, 1 m
+      pumpe → fællesvæg 1,5 m, filterafløb → ventilbrønd 1,5 m, nødoverløb → faskine 2 m, + de 3
+      indstøbte rørstumper + spild
+      10 m  a 55,00 kr  =  550 kr    (koimad.dk, verified)
+      OBS: fynshavedam 113 kr/m – undgå
+
+[ ] PVC afløbsrør Ø50 grå, 3 m-længder, til manifold (perforeres selv)
+      tryk-løst gitter under grus: 4 grene à 1,8 m + header – afløbsrør, ikke PN10
+      10 m  a 24,00 kr  =  240 kr    (byggemarked, estimat)
+      OBS: Lettere at bore 6–8 mm huller i
+
+[ ] PVC vinkel 90° 50 mm lim
+      8 stk  a 20,00 kr  =  160 kr    (koimad.dk, verified)
+
+[ ] PVC vinkel 45° 50 mm lim
+      4 stk  a 20,00 kr  =  80 kr    (koimad.dk, estimat)
+
+[ ] PVC T-stykke 50 mm lim
+      manifold-grene
+      4 stk  a 25,00 kr  =  100 kr    (koimad.dk, verified)
+
+[ ] PVC samlemuffe 50 mm
+      6 stk  a 16,00 kr  =  96 kr    (koimad.dk, verified)
+
+[ ] PVC slutmuffe 50 mm
+      manifold-ender
+      4 stk  a 15,00 kr  =  60 kr    (koimad.dk, estimat)
+
+[ ] AquaForte Eco kuglehane 50 mm, dobbelt union
+      1 på filterafløb i ventilbrønd, 1 til drøvling af pumpe
+      2 stk  a 199,00 kr  =  398 kr    (koimad.dk, verified)
+      OBS: Gravity-system uden tryk; union = kan skilles i brønden
+
+[ ] Overgange pumpe/skimmer (gevind→lim, slangestuds)
+      1½ tomme til 50 mm
+      1 sæt  a 120,00 kr  =  120 kr    (koimad.dk, estimat)
+
+[ ] Indstøbt rørstump Ø50 (af trykrøret) + kvældbånd + Mapeband-krave
+      3 stk: ① pumpeledning (fællesvæg, filterbund), ② filterafløb (ydervæg, filterbund →
+      ventilbrønd), ③ nødoverløb (poolens ydervæg +28 → grusfaskine). Sættes FØR cellerne fyldes
+      3 stk  a 40,00 kr  =  120 kr    (byggemarked, estimat)
+      OBS: En tankgennemføring (flangemøtrik) kan ikke spændes på en 19 cm betonvæg
+
+[ ] Ventilbrønd: Ø315 PVC-rør 1 m + dæksel
+      under dækket ved filterets ydervæg; filterafløb + kuglehane; skyllevand pumpes op med
+      dykpumpe
+      1 sæt  a 450,00 kr  =  450 kr    (byggemarked / VVS, estimat)
+      OBS: Nås gennem løst bræt
+
+[ ] PVC-U lim + rens (HN/Biltema)
+      ~40 samlinger
+      1 sæt  a 160,00 kr  =  160 kr    (Harald Nyborg / Biltema, estimat)
+
+[ ] Spændebånd 40–60 mm rustfri
+      2 stk pr. pk
+      3 stk  a 24,95 kr  =  75 kr    (Bauhaus, verified)
+
+[ ] Teflontape
+      2 rl  a 15,00 kr  =  30 kr    (byggemarked, estimat)
+
+[ ] Fragt pumpe/rør (2 shops)
+      1 stk  a 150,00 kr  =  150 kr    (, estimat)
+
+E. FILTERMEDIE & PLANTER   [1.632 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Nøddesten 16–32 mm, vasket, hentet på trailer
+      bundlag 30 cm × 1,6 m² ≈ 0,5 m³ ≈ 0,9 t
+      1 t  a 450,00 kr  =  450 kr    (lokal grusgrav / stenhandel, estimat)
+      OBS: Bigbag 1 500 kg ville koste 1 750 – og være 60 % for meget
+
+[ ] Ærtesten 8–16 mm, vasket, hentet på trailer
+      mellemlag 30 cm ≈ 0,9 t
+      1 t  a 450,00 kr  =  450 kr    (lokal grusgrav / stenhandel, estimat)
+
+[ ] Perlesten 4–8 mm, vasket, hentet på trailer
+      toplag 20 cm ≈ 0,35 m³ ≈ 0,6 t, planterne sættes heri – i alt 80 cm grus, vand ca. 10 cm
+      over
+      0,7 t  a 500,00 kr  =  350 kr    (lokal grusgrav / stenhandel, estimat)
+      OBS: 3 trailerture à ~750 kg; skyl alligevel
+
+[ ] Iris pseudacorus (gul iris)
+      4 stk  a 33,15 kr  =  133 kr    (lokalt havecenter, maj, estimat)
+      OBS: 15 % mængderabat indregnet
+
+[ ] Caltha palustris (engkabbeleje)
+      2 stk  a 29,75 kr  =  60 kr    (lokalt havecenter, maj, estimat)
+      OBS: Dunhammer fravalgt (rødder mod membran)
+
+[ ] Juncus effusus (lyse-siv)
+      3 stk  a 38,25 kr  =  115 kr    (lokalt havecenter, maj, estimat)
+
+[ ] Mentha aquatica (vandmynte)
+      breder sig selv
+      3 stk  a 24,65 kr  =  74 kr    (lokalt havecenter, maj, estimat)
+      OBS: Breder sig – godt til næringsoptag
+
+F. EL & VAND   [4.197 kr]
+----------------------------------------------------------------------------------------------------
+[ ] PRCD stikkontakt m. fejlstrømsafbryder 16 A 30 mA IP54
+      plug-in HPFI til trafo (12 V-pumpe) og dykpumpe indtil fast gruppe
+      1 stk  a 259,00 kr  =  259 kr    (Lampemania, verified)
+      OBS: Drop hvis husets stik er på HPFI 30 mA
+
+[ ] Udendørs dobbelt stikkontakt IP44 (LK Opus 73)
+      monteres i teknikboks
+      1 stk  a 194,95 kr  =  195 kr    (Bauhaus, verified)
+      OBS: Kampagne til 20/8; ellers via elektrikeren
+
+[ ] Installationskabel 3G1,5 halogenfri, til nedgravning
+      20 m  a 14,00 kr  =  280 kr    (Wattoo.dk, verified)
+
+[ ] Kabelrør 50 mm dobbeltvægget, 25 m m. træktråd
+      1 rulle  a 280,00 kr  =  280 kr    (Biltema / Harald Nyborg, estimat)
+
+[ ] Kabeldækbånd 'Pas på elkabel' 50 m
+      1 rulle  a 150,00 kr  =  150 kr    (Harald Nyborg, estimat)
+      OBS: Spørg elektrikeren om det er nødvendigt over kabelrør
+
+[ ] Elektriker: tilslutning fast udendørs gruppe
+      fast stik i boksen – vi kender en elektriker
+      1 stk  a 0,00 kr  =  0 kr    (bekendt elinstallatør, verified)
+      OBS: Skal stadig udføres/anmeldes af autoriseret installatør; markedspris ~3 500 kr
+
+[ ] Vand: fyld, tøm, fyld, tøm, fyld (cement-pH)
+      ~9 m³ pr. fyldning, to skyl + slutfyld + filter
+      35 m³  a 86,65 kr  =  3.033 kr    (lokal forsyning, estimat)
+      OBS: Tjek eget takstblad (50–70); pH < 8,5 efter 2. fyldning → spring 3. over
+
+G. TERRASSE   [16.223 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Thermo Fyr terrassebrædder 26×140 glat/glat, 5 100 mm
+      dæk 32,5 m² − pool 8 − filter 5 − cirkel 3,7 − affasning 1 ≈ 17 m² (brædderne stopper ved
+      vægtoppen) × 6,9 m/m² = 117 m + 20 % = 141 m ≈ 28 stk; bland 5,1 og 3,3 m efter skæreliste
+      28 stk  a 254,75 kr  =  7.133 kr    ((dit screenshot), verified)
+      OBS: Læg brædderne på tegningen FØR bestilling; køb hele partiet fra samme batch (farve).
+           Spørg om september-restparti
+
+[ ] Thermo Fyr 26×140, 5 100 mm – forkant/fascia
+      på kant ~15 m, 20 mm luftspalte foroven
+      3 stk  a 254,75 kr  =  764 kr    ((samme), verified)
+      OBS: Kan droppes
+
+[ ] Trykimp. bjælke 47×200 mm NTR AB, 4,2 m
+      hovedbjælker på jordskruer c/c ~2 m, ~26 m
+      7 stk  a 210,00 kr  =  1.470 kr    (Davidsen, verified)
+      OBS: 45×145 (jem&fix 125,10/3,6 m) sparer ~470 kr hvis skruehoveder ender højere
+
+[ ] Trykimp. strøer 45×95 mm, 3,6 m
+      17 m² / c/c 400 = 43 m + vekselstrøer om cirkel/affasning 8 m + dobbelt under stød 4 m = 55
+      m; de yderste krager 45 cm ud til 10 mm fra poolvæggen
+      18 stk  a 71,10 kr  =  1.280 kr    (jem & fix, verified)
+      OBS: Dobbelt strø under brædde-stød
+
+[ ] Phønix murpap 11 cm × 20 m (strøbånd)
+      på alle strøer/bjælker
+      3 rulle  a 99,00 kr  =  297 kr    (jem & fix, verified)
+
+[ ] Jordskrue U-type 68/1000 mm, galv.
+      18 stk, 1,0 m (frostfri i ler); række 50 cm fra poolvæg i urørt jord; hoved ~3 cm over
+      terræn
+      18 stk  a 180,00 kr  =  3.240 kr    (jordskruer.dk / Jysk Skruefundament, estimat)
+      OBS: Linket i første budget var 885-varianten. Fri fragt > 2 000 kr; tæl skruerne på
+           bjælkeplanen (16–18)
+
+[ ] Bræddebolte M10×100 / franske skruer til U-beslag
+      2 pr. skrue + reserve
+      40 stk  a 6,50 kr  =  260 kr    (Harald Nyborg / jem & fix, estimat)
+
+[ ] Leje el-jordskruemaskine, 1 uge
+      jorden er sten og ler
+      1 uge  a 625,00 kr  =  625 kr    (Jysk Skruefundament, estimat)
+      OBS: Rammer en skrue en sten, flyttes den 20–30 cm
+
+[ ] Vinkelbeslag m/rib 88×88×65 galv.
+      strø→bjælke
+      40 stk  a 3,70 kr  =  148 kr    (jem & fix, verified)
+
+[ ] Beslagskruer CSA 5,0×40, 250 stk
+      2 pk  a 169,00 kr  =  338 kr    (jem & fix, verified)
+
+[ ] A4 rustfri skruer 4,8×75, 100 stk
+      til ALT på dækket: brædder (2 pr. strø ≈ 650), fascia, ramme, boks. Forbor altid i termotræ
+      8 pk  a 83,50 kr  =  668 kr    (Harald Nyborg, verified)
+      OBS: Den linkede "terrasseskrue 4,5×70" viste sig at være 4,3×56 – for kort. 4,8×75 A4 er
+           verificeret hos HN
+
+H. ZEN-SANDKASSE   [2.111 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Rundt højbed cortenstål Ø236 cm, H 15 cm, 3 mm
+      top i plan med dækket (max 5 mm over); på grusbase + buevæggens rand
+      1 stk  a 1.270,75 kr  =  1.271 kr    ((dit screenshot), verified)
+
+[ ] Hvidt sandkassesand, vasket, 25 kg-sække
+      0,72 t, hentes på traileren – ingen bigbag at tømme i en 15 cm ring
+      28 sæk  a 30,00 kr  =  840 kr    (byggemarked, estimat)
+
+I. TEKNIK-/OPBEVARINGSBOKS 0,5×1,5×0,5 M   [947 kr]
+----------------------------------------------------------------------------------------------------
+[ ] Trykimp. reglar 45×45 mm, 3,0 m
+      ramme ~15 m + låg-ramme
+      6 stk  a 35,25 kr  =  212 kr    (jem & fix, verified)
+
+[ ] Thermo Fyr 26×140, 5 100 mm – låg (2 hele brædder)
+      siderne (~16 m) beklædes med dækkets afskær – de 2,5 m-stykker fra rækkerne ved poolen
+      2 stk  a 254,75 kr  =  510 kr    ((samme som terrasse), verified)
+
+[ ] Vormann T-hængsel rustfri 100×60 mm
+      låg 1,5 m – tag 3
+      3 stk  a 44,95 kr  =  135 kr    (Bauhaus, verified)
+
+[ ] Ventilationsrist 150×150 plast
+      2 stk krydsventilation – el må ikke stå i fugt
+      2 stk  a 25,00 kr  =  50 kr    (Bauhaus, verified)
+
+[ ] Hasp galv. (håndtag af et brædt)
+      1 sæt  a 40,00 kr  =  40 kr    (byggemarked, estimat)
+
+====================================================================================================
+MATERIALER I ALT, EKSKL. UFORUDSET:  72.543 kr
++ 20 % UFORUDSET:                    14.509 kr
+BUDGET INKL. UFORUDSET:              87.052 kr
+
+Udenfor tallet: ingeniørberegning af armering 1.500-3.000 kr (SKAL laves før jern bestilles),
+evt. UV-C 1.500 kr (kun hvis vandet bliver grønt), evt. færdigbeton til bundpladen +2.500 kr.
+
+ETAPE 1 (A, B, G, H, I: hul, plader, vægge, trappe, terrasse, sandcirkel): 46.332 kr
+ETAPE 2 (C, D, E, F: membran, VVS, pumpe, filtergrus, vand):               26.211 kr
+
+INDKØBSPLAN (kort):
+  1. Byggemarked, EN palleordre (uge 0-1): 3 pl. 19 cm blok + 1 pl. 15 cm + 1 pl. cement = fri
+     levering. Bed om projektpris (5-10 %). + armering (EFTER ingeniøren), net, folie, forskalling.
+  2. Vognmand (ring 2): 6 t stabilgrus 0-32 (uge 0) + 10 t betongrus 0-16 (dagen før støbning)
+     + 0,5 t bakkesand 0-4 til puds. Etape 2: filtergrus 2,7 t hentes selv på trailer (vaskede sorter).
+  3. HN/jem&fix på trailer: strøer, reglar, beslag, A4-skruer 4,8x75, fiberdug, presenning,
+     dykpumpe, kabelrør, PVC-lim, sandkassesand i sække.
+  4. Termofyr-butik: 28 dæk + 3 fascia + 2 låg = 33 brædder, samme batch, spørg om restparti.
+  5. Net: jordskruer.dk (18 stk 68/1000 + maskinleje), kakelgiganten (alt Mapei, 1 fragt),
+     koimad.dk (PVC + haner), fynshavedam.dk (12 V-pumpe + skimmer, 1 fragt). Planter: havecenter, maj.
+  6. DBA nu: betonblander 130-160 l (~1.200, sælges igen), stavvibrator.
+
+MÅ IKKE SPARES VÆK: armering + fyldte celler (vent på ingeniøren), 5 sæt Mapelastic + net,
+cementdosering >=300 kg/m3 og pladen på ÉN dag, gennemføringer FØR cellefyld, jordskruer 1000 mm,
+47x200 bjælker + strø c/c 400, A4-skruer + forboring, hulkehl + slidpuds på vægtoppe,
+geotekstil + 5 cm afretning under filtergrus, 28 døgns hærdning før bagfyld.
+
+Genereret 2026-08-20 fra BUDGET.md.
